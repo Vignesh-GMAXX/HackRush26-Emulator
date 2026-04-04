@@ -1,4 +1,4 @@
-﻿================== MISSION INITIALIZATION ==================
+================== MISSION INITIALIZATION ==================
 [SCENARIO-PARAMETERS]
   horizon_seconds=1800
   decision_window_seconds=10
@@ -53,7 +53,7 @@
   [satellite-state] r_m=6771000 theta_mdeg=1625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=0 delta_r_m=0
-  [resource-usage] cpu_utilization_pct=1.32 total_cycles=26410 active_cycles=26410 sleep_cycles=1980460 radio_cycles=1900
+  [resource-usage] cpu_utilization_pct=1.32 total_cycles=2006870 active_cycles=26410 sleep_cycles=1980460 radio_cycles=1900
   [energy-status] consumed_mj=1613.43 budget_mj=15000000 remaining_mj=14998386.57 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -83,7 +83,7 @@
   [satellite-state] r_m=6771000 theta_mdeg=2925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=0 delta_r_m=0
-  [resource-usage] cpu_utilization_pct=1.15 total_cycles=45950 active_cycles=45950 sleep_cycles=3960920 radio_cycles=3800
+  [resource-usage] cpu_utilization_pct=1.15 total_cycles=4006870 active_cycles=45950 sleep_cycles=3960920 radio_cycles=3800
   [energy-status] consumed_mj=3089.46 budget_mj=15000000 remaining_mj=14996910.54 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -113,7 +113,7 @@
   [satellite-state] r_m=6771000 theta_mdeg=4225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=0 delta_r_m=0
-  [resource-usage] cpu_utilization_pct=1.09 total_cycles=65490 active_cycles=65490 sleep_cycles=5941380 radio_cycles=5700
+  [resource-usage] cpu_utilization_pct=1.09 total_cycles=6006870 active_cycles=65490 sleep_cycles=5941380 radio_cycles=5700
   [energy-status] consumed_mj=4565.49 budget_mj=15000000 remaining_mj=14995434.51 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -143,7 +143,7 @@
   [satellite-state] r_m=6771000 theta_mdeg=5525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=0 delta_r_m=0
-  [resource-usage] cpu_utilization_pct=1.06 total_cycles=85030 active_cycles=85030 sleep_cycles=7921840 radio_cycles=7600
+  [resource-usage] cpu_utilization_pct=1.06 total_cycles=8006870 active_cycles=85030 sleep_cycles=7921840 radio_cycles=7600
   [energy-status] consumed_mj=6041.52 budget_mj=15000000 remaining_mj=14993958.48 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -173,7 +173,7 @@
   [satellite-state] r_m=6771000 theta_mdeg=6825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=0 delta_r_m=0
-  [resource-usage] cpu_utilization_pct=1.04 total_cycles=104570 active_cycles=104570 sleep_cycles=9902300 radio_cycles=9500
+  [resource-usage] cpu_utilization_pct=1.04 total_cycles=10006870 active_cycles=104570 sleep_cycles=9902300 radio_cycles=9500
   [energy-status] consumed_mj=7517.55 budget_mj=15000000 remaining_mj=14992482.45 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -208,7 +208,7 @@
   [satellite-state] r_m=6770999 theta_mdeg=8125 omega_mdegps=65
   [high-risk-list] count=1 ids=3
   [planned-maneuver] target_id=3 delta_v_cms=-3 delta_r_m=-1
-  [resource-usage] cpu_utilization_pct=1.05 total_cycles=126010 active_cycles=126010 sleep_cycles=11882760 radio_cycles=11400
+  [resource-usage] cpu_utilization_pct=1.05 total_cycles=12008770 active_cycles=126010 sleep_cycles=11882760 radio_cycles=11400
   [energy-status] consumed_mj=9031.58 budget_mj=15000000 remaining_mj=14990968.42 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=1
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -248,7 +248,7 @@
   [satellite-state] r_m=6770997 theta_mdeg=9425 omega_mdegps=65
   [high-risk-list] count=1 ids=3
   [planned-maneuver] target_id=3 delta_v_cms=-3 delta_r_m=-1
-  [resource-usage] cpu_utilization_pct=1.07 total_cycles=149350 active_cycles=149350 sleep_cycles=13859420 radio_cycles=13300
+  [resource-usage] cpu_utilization_pct=1.07 total_cycles=14008770 active_cycles=149350 sleep_cycles=13859420 radio_cycles=13300
   [energy-status] consumed_mj=10581.71 budget_mj=15000000 remaining_mj=14989418.29 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=3 high_risk_prev_20s=2
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -288,7 +288,7 @@
   [satellite-state] r_m=6770999 theta_mdeg=10725 omega_mdegps=65
   [high-risk-list] count=1 ids=3
   [planned-maneuver] target_id=3 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.08 total_cycles=172690 active_cycles=172690 sleep_cycles=15836080 radio_cycles=15200
+  [resource-usage] cpu_utilization_pct=1.08 total_cycles=16008770 active_cycles=172690 sleep_cycles=15836080 radio_cycles=15200
   [energy-status] consumed_mj=12131.84 budget_mj=15000000 remaining_mj=14987868.16 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=5 high_risk_prev_20s=2
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -328,7 +328,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=12025 omega_mdegps=65
   [high-risk-list] count=1 ids=3
   [planned-maneuver] target_id=3 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.09 total_cycles=196030 active_cycles=196030 sleep_cycles=17812740 radio_cycles=17100
+  [resource-usage] cpu_utilization_pct=1.09 total_cycles=18008770 active_cycles=196030 sleep_cycles=17812740 radio_cycles=17100
   [energy-status] consumed_mj=13681.97 budget_mj=15000000 remaining_mj=14986318.03 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=2
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -358,7 +358,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=13325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.08 total_cycles=215570 active_cycles=215570 sleep_cycles=19791300 radio_cycles=19000
+  [resource-usage] cpu_utilization_pct=1.08 total_cycles=20006870 active_cycles=215570 sleep_cycles=19791300 radio_cycles=19000
   [energy-status] consumed_mj=15157.05 budget_mj=15000000 remaining_mj=14984842.95 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -388,7 +388,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=14625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.07 total_cycles=235110 active_cycles=235110 sleep_cycles=21771760 radio_cycles=20900
+  [resource-usage] cpu_utilization_pct=1.07 total_cycles=22006870 active_cycles=235110 sleep_cycles=21771760 radio_cycles=20900
   [energy-status] consumed_mj=16633.08 budget_mj=15000000 remaining_mj=14983366.92 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -418,7 +418,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=15925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.06 total_cycles=254650 active_cycles=254650 sleep_cycles=23752220 radio_cycles=22800
+  [resource-usage] cpu_utilization_pct=1.06 total_cycles=24006870 active_cycles=254650 sleep_cycles=23752220 radio_cycles=22800
   [energy-status] consumed_mj=18109.11 budget_mj=15000000 remaining_mj=14981890.89 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -448,7 +448,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=17225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.05 total_cycles=274190 active_cycles=274190 sleep_cycles=25732680 radio_cycles=24700
+  [resource-usage] cpu_utilization_pct=1.05 total_cycles=26006870 active_cycles=274190 sleep_cycles=25732680 radio_cycles=24700
   [energy-status] consumed_mj=19585.14 budget_mj=15000000 remaining_mj=14980414.86 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -478,7 +478,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=18525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.05 total_cycles=293730 active_cycles=293730 sleep_cycles=27713140 radio_cycles=26600
+  [resource-usage] cpu_utilization_pct=1.05 total_cycles=28006870 active_cycles=293730 sleep_cycles=27713140 radio_cycles=26600
   [energy-status] consumed_mj=21061.17 budget_mj=15000000 remaining_mj=14978938.83 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -508,7 +508,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=19825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.04 total_cycles=313270 active_cycles=313270 sleep_cycles=29693600 radio_cycles=28500
+  [resource-usage] cpu_utilization_pct=1.04 total_cycles=30006870 active_cycles=313270 sleep_cycles=29693600 radio_cycles=28500
   [energy-status] consumed_mj=22537.20 budget_mj=15000000 remaining_mj=14977462.80 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -538,7 +538,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=21125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.04 total_cycles=332810 active_cycles=332810 sleep_cycles=31674060 radio_cycles=30400
+  [resource-usage] cpu_utilization_pct=1.04 total_cycles=32006870 active_cycles=332810 sleep_cycles=31674060 radio_cycles=30400
   [energy-status] consumed_mj=24013.23 budget_mj=15000000 remaining_mj=14975986.77 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -568,7 +568,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=22425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.04 total_cycles=352350 active_cycles=352350 sleep_cycles=33654520 radio_cycles=32300
+  [resource-usage] cpu_utilization_pct=1.04 total_cycles=34006870 active_cycles=352350 sleep_cycles=33654520 radio_cycles=32300
   [energy-status] consumed_mj=25489.26 budget_mj=15000000 remaining_mj=14974510.74 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -598,7 +598,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=23725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.03 total_cycles=371890 active_cycles=371890 sleep_cycles=35634980 radio_cycles=34200
+  [resource-usage] cpu_utilization_pct=1.03 total_cycles=36006870 active_cycles=371890 sleep_cycles=35634980 radio_cycles=34200
   [energy-status] consumed_mj=26965.29 budget_mj=15000000 remaining_mj=14973034.71 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -628,7 +628,7 @@
   [satellite-state] r_m=6771001 theta_mdeg=25025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.03 total_cycles=391430 active_cycles=391430 sleep_cycles=37615440 radio_cycles=36100
+  [resource-usage] cpu_utilization_pct=1.03 total_cycles=38006870 active_cycles=391430 sleep_cycles=37615440 radio_cycles=36100
   [energy-status] consumed_mj=28441.32 budget_mj=15000000 remaining_mj=14971558.68 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=7 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -663,7 +663,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=26325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.03 total_cycles=412870 active_cycles=412870 sleep_cycles=39594000 radio_cycles=38000
+  [resource-usage] cpu_utilization_pct=1.03 total_cycles=40006870 active_cycles=412870 sleep_cycles=39594000 radio_cycles=38000
   [energy-status] consumed_mj=29954.40 budget_mj=15000000 remaining_mj=14970045.60 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=1
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -693,7 +693,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=27625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.03 total_cycles=432410 active_cycles=432410 sleep_cycles=41574460 radio_cycles=39900
+  [resource-usage] cpu_utilization_pct=1.03 total_cycles=42006870 active_cycles=432410 sleep_cycles=41574460 radio_cycles=39900
   [energy-status] consumed_mj=31430.43 budget_mj=15000000 remaining_mj=14968569.57 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -723,7 +723,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=28925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.03 total_cycles=451950 active_cycles=451950 sleep_cycles=43554920 radio_cycles=41800
+  [resource-usage] cpu_utilization_pct=1.03 total_cycles=44006870 active_cycles=451950 sleep_cycles=43554920 radio_cycles=41800
   [energy-status] consumed_mj=32906.46 budget_mj=15000000 remaining_mj=14967093.54 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -753,7 +753,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=30225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.02 total_cycles=471490 active_cycles=471490 sleep_cycles=45535380 radio_cycles=43700
+  [resource-usage] cpu_utilization_pct=1.02 total_cycles=46006870 active_cycles=471490 sleep_cycles=45535380 radio_cycles=43700
   [energy-status] consumed_mj=34382.49 budget_mj=15000000 remaining_mj=14965617.51 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -783,7 +783,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=31525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.02 total_cycles=491030 active_cycles=491030 sleep_cycles=47515840 radio_cycles=45600
+  [resource-usage] cpu_utilization_pct=1.02 total_cycles=48006870 active_cycles=491030 sleep_cycles=47515840 radio_cycles=45600
   [energy-status] consumed_mj=35858.52 budget_mj=15000000 remaining_mj=14964141.48 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -813,7 +813,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=32825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.02 total_cycles=510570 active_cycles=510570 sleep_cycles=49496300 radio_cycles=47500
+  [resource-usage] cpu_utilization_pct=1.02 total_cycles=50006870 active_cycles=510570 sleep_cycles=49496300 radio_cycles=47500
   [energy-status] consumed_mj=37334.55 budget_mj=15000000 remaining_mj=14962665.45 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -843,7 +843,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=34125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.02 total_cycles=530110 active_cycles=530110 sleep_cycles=51476760 radio_cycles=49400
+  [resource-usage] cpu_utilization_pct=1.02 total_cycles=52006870 active_cycles=530110 sleep_cycles=51476760 radio_cycles=49400
   [energy-status] consumed_mj=38810.58 budget_mj=15000000 remaining_mj=14961189.42 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -873,7 +873,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=35425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.02 total_cycles=549650 active_cycles=549650 sleep_cycles=53457220 radio_cycles=51300
+  [resource-usage] cpu_utilization_pct=1.02 total_cycles=54006870 active_cycles=549650 sleep_cycles=53457220 radio_cycles=51300
   [energy-status] consumed_mj=40286.61 budget_mj=15000000 remaining_mj=14959713.39 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -903,7 +903,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=36725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.02 total_cycles=569190 active_cycles=569190 sleep_cycles=55437680 radio_cycles=53200
+  [resource-usage] cpu_utilization_pct=1.02 total_cycles=56006870 active_cycles=569190 sleep_cycles=55437680 radio_cycles=53200
   [energy-status] consumed_mj=41762.64 budget_mj=15000000 remaining_mj=14958237.36 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -933,7 +933,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=38025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=588730 active_cycles=588730 sleep_cycles=57418140 radio_cycles=55100
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=58006870 active_cycles=588730 sleep_cycles=57418140 radio_cycles=55100
   [energy-status] consumed_mj=43238.67 budget_mj=15000000 remaining_mj=14956761.33 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -963,7 +963,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=39325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=608270 active_cycles=608270 sleep_cycles=59398600 radio_cycles=57000
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=60006870 active_cycles=608270 sleep_cycles=59398600 radio_cycles=57000
   [energy-status] consumed_mj=44714.70 budget_mj=15000000 remaining_mj=14955285.30 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -993,7 +993,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=40625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=627810 active_cycles=627810 sleep_cycles=61379060 radio_cycles=58900
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=62006870 active_cycles=627810 sleep_cycles=61379060 radio_cycles=58900
   [energy-status] consumed_mj=46190.73 budget_mj=15000000 remaining_mj=14953809.27 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1023,7 +1023,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=41925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=647350 active_cycles=647350 sleep_cycles=63359520 radio_cycles=60800
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=64006870 active_cycles=647350 sleep_cycles=63359520 radio_cycles=60800
   [energy-status] consumed_mj=47666.76 budget_mj=15000000 remaining_mj=14952333.24 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1053,7 +1053,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=43225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=666890 active_cycles=666890 sleep_cycles=65339980 radio_cycles=62700
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=66006870 active_cycles=666890 sleep_cycles=65339980 radio_cycles=62700
   [energy-status] consumed_mj=49142.79 budget_mj=15000000 remaining_mj=14950857.21 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1083,7 +1083,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=44525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=686430 active_cycles=686430 sleep_cycles=67320440 radio_cycles=64600
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=68006870 active_cycles=686430 sleep_cycles=67320440 radio_cycles=64600
   [energy-status] consumed_mj=50618.82 budget_mj=15000000 remaining_mj=14949381.18 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1113,7 +1113,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=45825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=705970 active_cycles=705970 sleep_cycles=69300900 radio_cycles=66500
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=70006870 active_cycles=705970 sleep_cycles=69300900 radio_cycles=66500
   [energy-status] consumed_mj=52094.85 budget_mj=15000000 remaining_mj=14947905.15 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1143,7 +1143,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=47125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=725510 active_cycles=725510 sleep_cycles=71281360 radio_cycles=68400
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=72006870 active_cycles=725510 sleep_cycles=71281360 radio_cycles=68400
   [energy-status] consumed_mj=53570.88 budget_mj=15000000 remaining_mj=14946429.12 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1173,7 +1173,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=48425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=745050 active_cycles=745050 sleep_cycles=73261820 radio_cycles=70300
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=74006870 active_cycles=745050 sleep_cycles=73261820 radio_cycles=70300
   [energy-status] consumed_mj=55046.91 budget_mj=15000000 remaining_mj=14944953.09 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1203,7 +1203,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=49725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=764590 active_cycles=764590 sleep_cycles=75242280 radio_cycles=72200
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=76006870 active_cycles=764590 sleep_cycles=75242280 radio_cycles=72200
   [energy-status] consumed_mj=56522.94 budget_mj=15000000 remaining_mj=14943477.06 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1233,7 +1233,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=51025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.01 total_cycles=784130 active_cycles=784130 sleep_cycles=77222740 radio_cycles=74100
+  [resource-usage] cpu_utilization_pct=1.01 total_cycles=78006870 active_cycles=784130 sleep_cycles=77222740 radio_cycles=74100
   [energy-status] consumed_mj=57998.97 budget_mj=15000000 remaining_mj=14942001.03 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1263,7 +1263,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=52325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=803670 active_cycles=803670 sleep_cycles=79203200 radio_cycles=76000
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=80006870 active_cycles=803670 sleep_cycles=79203200 radio_cycles=76000
   [energy-status] consumed_mj=59475.00 budget_mj=15000000 remaining_mj=14940525.00 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1293,7 +1293,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=53625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=823210 active_cycles=823210 sleep_cycles=81183660 radio_cycles=77900
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=82006870 active_cycles=823210 sleep_cycles=81183660 radio_cycles=77900
   [energy-status] consumed_mj=60951.03 budget_mj=15000000 remaining_mj=14939048.97 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1323,7 +1323,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=54925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=842750 active_cycles=842750 sleep_cycles=83164120 radio_cycles=79800
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=84006870 active_cycles=842750 sleep_cycles=83164120 radio_cycles=79800
   [energy-status] consumed_mj=62427.06 budget_mj=15000000 remaining_mj=14937572.94 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1353,7 +1353,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=56225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=862290 active_cycles=862290 sleep_cycles=85144580 radio_cycles=81700
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=86006870 active_cycles=862290 sleep_cycles=85144580 radio_cycles=81700
   [energy-status] consumed_mj=63903.09 budget_mj=15000000 remaining_mj=14936096.91 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1383,7 +1383,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=57525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=881830 active_cycles=881830 sleep_cycles=87125040 radio_cycles=83600
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=88006870 active_cycles=881830 sleep_cycles=87125040 radio_cycles=83600
   [energy-status] consumed_mj=65379.12 budget_mj=15000000 remaining_mj=14934620.88 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1413,7 +1413,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=58825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=901370 active_cycles=901370 sleep_cycles=89105500 radio_cycles=85500
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=90006870 active_cycles=901370 sleep_cycles=89105500 radio_cycles=85500
   [energy-status] consumed_mj=66855.15 budget_mj=15000000 remaining_mj=14933144.85 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1443,7 +1443,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=60125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=920910 active_cycles=920910 sleep_cycles=91085960 radio_cycles=87400
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=92006870 active_cycles=920910 sleep_cycles=91085960 radio_cycles=87400
   [energy-status] consumed_mj=68331.18 budget_mj=15000000 remaining_mj=14931668.82 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1473,7 +1473,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=61425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=940450 active_cycles=940450 sleep_cycles=93066420 radio_cycles=89300
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=94006870 active_cycles=940450 sleep_cycles=93066420 radio_cycles=89300
   [energy-status] consumed_mj=69807.21 budget_mj=15000000 remaining_mj=14930192.79 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1503,7 +1503,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=62725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=959990 active_cycles=959990 sleep_cycles=95046880 radio_cycles=91200
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=96006870 active_cycles=959990 sleep_cycles=95046880 radio_cycles=91200
   [energy-status] consumed_mj=71283.24 budget_mj=15000000 remaining_mj=14928716.76 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1533,7 +1533,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=64025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=979530 active_cycles=979530 sleep_cycles=97027340 radio_cycles=93100
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=98006870 active_cycles=979530 sleep_cycles=97027340 radio_cycles=93100
   [energy-status] consumed_mj=72759.27 budget_mj=15000000 remaining_mj=14927240.73 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1563,7 +1563,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=65325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=999070 active_cycles=999070 sleep_cycles=99007800 radio_cycles=95000
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=100006870 active_cycles=999070 sleep_cycles=99007800 radio_cycles=95000
   [energy-status] consumed_mj=74235.30 budget_mj=15000000 remaining_mj=14925764.70 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1593,7 +1593,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=66625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1018610 active_cycles=1018610 sleep_cycles=100988260 radio_cycles=96900
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=102006870 active_cycles=1018610 sleep_cycles=100988260 radio_cycles=96900
   [energy-status] consumed_mj=75711.33 budget_mj=15000000 remaining_mj=14924288.67 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1623,7 +1623,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=67925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1038150 active_cycles=1038150 sleep_cycles=102968720 radio_cycles=98800
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=104006870 active_cycles=1038150 sleep_cycles=102968720 radio_cycles=98800
   [energy-status] consumed_mj=77187.36 budget_mj=15000000 remaining_mj=14922812.64 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1653,7 +1653,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=69225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1057690 active_cycles=1057690 sleep_cycles=104949180 radio_cycles=100700
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=106006870 active_cycles=1057690 sleep_cycles=104949180 radio_cycles=100700
   [energy-status] consumed_mj=78663.39 budget_mj=15000000 remaining_mj=14921336.61 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1683,7 +1683,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=70525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1077230 active_cycles=1077230 sleep_cycles=106929640 radio_cycles=102600
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=108006870 active_cycles=1077230 sleep_cycles=106929640 radio_cycles=102600
   [energy-status] consumed_mj=80139.42 budget_mj=15000000 remaining_mj=14919860.58 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1713,7 +1713,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=71825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1096770 active_cycles=1096770 sleep_cycles=108910100 radio_cycles=104500
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=110006870 active_cycles=1096770 sleep_cycles=108910100 radio_cycles=104500
   [energy-status] consumed_mj=81615.45 budget_mj=15000000 remaining_mj=14918384.55 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1743,7 +1743,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=73125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1116310 active_cycles=1116310 sleep_cycles=110890560 radio_cycles=106400
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=112006870 active_cycles=1116310 sleep_cycles=110890560 radio_cycles=106400
   [energy-status] consumed_mj=83091.48 budget_mj=15000000 remaining_mj=14916908.52 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1773,7 +1773,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=74425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1135850 active_cycles=1135850 sleep_cycles=112871020 radio_cycles=108300
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=114006870 active_cycles=1135850 sleep_cycles=112871020 radio_cycles=108300
   [energy-status] consumed_mj=84567.51 budget_mj=15000000 remaining_mj=14915432.49 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1803,7 +1803,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=75725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1155390 active_cycles=1155390 sleep_cycles=114851480 radio_cycles=110200
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=116006870 active_cycles=1155390 sleep_cycles=114851480 radio_cycles=110200
   [energy-status] consumed_mj=86043.54 budget_mj=15000000 remaining_mj=14913956.46 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1833,7 +1833,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=77025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1174930 active_cycles=1174930 sleep_cycles=116831940 radio_cycles=112100
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=118006870 active_cycles=1174930 sleep_cycles=116831940 radio_cycles=112100
   [energy-status] consumed_mj=87519.57 budget_mj=15000000 remaining_mj=14912480.43 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1863,7 +1863,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=78325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1194470 active_cycles=1194470 sleep_cycles=118812400 radio_cycles=114000
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=120006870 active_cycles=1194470 sleep_cycles=118812400 radio_cycles=114000
   [energy-status] consumed_mj=88995.60 budget_mj=15000000 remaining_mj=14911004.40 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1893,7 +1893,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=79625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=1.00 total_cycles=1214010 active_cycles=1214010 sleep_cycles=120792860 radio_cycles=115900
+  [resource-usage] cpu_utilization_pct=1.00 total_cycles=122006870 active_cycles=1214010 sleep_cycles=120792860 radio_cycles=115900
   [energy-status] consumed_mj=90471.63 budget_mj=15000000 remaining_mj=14909528.37 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1923,7 +1923,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=80925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1233550 active_cycles=1233550 sleep_cycles=122773320 radio_cycles=117800
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=124006870 active_cycles=1233550 sleep_cycles=122773320 radio_cycles=117800
   [energy-status] consumed_mj=91947.66 budget_mj=15000000 remaining_mj=14908052.34 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1953,7 +1953,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=82225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1253090 active_cycles=1253090 sleep_cycles=124753780 radio_cycles=119700
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=126006870 active_cycles=1253090 sleep_cycles=124753780 radio_cycles=119700
   [energy-status] consumed_mj=93423.69 budget_mj=15000000 remaining_mj=14906576.31 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -1983,7 +1983,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=83525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1272630 active_cycles=1272630 sleep_cycles=126734240 radio_cycles=121600
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=128006870 active_cycles=1272630 sleep_cycles=126734240 radio_cycles=121600
   [energy-status] consumed_mj=94899.72 budget_mj=15000000 remaining_mj=14905100.28 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2013,7 +2013,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=84825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1292170 active_cycles=1292170 sleep_cycles=128714700 radio_cycles=123500
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=130006870 active_cycles=1292170 sleep_cycles=128714700 radio_cycles=123500
   [energy-status] consumed_mj=96375.75 budget_mj=15000000 remaining_mj=14903624.25 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2043,7 +2043,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=86125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1311710 active_cycles=1311710 sleep_cycles=130695160 radio_cycles=125400
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=132006870 active_cycles=1311710 sleep_cycles=130695160 radio_cycles=125400
   [energy-status] consumed_mj=97851.78 budget_mj=15000000 remaining_mj=14902148.22 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2073,7 +2073,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=87425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1331250 active_cycles=1331250 sleep_cycles=132675620 radio_cycles=127300
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=134006870 active_cycles=1331250 sleep_cycles=132675620 radio_cycles=127300
   [energy-status] consumed_mj=99327.81 budget_mj=15000000 remaining_mj=14900672.19 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2103,7 +2103,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=88725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1350790 active_cycles=1350790 sleep_cycles=134656080 radio_cycles=129200
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=136006870 active_cycles=1350790 sleep_cycles=134656080 radio_cycles=129200
   [energy-status] consumed_mj=100803.84 budget_mj=15000000 remaining_mj=14899196.16 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2133,7 +2133,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=90025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1370330 active_cycles=1370330 sleep_cycles=136636540 radio_cycles=131100
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=138006870 active_cycles=1370330 sleep_cycles=136636540 radio_cycles=131100
   [energy-status] consumed_mj=102279.87 budget_mj=15000000 remaining_mj=14897720.13 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2163,7 +2163,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=91325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1389870 active_cycles=1389870 sleep_cycles=138617000 radio_cycles=133000
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=140006870 active_cycles=1389870 sleep_cycles=138617000 radio_cycles=133000
   [energy-status] consumed_mj=103755.90 budget_mj=15000000 remaining_mj=14896244.10 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2193,7 +2193,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=92625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1409410 active_cycles=1409410 sleep_cycles=140597460 radio_cycles=134900
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=142006870 active_cycles=1409410 sleep_cycles=140597460 radio_cycles=134900
   [energy-status] consumed_mj=105231.93 budget_mj=15000000 remaining_mj=14894768.07 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2223,7 +2223,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=93925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1428950 active_cycles=1428950 sleep_cycles=142577920 radio_cycles=136800
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=144006870 active_cycles=1428950 sleep_cycles=142577920 radio_cycles=136800
   [energy-status] consumed_mj=106707.96 budget_mj=15000000 remaining_mj=14893292.04 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2253,7 +2253,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=95225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1448490 active_cycles=1448490 sleep_cycles=144558380 radio_cycles=138700
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=146006870 active_cycles=1448490 sleep_cycles=144558380 radio_cycles=138700
   [energy-status] consumed_mj=108183.99 budget_mj=15000000 remaining_mj=14891816.01 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2283,7 +2283,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=96525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1468030 active_cycles=1468030 sleep_cycles=146538840 radio_cycles=140600
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=148006870 active_cycles=1468030 sleep_cycles=146538840 radio_cycles=140600
   [energy-status] consumed_mj=109660.02 budget_mj=15000000 remaining_mj=14890339.98 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2313,7 +2313,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=97825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1487570 active_cycles=1487570 sleep_cycles=148519300 radio_cycles=142500
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=150006870 active_cycles=1487570 sleep_cycles=148519300 radio_cycles=142500
   [energy-status] consumed_mj=111136.05 budget_mj=15000000 remaining_mj=14888863.95 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2343,7 +2343,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=99125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1507110 active_cycles=1507110 sleep_cycles=150499760 radio_cycles=144400
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=152006870 active_cycles=1507110 sleep_cycles=150499760 radio_cycles=144400
   [energy-status] consumed_mj=112612.08 budget_mj=15000000 remaining_mj=14887387.92 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2373,7 +2373,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=100425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1526650 active_cycles=1526650 sleep_cycles=152480220 radio_cycles=146300
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=154006870 active_cycles=1526650 sleep_cycles=152480220 radio_cycles=146300
   [energy-status] consumed_mj=114088.11 budget_mj=15000000 remaining_mj=14885911.89 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2403,7 +2403,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=101725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1546190 active_cycles=1546190 sleep_cycles=154460680 radio_cycles=148200
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=156006870 active_cycles=1546190 sleep_cycles=154460680 radio_cycles=148200
   [energy-status] consumed_mj=115564.14 budget_mj=15000000 remaining_mj=14884435.86 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2433,7 +2433,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=103025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1565730 active_cycles=1565730 sleep_cycles=156441140 radio_cycles=150100
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=158006870 active_cycles=1565730 sleep_cycles=156441140 radio_cycles=150100
   [energy-status] consumed_mj=117040.17 budget_mj=15000000 remaining_mj=14882959.83 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2463,7 +2463,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=104325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1585270 active_cycles=1585270 sleep_cycles=158421600 radio_cycles=152000
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=160006870 active_cycles=1585270 sleep_cycles=158421600 radio_cycles=152000
   [energy-status] consumed_mj=118516.20 budget_mj=15000000 remaining_mj=14881483.80 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2493,7 +2493,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=105625 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1604810 active_cycles=1604810 sleep_cycles=160402060 radio_cycles=153900
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=162006870 active_cycles=1604810 sleep_cycles=160402060 radio_cycles=153900
   [energy-status] consumed_mj=119992.23 budget_mj=15000000 remaining_mj=14880007.77 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2523,7 +2523,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=106925 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1624350 active_cycles=1624350 sleep_cycles=162382520 radio_cycles=155800
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=164006870 active_cycles=1624350 sleep_cycles=162382520 radio_cycles=155800
   [energy-status] consumed_mj=121468.26 budget_mj=15000000 remaining_mj=14878531.74 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2553,7 +2553,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=108225 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1643890 active_cycles=1643890 sleep_cycles=164362980 radio_cycles=157700
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=166006870 active_cycles=1643890 sleep_cycles=164362980 radio_cycles=157700
   [energy-status] consumed_mj=122944.29 budget_mj=15000000 remaining_mj=14877055.71 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2583,7 +2583,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=109525 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1663430 active_cycles=1663430 sleep_cycles=166343440 radio_cycles=159600
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=168006870 active_cycles=1663430 sleep_cycles=166343440 radio_cycles=159600
   [energy-status] consumed_mj=124420.32 budget_mj=15000000 remaining_mj=14875579.68 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2613,7 +2613,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=110825 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1682970 active_cycles=1682970 sleep_cycles=168323900 radio_cycles=161500
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=170006870 active_cycles=1682970 sleep_cycles=168323900 radio_cycles=161500
   [energy-status] consumed_mj=125896.35 budget_mj=15000000 remaining_mj=14874103.65 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2643,7 +2643,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=112125 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1702510 active_cycles=1702510 sleep_cycles=170304360 radio_cycles=163400
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=172006870 active_cycles=1702510 sleep_cycles=170304360 radio_cycles=163400
   [energy-status] consumed_mj=127372.38 budget_mj=15000000 remaining_mj=14872627.62 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2673,7 +2673,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=113425 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1722050 active_cycles=1722050 sleep_cycles=172284820 radio_cycles=165300
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=174006870 active_cycles=1722050 sleep_cycles=172284820 radio_cycles=165300
   [energy-status] consumed_mj=128848.41 budget_mj=15000000 remaining_mj=14871151.59 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2703,7 +2703,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=114725 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1741590 active_cycles=1741590 sleep_cycles=174265280 radio_cycles=167200
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=176006870 active_cycles=1741590 sleep_cycles=174265280 radio_cycles=167200
   [energy-status] consumed_mj=130324.44 budget_mj=15000000 remaining_mj=14869675.56 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2733,7 +2733,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=116025 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1761130 active_cycles=1761130 sleep_cycles=176245740 radio_cycles=169100
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=178006870 active_cycles=1761130 sleep_cycles=176245740 radio_cycles=169100
   [energy-status] consumed_mj=131800.47 budget_mj=15000000 remaining_mj=14868199.53 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2763,7 +2763,7 @@
   [satellite-state] r_m=6771002 theta_mdeg=117325 omega_mdegps=65
   [high-risk-list] count=0 ids=none
   [planned-maneuver] target_id=-1 delta_v_cms=-3 delta_r_m=1
-  [resource-usage] cpu_utilization_pct=0.99 total_cycles=1780670 active_cycles=1780670 sleep_cycles=178226200 radio_cycles=171000
+  [resource-usage] cpu_utilization_pct=0.99 total_cycles=180006870 active_cycles=1780670 sleep_cycles=178226200 radio_cycles=171000
   [energy-status] consumed_mj=133276.50 budget_mj=15000000 remaining_mj=14866723.50 battery_status=HEALTHY
   [risk-tracking] high_risk_so_far=8 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
@@ -2778,7 +2778,7 @@
   active_cycles=1782570
   sleep_cycles=178317430
   radio_cycles=172900
-  total_cycles=1782570
+  total_cycles=180100000
 
 [PER-TASK-CYCLES]
   task_orbit_cycles=703950

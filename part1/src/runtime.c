@@ -34,6 +34,7 @@ void runtime_charge_sleep(runtime_stats_t *rt, int64_t cycles) {
     if (cycles <= 0) {
         return;
     }
+    rt->total_cycles += cycles;
     rt->sleep_cycles += cycles;
     rt->energy_mj_x10000 += cycles * SLEEP_MJ_X10000_PER_CYCLE;
 }
