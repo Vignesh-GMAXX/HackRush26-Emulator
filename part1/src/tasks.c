@@ -57,9 +57,8 @@ void mission_init(mission_state_t *ms, const scenario_t *sc) {
     ms->sat_theta_mdeg = sc->sat_theta_mdeg;
     ms->sat_omega_mdegps = sc->sat_omega_mdegps;
     ms->high_risk_count = 0;
-    ms->high_risk_any_20s = 0;
-    ms->high_risk_max_20s = 0;
-    ms->high_risk_events_20s = 0;
+    ms->high_risk_total_so_far = 0;
+    ms->high_risk_window_20s = 0;
     ms->last_high_risk_id = -1;
     ms->maneuver_pending = 0;
     ms->planned_dv_cms = 0;
@@ -129,15 +128,8 @@ void task_risk_eval(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, in
     printf("[COLLISION-RISK-SUMMARY] high_risk=%d watch=%d safe=%d\n", high_count, watch_count, safe_count);
 
     ms->maneuver_pending = (ms->high_risk_count > 0) ? 1 : 0;
-
-    /* Rolling telemetry window (20s): preserve transient HIGH-RISK events. */
-    if (ms->high_risk_count > 0) {
-        ms->high_risk_any_20s = 1;
-        ms->high_risk_events_20s += ms->high_risk_count;
-        if (ms->high_risk_count > ms->high_risk_max_20s) {
-            ms->high_risk_max_20s = ms->high_risk_count;
-        }
-    }
+    ms->high_risk_total_so_far += ms->high_risk_count;
+    ms->high_risk_window_20s += ms->high_risk_count;
 
     runtime_charge_cycles(rt, TASK_RISK, 4200 + 70 * sc->debris_count, 0);
 }
@@ -198,17 +190,12 @@ void task_telemetry(mission_state_t *ms, const scenario_t *sc, runtime_stats_t *
            ms->sat_r_m,
            ms->sat_theta_mdeg,
            ms->sat_omega_mdegps);
-    printf("  [risk-tracking] current_high_risk=%d any_in_window=%d max_in_window=%d total_events=%d\n",
-           ms->high_risk_count,
-           ms->high_risk_any_20s,
-           ms->high_risk_max_20s,
-           ms->high_risk_events_20s);
+    printf("  [risk-tracking] high_risk_so_far=%d high_risk_prev_20s=%d\n",
+           ms->high_risk_total_so_far,
+           ms->high_risk_window_20s);
     printf("  [mission-status] debris_tracked=%d decision_window_s=20\n", sc->debris_count);
 
-    /* New 20s telemetry window starts after each send. */
-    ms->high_risk_any_20s = 0;
-    ms->high_risk_max_20s = 0;
-    ms->high_risk_events_20s = 0;
+    ms->high_risk_window_20s = 0;
 
     runtime_charge_cycles(rt, TASK_TELEMETRY, 1100, 1);
 }

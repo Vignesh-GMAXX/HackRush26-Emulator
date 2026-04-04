@@ -21,7 +21,7 @@
 
 [TELEMETRY-REPORT] timestamp=0_s
   [satellite-state] r_m=6771000 theta_mdeg=325 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=0_s
@@ -47,7 +47,7 @@
 
 [TELEMETRY-REPORT] timestamp=20_s
   [satellite-state] r_m=6771000 theta_mdeg=1625 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=20_s
@@ -73,7 +73,7 @@
 
 [TELEMETRY-REPORT] timestamp=40_s
   [satellite-state] r_m=6771000 theta_mdeg=2925 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=40_s
@@ -99,7 +99,7 @@
 
 [TELEMETRY-REPORT] timestamp=60_s
   [satellite-state] r_m=6771000 theta_mdeg=4225 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=60_s
@@ -125,7 +125,7 @@
 
 [TELEMETRY-REPORT] timestamp=80_s
   [satellite-state] r_m=6771000 theta_mdeg=5525 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=80_s
@@ -151,7 +151,7 @@
 
 [TELEMETRY-REPORT] timestamp=100_s
   [satellite-state] r_m=6771000 theta_mdeg=6825 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=100_s
@@ -177,7 +177,7 @@
 
 [TELEMETRY-REPORT] timestamp=120_s
   [satellite-state] r_m=6771000 theta_mdeg=8125 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=120_s
@@ -203,7 +203,7 @@
 
 [TELEMETRY-REPORT] timestamp=140_s
   [satellite-state] r_m=6771000 theta_mdeg=9425 omega_mdegps=65
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=0 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=140_s
@@ -234,7 +234,7 @@
 
 [TELEMETRY-REPORT] timestamp=160_s
   [satellite-state] r_m=6771001 theta_mdeg=10695 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=1 max_in_window=1 total_events=1
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=1
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=160_s
@@ -260,7 +260,7 @@
 
 [TELEMETRY-REPORT] timestamp=180_s
   [satellite-state] r_m=6771001 theta_mdeg=11935 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=180_s
@@ -286,7 +286,7 @@
 
 [TELEMETRY-REPORT] timestamp=200_s
   [satellite-state] r_m=6771001 theta_mdeg=13175 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=200_s
@@ -312,7 +312,7 @@
 
 [TELEMETRY-REPORT] timestamp=220_s
   [satellite-state] r_m=6771001 theta_mdeg=14415 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=220_s
@@ -338,7 +338,7 @@
 
 [TELEMETRY-REPORT] timestamp=240_s
   [satellite-state] r_m=6771001 theta_mdeg=15655 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=240_s
@@ -364,7 +364,7 @@
 
 [TELEMETRY-REPORT] timestamp=260_s
   [satellite-state] r_m=6771001 theta_mdeg=16895 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=260_s
@@ -390,7 +390,7 @@
 
 [TELEMETRY-REPORT] timestamp=280_s
   [satellite-state] r_m=6771001 theta_mdeg=18135 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=280_s
@@ -416,7 +416,7 @@
 
 [TELEMETRY-REPORT] timestamp=300_s
   [satellite-state] r_m=6771001 theta_mdeg=19375 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=300_s
@@ -442,7 +442,7 @@
 
 [TELEMETRY-REPORT] timestamp=320_s
   [satellite-state] r_m=6771001 theta_mdeg=20615 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=320_s
@@ -468,7 +468,7 @@
 
 [TELEMETRY-REPORT] timestamp=340_s
   [satellite-state] r_m=6771001 theta_mdeg=21855 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=340_s
@@ -494,7 +494,7 @@
 
 [TELEMETRY-REPORT] timestamp=360_s
   [satellite-state] r_m=6771001 theta_mdeg=23095 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=360_s
@@ -520,7 +520,7 @@
 
 [TELEMETRY-REPORT] timestamp=380_s
   [satellite-state] r_m=6771001 theta_mdeg=24335 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=380_s
@@ -546,7 +546,7 @@
 
 [TELEMETRY-REPORT] timestamp=400_s
   [satellite-state] r_m=6771001 theta_mdeg=25575 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=400_s
@@ -572,7 +572,7 @@
 
 [TELEMETRY-REPORT] timestamp=420_s
   [satellite-state] r_m=6771001 theta_mdeg=26815 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=420_s
@@ -598,7 +598,7 @@
 
 [TELEMETRY-REPORT] timestamp=440_s
   [satellite-state] r_m=6771001 theta_mdeg=28055 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=440_s
@@ -624,7 +624,7 @@
 
 [TELEMETRY-REPORT] timestamp=460_s
   [satellite-state] r_m=6771001 theta_mdeg=29295 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=460_s
@@ -650,7 +650,7 @@
 
 [TELEMETRY-REPORT] timestamp=480_s
   [satellite-state] r_m=6771001 theta_mdeg=30535 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=480_s
@@ -676,7 +676,7 @@
 
 [TELEMETRY-REPORT] timestamp=500_s
   [satellite-state] r_m=6771001 theta_mdeg=31775 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=500_s
@@ -702,7 +702,7 @@
 
 [TELEMETRY-REPORT] timestamp=520_s
   [satellite-state] r_m=6771001 theta_mdeg=33015 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=520_s
@@ -728,7 +728,7 @@
 
 [TELEMETRY-REPORT] timestamp=540_s
   [satellite-state] r_m=6771001 theta_mdeg=34255 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=540_s
@@ -754,7 +754,7 @@
 
 [TELEMETRY-REPORT] timestamp=560_s
   [satellite-state] r_m=6771001 theta_mdeg=35495 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=560_s
@@ -780,7 +780,7 @@
 
 [TELEMETRY-REPORT] timestamp=580_s
   [satellite-state] r_m=6771001 theta_mdeg=36735 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=580_s
@@ -806,7 +806,7 @@
 
 [TELEMETRY-REPORT] timestamp=600_s
   [satellite-state] r_m=6771001 theta_mdeg=37975 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=600_s
@@ -832,7 +832,7 @@
 
 [TELEMETRY-REPORT] timestamp=620_s
   [satellite-state] r_m=6771001 theta_mdeg=39215 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=620_s
@@ -858,7 +858,7 @@
 
 [TELEMETRY-REPORT] timestamp=640_s
   [satellite-state] r_m=6771001 theta_mdeg=40455 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=640_s
@@ -884,7 +884,7 @@
 
 [TELEMETRY-REPORT] timestamp=660_s
   [satellite-state] r_m=6771001 theta_mdeg=41695 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=660_s
@@ -910,7 +910,7 @@
 
 [TELEMETRY-REPORT] timestamp=680_s
   [satellite-state] r_m=6771001 theta_mdeg=42935 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=680_s
@@ -936,7 +936,7 @@
 
 [TELEMETRY-REPORT] timestamp=700_s
   [satellite-state] r_m=6771001 theta_mdeg=44175 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=700_s
@@ -962,7 +962,7 @@
 
 [TELEMETRY-REPORT] timestamp=720_s
   [satellite-state] r_m=6771001 theta_mdeg=45415 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=720_s
@@ -988,7 +988,7 @@
 
 [TELEMETRY-REPORT] timestamp=740_s
   [satellite-state] r_m=6771001 theta_mdeg=46655 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=740_s
@@ -1014,7 +1014,7 @@
 
 [TELEMETRY-REPORT] timestamp=760_s
   [satellite-state] r_m=6771001 theta_mdeg=47895 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=760_s
@@ -1040,7 +1040,7 @@
 
 [TELEMETRY-REPORT] timestamp=780_s
   [satellite-state] r_m=6771001 theta_mdeg=49135 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=780_s
@@ -1066,7 +1066,7 @@
 
 [TELEMETRY-REPORT] timestamp=800_s
   [satellite-state] r_m=6771001 theta_mdeg=50375 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=800_s
@@ -1092,7 +1092,7 @@
 
 [TELEMETRY-REPORT] timestamp=820_s
   [satellite-state] r_m=6771001 theta_mdeg=51615 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=820_s
@@ -1118,7 +1118,7 @@
 
 [TELEMETRY-REPORT] timestamp=840_s
   [satellite-state] r_m=6771001 theta_mdeg=52855 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=840_s
@@ -1144,7 +1144,7 @@
 
 [TELEMETRY-REPORT] timestamp=860_s
   [satellite-state] r_m=6771001 theta_mdeg=54095 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=860_s
@@ -1170,7 +1170,7 @@
 
 [TELEMETRY-REPORT] timestamp=880_s
   [satellite-state] r_m=6771001 theta_mdeg=55335 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=880_s
@@ -1196,7 +1196,7 @@
 
 [TELEMETRY-REPORT] timestamp=900_s
   [satellite-state] r_m=6771001 theta_mdeg=56575 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=900_s
@@ -1222,7 +1222,7 @@
 
 [TELEMETRY-REPORT] timestamp=920_s
   [satellite-state] r_m=6771001 theta_mdeg=57815 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=920_s
@@ -1248,7 +1248,7 @@
 
 [TELEMETRY-REPORT] timestamp=940_s
   [satellite-state] r_m=6771001 theta_mdeg=59055 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=940_s
@@ -1274,7 +1274,7 @@
 
 [TELEMETRY-REPORT] timestamp=960_s
   [satellite-state] r_m=6771001 theta_mdeg=60295 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=960_s
@@ -1300,7 +1300,7 @@
 
 [TELEMETRY-REPORT] timestamp=980_s
   [satellite-state] r_m=6771001 theta_mdeg=61535 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=980_s
@@ -1326,7 +1326,7 @@
 
 [TELEMETRY-REPORT] timestamp=1000_s
   [satellite-state] r_m=6771001 theta_mdeg=62775 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1000_s
@@ -1352,7 +1352,7 @@
 
 [TELEMETRY-REPORT] timestamp=1020_s
   [satellite-state] r_m=6771001 theta_mdeg=64015 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1020_s
@@ -1378,7 +1378,7 @@
 
 [TELEMETRY-REPORT] timestamp=1040_s
   [satellite-state] r_m=6771001 theta_mdeg=65255 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1040_s
@@ -1404,7 +1404,7 @@
 
 [TELEMETRY-REPORT] timestamp=1060_s
   [satellite-state] r_m=6771001 theta_mdeg=66495 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1060_s
@@ -1430,7 +1430,7 @@
 
 [TELEMETRY-REPORT] timestamp=1080_s
   [satellite-state] r_m=6771001 theta_mdeg=67735 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1080_s
@@ -1456,7 +1456,7 @@
 
 [TELEMETRY-REPORT] timestamp=1100_s
   [satellite-state] r_m=6771001 theta_mdeg=68975 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1100_s
@@ -1482,7 +1482,7 @@
 
 [TELEMETRY-REPORT] timestamp=1120_s
   [satellite-state] r_m=6771001 theta_mdeg=70215 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1120_s
@@ -1508,7 +1508,7 @@
 
 [TELEMETRY-REPORT] timestamp=1140_s
   [satellite-state] r_m=6771001 theta_mdeg=71455 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1140_s
@@ -1534,7 +1534,7 @@
 
 [TELEMETRY-REPORT] timestamp=1160_s
   [satellite-state] r_m=6771001 theta_mdeg=72695 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1160_s
@@ -1560,7 +1560,7 @@
 
 [TELEMETRY-REPORT] timestamp=1180_s
   [satellite-state] r_m=6771001 theta_mdeg=73935 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1180_s
@@ -1586,7 +1586,7 @@
 
 [TELEMETRY-REPORT] timestamp=1200_s
   [satellite-state] r_m=6771001 theta_mdeg=75175 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1200_s
@@ -1612,7 +1612,7 @@
 
 [TELEMETRY-REPORT] timestamp=1220_s
   [satellite-state] r_m=6771001 theta_mdeg=76415 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1220_s
@@ -1638,7 +1638,7 @@
 
 [TELEMETRY-REPORT] timestamp=1240_s
   [satellite-state] r_m=6771001 theta_mdeg=77655 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1240_s
@@ -1664,7 +1664,7 @@
 
 [TELEMETRY-REPORT] timestamp=1260_s
   [satellite-state] r_m=6771001 theta_mdeg=78895 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1260_s
@@ -1690,7 +1690,7 @@
 
 [TELEMETRY-REPORT] timestamp=1280_s
   [satellite-state] r_m=6771001 theta_mdeg=80135 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1280_s
@@ -1716,7 +1716,7 @@
 
 [TELEMETRY-REPORT] timestamp=1300_s
   [satellite-state] r_m=6771001 theta_mdeg=81375 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1300_s
@@ -1742,7 +1742,7 @@
 
 [TELEMETRY-REPORT] timestamp=1320_s
   [satellite-state] r_m=6771001 theta_mdeg=82615 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1320_s
@@ -1768,7 +1768,7 @@
 
 [TELEMETRY-REPORT] timestamp=1340_s
   [satellite-state] r_m=6771001 theta_mdeg=83855 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1340_s
@@ -1794,7 +1794,7 @@
 
 [TELEMETRY-REPORT] timestamp=1360_s
   [satellite-state] r_m=6771001 theta_mdeg=85095 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1360_s
@@ -1820,7 +1820,7 @@
 
 [TELEMETRY-REPORT] timestamp=1380_s
   [satellite-state] r_m=6771001 theta_mdeg=86335 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1380_s
@@ -1846,7 +1846,7 @@
 
 [TELEMETRY-REPORT] timestamp=1400_s
   [satellite-state] r_m=6771001 theta_mdeg=87575 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1400_s
@@ -1872,7 +1872,7 @@
 
 [TELEMETRY-REPORT] timestamp=1420_s
   [satellite-state] r_m=6771001 theta_mdeg=88815 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1420_s
@@ -1898,7 +1898,7 @@
 
 [TELEMETRY-REPORT] timestamp=1440_s
   [satellite-state] r_m=6771001 theta_mdeg=90055 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1440_s
@@ -1924,7 +1924,7 @@
 
 [TELEMETRY-REPORT] timestamp=1460_s
   [satellite-state] r_m=6771001 theta_mdeg=91295 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1460_s
@@ -1950,7 +1950,7 @@
 
 [TELEMETRY-REPORT] timestamp=1480_s
   [satellite-state] r_m=6771001 theta_mdeg=92535 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1480_s
@@ -1976,7 +1976,7 @@
 
 [TELEMETRY-REPORT] timestamp=1500_s
   [satellite-state] r_m=6771001 theta_mdeg=93775 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1500_s
@@ -2002,7 +2002,7 @@
 
 [TELEMETRY-REPORT] timestamp=1520_s
   [satellite-state] r_m=6771001 theta_mdeg=95015 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1520_s
@@ -2028,7 +2028,7 @@
 
 [TELEMETRY-REPORT] timestamp=1540_s
   [satellite-state] r_m=6771001 theta_mdeg=96255 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1540_s
@@ -2054,7 +2054,7 @@
 
 [TELEMETRY-REPORT] timestamp=1560_s
   [satellite-state] r_m=6771001 theta_mdeg=97495 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1560_s
@@ -2080,7 +2080,7 @@
 
 [TELEMETRY-REPORT] timestamp=1580_s
   [satellite-state] r_m=6771001 theta_mdeg=98735 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1580_s
@@ -2106,7 +2106,7 @@
 
 [TELEMETRY-REPORT] timestamp=1600_s
   [satellite-state] r_m=6771001 theta_mdeg=99975 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1600_s
@@ -2132,7 +2132,7 @@
 
 [TELEMETRY-REPORT] timestamp=1620_s
   [satellite-state] r_m=6771001 theta_mdeg=101215 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1620_s
@@ -2158,7 +2158,7 @@
 
 [TELEMETRY-REPORT] timestamp=1640_s
   [satellite-state] r_m=6771001 theta_mdeg=102455 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1640_s
@@ -2184,7 +2184,7 @@
 
 [TELEMETRY-REPORT] timestamp=1660_s
   [satellite-state] r_m=6771001 theta_mdeg=103695 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1660_s
@@ -2210,7 +2210,7 @@
 
 [TELEMETRY-REPORT] timestamp=1680_s
   [satellite-state] r_m=6771001 theta_mdeg=104935 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1680_s
@@ -2236,7 +2236,7 @@
 
 [TELEMETRY-REPORT] timestamp=1700_s
   [satellite-state] r_m=6771001 theta_mdeg=106175 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1700_s
@@ -2262,7 +2262,7 @@
 
 [TELEMETRY-REPORT] timestamp=1720_s
   [satellite-state] r_m=6771001 theta_mdeg=107415 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1720_s
@@ -2288,7 +2288,7 @@
 
 [TELEMETRY-REPORT] timestamp=1740_s
   [satellite-state] r_m=6771001 theta_mdeg=108655 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1740_s
@@ -2314,7 +2314,7 @@
 
 [TELEMETRY-REPORT] timestamp=1760_s
   [satellite-state] r_m=6771001 theta_mdeg=109895 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1760_s
@@ -2340,7 +2340,7 @@
 
 [TELEMETRY-REPORT] timestamp=1780_s
   [satellite-state] r_m=6771001 theta_mdeg=111135 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1780_s
@@ -2366,7 +2366,7 @@
 
 [TELEMETRY-REPORT] timestamp=1800_s
   [satellite-state] r_m=6771001 theta_mdeg=112375 omega_mdegps=62
-  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [risk-tracking] high_risk_so_far=1 high_risk_prev_20s=0
   [mission-status] debris_tracked=6 decision_window_s=20
 
 [TRANSMISSION-LOG] timestamp=1800_s
