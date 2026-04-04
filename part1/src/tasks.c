@@ -4,6 +4,9 @@
 static int32_t abs_i32(int32_t x) {
     return (x < 0) ? -x : x;
 }
+static int64_t abs_i64(int64_t x) {
+    return (x < 0) ? -x : x;
+}
 static int32_t wrap_theta_mdeg(int32_t theta_mdeg) {
     while (theta_mdeg >= 360000) {
         theta_mdeg -= 360000;
@@ -96,6 +99,9 @@ void mission_init(mission_state_t *ms, const scenario_t *sc) {
     ms->sat_theta_mdeg = sc->sat_theta_mdeg;
     ms->sat_omega_mdegps = sc->sat_omega_mdegps;
     ms->high_risk_count = 0;
+    for (int i = 0; i < MAX_DEBRIS; i++) {
+        ms->high_risk_ids[i] = -1;
+    }
     ms->high_risk_total_so_far = 0;
     ms->high_risk_window_20s = 0;
     ms->last_high_risk_id = -1;
@@ -129,6 +135,9 @@ void task_orbit_propagation(mission_state_t *ms, scenario_t *sc, runtime_stats_t
 void task_risk_eval(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, int32_t now_s) {
     ms->high_risk_count = 0;
     ms->last_high_risk_id = -1;
+    for (int i = 0; i < MAX_DEBRIS; i++) {
+        ms->high_risk_ids[i] = -1;
+    }
 
     printf("\n[COLLISION-RISK-REPORT] timestamp=%d_s\n", now_s);
 
@@ -147,6 +156,9 @@ void task_risk_eval(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, in
         risk_level_t level = RISK_SAFE;
         if (proximity < high_risk_threshold) {
             level = RISK_HIGH;
+            if (ms->high_risk_count < MAX_DEBRIS) {
+                ms->high_risk_ids[ms->high_risk_count] = sc->debris[i].id;
+            }
             ms->high_risk_count++;
             ms->last_high_risk_id = sc->debris[i].id;
             high_count++;
@@ -226,11 +238,57 @@ void task_maneuver(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, int
 }
 
 void task_telemetry(mission_state_t *ms, const scenario_t *sc, runtime_stats_t *rt, int32_t now_s) {
+    int64_t cpu_utilization_pct_x100 = 0;
+    if ((rt->active_cycles + rt->sleep_cycles) > 0) {
+        cpu_utilization_pct_x100 =
+            ((rt->active_cycles * 10000) + ((rt->active_cycles + rt->sleep_cycles) / 2)) /
+            (rt->active_cycles + rt->sleep_cycles);
+    }
+
+    int64_t consumed_energy_x10000 = rt->energy_mj_x10000;
+    int64_t budget_energy_x10000 = (int64_t)sc->energy_budget_mj * 10000;
+    int64_t remaining_energy_x10000 = budget_energy_x10000 - consumed_energy_x10000;
+
     printf("\n[TELEMETRY-REPORT] timestamp=%d_s\n", now_s);
     printf("  [satellite-state] r_m=%d theta_mdeg=%d omega_mdegps=%d\n",
            ms->sat_r_m,
            ms->sat_theta_mdeg,
            ms->sat_omega_mdegps);
+    printf("  [high-risk-list] count=%d ids=", ms->high_risk_count);
+    if (ms->high_risk_count <= 0) {
+        printf("none");
+    } else {
+        int32_t emit_count = ms->high_risk_count;
+        if (emit_count > MAX_DEBRIS) {
+            emit_count = MAX_DEBRIS;
+        }
+        for (int32_t i = 0; i < emit_count; i++) {
+            if (i > 0) {
+                printf(",");
+            }
+            printf("%d", ms->high_risk_ids[i]);
+        }
+    }
+    printf("\n");
+    printf("  [planned-maneuver] target_id=%d delta_v_cms=%d delta_r_m=%d\n",
+           ms->last_high_risk_id,
+           ms->planned_dv_cms,
+           ms->planned_dr_m);
+        printf("  [resource-usage] cpu_utilization_pct=%lld.%02lld total_cycles=%lld active_cycles=%lld sleep_cycles=%lld radio_cycles=%lld\n",
+            (long long)(cpu_utilization_pct_x100 / 100),
+            (long long)(cpu_utilization_pct_x100 % 100),
+           (long long)rt->total_cycles,
+           (long long)rt->active_cycles,
+           (long long)rt->sleep_cycles,
+           (long long)rt->radio_cycles);
+        printf("  [energy-status] consumed_mj=%lld.%02lld budget_mj=%d remaining_mj=%s%lld.%02lld battery_status=%s\n",
+            (long long)(consumed_energy_x10000 / 10000),
+            (long long)((consumed_energy_x10000 % 10000) / 100),
+           sc->energy_budget_mj,
+            (remaining_energy_x10000 < 0) ? "-" : "",
+            (long long)(abs_i64(remaining_energy_x10000) / 10000),
+            (long long)((abs_i64(remaining_energy_x10000) % 10000) / 100),
+            (remaining_energy_x10000 >= 0) ? "HEALTHY" : "EXCEEDED");
     printf("  [risk-tracking] high_risk_so_far=%d high_risk_prev_20s=%d\n",
            ms->high_risk_total_so_far,
            ms->high_risk_window_20s);

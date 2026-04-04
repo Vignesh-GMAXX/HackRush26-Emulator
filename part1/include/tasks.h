@@ -17,6 +17,7 @@ typedef struct {
     int32_t sat_theta_mdeg;
     int32_t sat_omega_mdegps;
     int32_t high_risk_count;
+    int32_t high_risk_ids[MAX_DEBRIS];
     int32_t high_risk_total_so_far;
     int32_t high_risk_window_20s;
     int32_t last_high_risk_id;

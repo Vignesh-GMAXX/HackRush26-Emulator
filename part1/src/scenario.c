@@ -1,6 +1,6 @@
 #include "scenario.h"
 
-#include <math.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,17 +34,63 @@ static int32_t extract_int_range(const char *start, const char *end, const char 
     return (int32_t)strtol(p, NULL, 10);
 }
 
-static double extract_double_range(const char *start, const char *end, const char *key, double fallback) {
-    const char *p = strstr(start, key);
-    if (!p || p >= end) {
-        return fallback;
+static int64_t pow10_i32(int32_t n) {
+    int64_t v = 1;
+    for (int32_t i = 0; i < n; i++) {
+        v *= 10;
     }
-    p = strchr(p, ':');
-    if (!p || p >= end) {
-        return fallback;
+    return v;
+}
+
+/* Parses decimal text into an integer scaled by `scale`, rounded to nearest. */
+static int parse_decimal_scaled(const char *p, int32_t scale, int64_t *out_scaled) {
+    int sign = 1;
+    int64_t int_part = 0;
+    int64_t frac_part = 0;
+    int32_t frac_digits = 0;
+    int saw_digit = 0;
+
+    while (*p == ' ' || *p == '\t' || *p == '\n' || *p == '\r') {
+        p++;
     }
-    p++;
-    return strtod(p, NULL);
+    if (*p == '-') {
+        sign = -1;
+        p++;
+    } else if (*p == '+') {
+        p++;
+    }
+
+    while (isdigit((unsigned char)*p)) {
+        saw_digit = 1;
+        int_part = int_part * 10 + (*p - '0');
+        p++;
+    }
+
+    if (*p == '.') {
+        p++;
+        while (isdigit((unsigned char)*p)) {
+            saw_digit = 1;
+            if (frac_digits < 12) {
+                frac_part = frac_part * 10 + (*p - '0');
+                frac_digits++;
+            }
+            p++;
+        }
+    }
+
+    if (!saw_digit) {
+        return 0;
+    }
+
+    int64_t scaled = int_part * (int64_t)scale;
+    if (frac_digits > 0) {
+        int64_t denom = pow10_i32(frac_digits);
+        int64_t frac_scaled = (frac_part * (int64_t)scale + (denom / 2)) / denom;
+        scaled += frac_scaled;
+    }
+
+    *out_scaled = (sign < 0) ? -scaled : scaled;
+    return 1;
 }
 
 static int32_t extract_int_rounded(const char *buf, const char *key, int32_t fallback) {
@@ -57,11 +103,67 @@ static int32_t extract_int_rounded(const char *buf, const char *key, int32_t fal
         return fallback;
     }
     p++;
-    double v = strtod(p, NULL);
-    if (v >= 0.0) {
-        return (int32_t)(v + 0.5);
+    int64_t scaled = 0;
+    if (!parse_decimal_scaled(p, 1, &scaled)) {
+        return fallback;
     }
-    return (int32_t)(v - 0.5);
+    return (int32_t)scaled;
+}
+
+static int32_t extract_int_rounded_range(const char *start, const char *end, const char *key, int32_t fallback) {
+    const char *p = strstr(start, key);
+    if (!p || p >= end) {
+        return fallback;
+    }
+    p = strchr(p, ':');
+    if (!p || p >= end) {
+        return fallback;
+    }
+    p++;
+    int64_t scaled = 0;
+    if (!parse_decimal_scaled(p, 1, &scaled)) {
+        return fallback;
+    }
+    return (int32_t)scaled;
+}
+
+static int32_t extract_rad_to_mdeg_range(const char *start, const char *end, const char *key, int32_t fallback) {
+    const char *p = strstr(start, key);
+    if (!p || p >= end) {
+        return fallback;
+    }
+    p = strchr(p, ':');
+    if (!p || p >= end) {
+        return fallback;
+    }
+    p++;
+
+    int64_t rad_x1000000 = 0;
+    if (!parse_decimal_scaled(p, 1000000, &rad_x1000000)) {
+        return fallback;
+    }
+
+    /* mdeg = rad * (180000/pi), with integer approximation 57296 mdeg/rad. */
+    int64_t mdeg = (rad_x1000000 * 57296 + ((rad_x1000000 >= 0) ? 500000 : -500000)) / 1000000;
+    return (int32_t)mdeg;
+}
+
+static int32_t extract_m_to_cm_range(const char *start, const char *end, const char *key, int32_t fallback) {
+    const char *p = strstr(start, key);
+    if (!p || p >= end) {
+        return fallback;
+    }
+    p = strchr(p, ':');
+    if (!p || p >= end) {
+        return fallback;
+    }
+    p++;
+
+    int64_t cm = 0;
+    if (!parse_decimal_scaled(p, 100, &cm)) {
+        return fallback;
+    }
+    return (int32_t)cm;
 }
 
 int load_scenario_file(const char *path, scenario_t *sc) {
@@ -113,12 +215,10 @@ int load_scenario_file(const char *path, scenario_t *sc) {
             if (omega_p) {
                 omega_p = strchr(omega_p, ':');
                 if (omega_p) {
-                    double omega_rad_s = strtod(omega_p + 1, NULL);
-                    double omega_mdegps = omega_rad_s * (180000.0 / 3.14159265358979323846);
-                    if (omega_mdegps >= 0.0) {
-                        sc->sat_omega_mdegps = (int32_t)(omega_mdegps + 0.5);
-                    } else {
-                        sc->sat_omega_mdegps = (int32_t)(omega_mdegps - 0.5);
+                    int64_t omega_x1000000 = 0;
+                    if (parse_decimal_scaled(omega_p + 1, 1000000, &omega_x1000000)) {
+                        int64_t mdegps = (omega_x1000000 * 57296 + ((omega_x1000000 >= 0) ? 500000 : -500000)) / 1000000;
+                        sc->sat_omega_mdegps = (int32_t)mdegps;
                     }
                 }
             }
@@ -144,26 +244,14 @@ int load_scenario_file(const char *path, scenario_t *sc) {
                         debris_t *d = &sc->debris[parsed];
                         int32_t fallback_id = d->id;
                         d->id = extract_int_range(id_pos, obj_end, "\"id\"", fallback_id);
-                        d->r_m = extract_int_range(id_pos, obj_end, "\"r\"", extract_int_rounded(id_pos, "\"r\"", d->r_m));
+                        d->r_m = extract_int_range(id_pos, obj_end, "\"r\"", extract_int_rounded_range(id_pos, obj_end, "\"r\"", d->r_m));
 
-                        {
-                            double theta_rad = extract_double_range(id_pos, obj_end, "\"theta\"", -1.0);
-                            if (theta_rad >= 0.0) {
-                                double theta_mdeg = theta_rad * (180000.0 / 3.14159265358979323846);
-                                d->theta_mdeg = (int32_t)(theta_mdeg + 0.5);
-                            }
-                        }
+                        d->theta_mdeg = extract_rad_to_mdeg_range(id_pos, obj_end, "\"theta\"", d->theta_mdeg);
 
-                        d->vr_mps = extract_int_rounded(id_pos, "\"vr\"", d->vr_mps);
-                        d->vt_mps = extract_int_rounded(id_pos, "\"vt\"", d->vt_mps);
+                        d->vr_mps = extract_int_rounded_range(id_pos, obj_end, "\"vr\"", d->vr_mps);
+                        d->vt_mps = extract_int_rounded_range(id_pos, obj_end, "\"vt\"", d->vt_mps);
 
-                        {
-                            double size_m = extract_double_range(id_pos, obj_end, "\"size\"", -1.0);
-                            if (size_m >= 0.0) {
-                                double size_cm = size_m * 100.0;
-                                d->size_cm = (int32_t)(size_cm + 0.5);
-                            }
-                        }
+                        d->size_cm = extract_m_to_cm_range(id_pos, obj_end, "\"size\"", d->size_cm);
 
                         parsed++;
                         cursor = obj_end;

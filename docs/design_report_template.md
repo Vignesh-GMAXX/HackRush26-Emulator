@@ -28,6 +28,11 @@
 - Recall and precision summary
 - Maneuver effectiveness summary
 - Cycle and energy usage summary
+- Telemetry payload completeness:
+	- Latest satellite state
+	- HIGH-RISK object IDs list
+	- Planned maneuver snapshot
+	- Runtime resource and energy snapshot
 
 ## 7. Limitations and Future Work
 - Current limitations

@@ -73,7 +73,7 @@ The simulation now produces strictly formatted logs with three main sections:
 ```
 [MANEUVER-RECOMMENDATION] timestamp=30_s
   [maneuver-target] debris_id=104 risk_level=HIGH-RISK
-  [maneuver-action] type=thruster_burn time_to_execute_s=2 delta_v_mdegps=-3 delta_r_m=-1
+  [maneuver-action] type=thruster_burn time_to_execute_s=2 delta_v_cms=-3 delta_r_m=-1
   [maneuver-status] executed=true
 ```
 
@@ -83,7 +83,7 @@ The simulation now produces strictly formatted logs with three main sections:
 - `risk_level`: Always HIGH-RISK for maneuver recommendations
 - `type`: Maneuver type (thruster_burn)
 - `time_to_execute_s`: Time to complete maneuver (seconds)
-- `delta_v_mdegps`: Change in angular velocity (millidegrees/second)
+- `delta_v_cms`: Tangential burn command (centimeters/second)
   - Negative: Decrease angular velocity
   - Positive: Increase angular velocity
 - `delta_r_m`: Change in orbital radius (meters)
@@ -100,7 +100,11 @@ The simulation now produces strictly formatted logs with three main sections:
 ```
 [TELEMETRY-REPORT] timestamp=20_s
   [satellite-state] r_m=6800001 theta_mdeg=4500 omega_mdegps=54
-  [risk-tracking] current_high_risk=1 any_in_window=1 max_in_window=3 total_events=5
+  [high-risk-list] count=2 ids=104,219
+  [planned-maneuver] target_id=104 delta_v_cms=-3 delta_r_m=-1
+  [resource-usage] cpu_utilization_pct=8.96 total_cycles=100000 active_cycles=8960 sleep_cycles=91040 radio_cycles=1900
+  [energy-status] consumed_mj=319.72 budget_mj=5000 remaining_mj=4680.28 battery_status=HEALTHY
+  [risk-tracking] high_risk_so_far=5 high_risk_prev_20s=2
   [mission-status] debris_tracked=256 decision_window_s=20
 ```
 
@@ -109,11 +113,28 @@ The simulation now produces strictly formatted logs with three main sections:
 - `theta_mdeg`: Current angular position (millidegrees)
 - `omega_mdegps`: Current angular velocity (millidegrees/second)
 
+**High-Risk List:**
+- `count`: Number of HIGH-RISK objects currently detected
+- `ids`: Comma-separated HIGH-RISK debris IDs (`none` when empty)
+
+**Planned Maneuver Snapshot:**
+- `target_id`: Last HIGH-RISK target selected by planner
+- `delta_v_cms`: Planned tangential burn (cm/s)
+- `delta_r_m`: Planned radial shift (m)
+
+**Resource Usage Snapshot:**
+- `cpu_utilization_pct`: Active cycle fraction percentage up to current timestamp
+- `total_cycles`, `active_cycles`, `sleep_cycles`, `radio_cycles`: Cumulative runtime counters
+
+**Energy Snapshot:**
+- `consumed_mj`: Cumulative estimated energy consumed
+- `budget_mj`: Scenario energy budget
+- `remaining_mj`: Remaining budget (`budget_mj - consumed_mj`)
+- `battery_status`: HEALTHY or EXCEEDED
+
 **Risk Tracking (Per 20-second window):**
-- `current_high_risk`: HIGH-RISK objects at this timestamp
-- `any_in_window`: Flag: any HIGH-RISK events in 20s window (0/1)
-- `max_in_window`: Maximum HIGH-RISK events in any decision window
-- `total_events`: Cumulative HIGH-RISK events in window
+- `high_risk_so_far`: Cumulative HIGH-RISK detections across mission
+- `high_risk_prev_20s`: HIGH-RISK detections in the latest 20s telemetry window
 
 **Mission Status:**
 - `debris_tracked`: Total debris objects in scenario

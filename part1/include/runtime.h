@@ -19,7 +19,7 @@ typedef struct {
     int64_t active_cycles;
     int64_t sleep_cycles;
     int64_t radio_cycles;
-    double energy_mj;
+    int64_t energy_mj_x10000;
 } runtime_stats_t;
 
 void runtime_init(runtime_stats_t *rt);

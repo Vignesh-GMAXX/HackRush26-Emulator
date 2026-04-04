@@ -9,15 +9,22 @@
 #define SIM_CYCLES_PER_SEC 100000
 
 static void print_summary(const scenario_t *sc, const runtime_stats_t *rt) {
-    double utilization = 0.0;
+    int64_t utilization_x100 = 0;
     if ((rt->active_cycles + rt->sleep_cycles) > 0) {
-        utilization = (100.0 * (double)rt->active_cycles) / (double)(rt->active_cycles + rt->sleep_cycles);
+        utilization_x100 =
+            ((rt->active_cycles * 10000) + ((rt->active_cycles + rt->sleep_cycles) / 2)) /
+            (rt->active_cycles + rt->sleep_cycles);
     }
+
+    int64_t remaining_energy_x10000 = ((int64_t)sc->energy_budget_mj * 10000) - rt->energy_mj_x10000;
+    int64_t abs_remaining_x10000 = (remaining_energy_x10000 < 0) ? -remaining_energy_x10000 : remaining_energy_x10000;
 
     printf("\n================== FINAL RESOURCE REPORT ==================\n");
     
     printf("\n[CPU-UTILIZATION]\n");
-    printf("  cpu_utilization_pct=%.2f\n", utilization);
+    printf("  cpu_utilization_pct=%lld.%02lld\n",
+           (long long)(utilization_x100 / 100),
+           (long long)(utilization_x100 % 100));
     printf("  active_cycles=%lld\n", (long long)rt->active_cycles);
     printf("  sleep_cycles=%lld\n", (long long)rt->sleep_cycles);
     printf("  radio_cycles=%lld\n", (long long)rt->radio_cycles);
@@ -31,10 +38,15 @@ static void print_summary(const scenario_t *sc, const runtime_stats_t *rt) {
     printf("  task_tx_cycles=%lld\n", (long long)rt->task_cycles[TASK_TX]);
     
     printf("\n[ENERGY-BUDGET]\n");
-    printf("  estimated_energy_mj=%.2f\n", rt->energy_mj);
+        printf("  estimated_energy_mj=%lld.%02lld\n",
+            (long long)(rt->energy_mj_x10000 / 10000),
+            (long long)((rt->energy_mj_x10000 % 10000) / 100));
     printf("  budget_mj=%d\n", sc->energy_budget_mj);
-    printf("  remaining_energy_mj=%.2f\n", (double)sc->energy_budget_mj - rt->energy_mj);
-    printf("  battery_status=%s\n", (rt->energy_mj <= sc->energy_budget_mj) ? "HEALTHY" : "EXCEEDED");
+        printf("  remaining_energy_mj=%s%lld.%02lld\n",
+            (remaining_energy_x10000 < 0) ? "-" : "",
+            (long long)(abs_remaining_x10000 / 10000),
+            (long long)((abs_remaining_x10000 % 10000) / 100));
+        printf("  battery_status=%s\n", (remaining_energy_x10000 >= 0) ? "HEALTHY" : "EXCEEDED");
     
     printf("\n=========================================================\n");
 }
