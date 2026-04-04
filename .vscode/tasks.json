@@ -8,27 +8,21 @@
 			"isBackground": false
 		},
 		{
-			"label": "set-origin",
+			"label": "run-part1-sample",
 			"type": "shell",
-			"command": "if (git remote get-url origin) { git remote set-url origin https://github.com/Vignesh-GMAXX/HackRush26-Emulator } else { git remote add origin https://github.com/Vignesh-GMAXX/HackRush26-Emulator }",
+			"command": "Set-Location .\\part1; .\\bin\\sat_sim.exe .\\scenarios\\sample_scenario.json",
 			"isBackground": false
 		},
 		{
-			"label": "push-origin-main",
+			"label": "run-part1-all-scenarios",
 			"type": "shell",
-			"command": "git push -u origin main",
+			"command": "$scenarios = @('sample_scenario.json','scenario_low_risk.json','scenario_medium_risk.json','scenario_high_risk.json'); foreach ($s in $scenarios) { Write-Host \"--- $s ---\"; $out = .\\bin\\sat_sim.exe \".\\scenarios\\$s\"; $out | Select-String '^=== FINAL SUMMARY ===|^total_cycles=|^cpu_utilization_pct=|^energy_mj=|^budget_status=' | ForEach-Object { $_.Line }; $risk = ($out | Select-String '\\[risk\\].*HIGH-RISK').Count; $man = ($out | Select-String '\\[maneuver\\]').Count; Write-Host \"high_risk_events=$risk maneuvers=$man\" }",
 			"isBackground": false
 		},
 		{
-			"label": "verify-push-state",
+			"label": "commit-final-clean-tasks",
 			"type": "shell",
-			"command": "git status --short --branch; git remote -v; git log --oneline -1",
-			"isBackground": false
-		},
-		{
-			"label": "commit-clean-tasks-final",
-			"type": "shell",
-			"command": "git add .vscode/tasks.json; git commit --message 'Clean Part 1 task configuration for push'",
+			"command": "git add .vscode/tasks.json; git commit --message 'Final clean Part 1 task config'",
 			"isBackground": false
 		}
 	]
