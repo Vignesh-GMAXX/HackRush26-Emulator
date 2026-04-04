@@ -1,0 +1,47 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build-part1",
+			"type": "shell",
+			"command": "Set-Location .\\part1; mingw32-make",
+			"isBackground": false
+		},
+		{
+			"label": "run-part1-sample",
+			"type": "shell",
+			"command": "Set-Location .\\part1; .\\bin\\sat_sim.exe .\\scenarios\\sample_scenario.json",
+			"isBackground": false
+		},
+		{
+			"label": "run-part1-all-scenarios",
+			"type": "shell",
+			"command": "$scenarios = @('sample_scenario.json','scenario_low_risk.json','scenario_medium_risk.json','scenario_high_risk.json'); foreach ($s in $scenarios) { Write-Host \"--- $s ---\"; $out = .\\bin\\sat_sim.exe \".\\scenarios\\$s\"; $out | Select-String '^=== FINAL SUMMARY ===|^total_cycles=|^cpu_utilization_pct=|^energy_mj=|^budget_status=' | ForEach-Object { $_.Line }; $risk = ($out | Select-String '\\[risk\\].*HIGH-RISK').Count; $man = ($out | Select-String '\\[maneuver\\]').Count; Write-Host \"high_risk_events=$risk maneuvers=$man\" }",
+			"isBackground": false
+		},
+		{
+			"label": "git-status-remote",
+			"type": "shell",
+			"command": "git status --short --branch; git remote -v; git branch --show-current",
+			"isBackground": false
+		},
+		{
+			"label": "git-config-remotes",
+			"type": "shell",
+			"command": "git config --get-regexp '^remote\\..*'",
+			"isBackground": false
+		},
+		{
+			"label": "show-vscode-tasks",
+			"type": "shell",
+			"command": "Get-Content .\\.vscode\\tasks.json",
+			"isBackground": false
+		},
+		{
+			"label": "git-prepare-commit",
+			"type": "shell",
+			"command": "git add README.md build.sh build.ps1 run.sh run.ps1 docs part1 .vscode results; git add -u; git status --short; git commit -m \"Prepare Part 1-only project state\"",
+			"isBackground": false
+		}
+	]
+}
