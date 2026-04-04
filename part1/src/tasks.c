@@ -4,6 +4,15 @@
 static int32_t abs_i32(int32_t x) {
     return (x < 0) ? -x : x;
 }
+static int32_t wrap_theta_mdeg(int32_t theta_mdeg) {
+    while (theta_mdeg >= 360000) {
+        theta_mdeg -= 360000;
+    }
+    while (theta_mdeg < 0) {
+        theta_mdeg += 360000;
+    }
+    return theta_mdeg;
+}
 static int32_t signed_delta_theta_mdeg(int32_t debris_theta_mdeg, int32_t sat_theta_mdeg) {
     int32_t d = debris_theta_mdeg - sat_theta_mdeg;
     while (d > 180000) {
@@ -14,25 +23,55 @@ static int32_t signed_delta_theta_mdeg(int32_t debris_theta_mdeg, int32_t sat_th
     }
     return d;
 }
+static int32_t tangential_to_theta_delta_mdeg(int32_t vt_mps, int32_t radius_m, int32_t dt_s) {
+    if (vt_mps == 0 || radius_m <= 0 || dt_s <= 0) {
+        return 0;
+    }
+
+    /* 1 radian ~= 57296 millidegrees. Keep this as integer math to avoid FPU use. */
+    const int64_t rad_to_mdeg = 57296LL;
+    int64_t numerator = (int64_t)vt_mps * (int64_t)dt_s * rad_to_mdeg;
+
+    if (numerator >= 0) {
+        numerator += radius_m / 2;
+    } else {
+        numerator -= radius_m / 2;
+    }
+
+    return (int32_t)(numerator / radius_m);
+}
+static int32_t tangential_dv_to_omega_delta_mdegps(int32_t dv_cms, int32_t radius_m) {
+    if (dv_cms == 0 || radius_m <= 0) {
+        return 0;
+    }
+
+    /* Convert tangential cm/s burn into millidegrees/second using fixed-point math. */
+    const int64_t rad_to_mdeg = 57296LL;
+    int64_t numerator = (int64_t)dv_cms * rad_to_mdeg;
+    int64_t denominator = (int64_t)radius_m * 100LL;
+
+    if (numerator >= 0) {
+        numerator += denominator / 2;
+    } else {
+        numerator -= denominator / 2;
+    }
+
+    return (int32_t)(numerator / denominator);
+}
 static int32_t predict_next_proximity(const mission_state_t *ms, const debris_t *target, int32_t cand_dv, int32_t cand_dr) {
     const int32_t step_s = 10;
     int32_t sat_r_next = ms->sat_r_m + cand_dr;
-    int32_t sat_theta_next = ms->sat_theta_mdeg + (ms->sat_omega_mdegps + cand_dv) * step_s;
-    while (sat_theta_next >= 360000) {
-        sat_theta_next -= 360000;
-    }
-    while (sat_theta_next < 0) {
-        sat_theta_next += 360000;
-    }
+    int32_t sat_omega_next = ms->sat_omega_mdegps + tangential_dv_to_omega_delta_mdegps(cand_dv, ms->sat_r_m);
+    int32_t sat_theta_next = ms->sat_theta_mdeg + sat_omega_next * step_s;
+    sat_theta_next = wrap_theta_mdeg(sat_theta_next);
 
     int32_t debris_r_next = target->r_m + target->vr_mps * step_s;
-    int32_t debris_theta_next = target->theta_mdeg + target->vt_mps * step_s;
-    while (debris_theta_next >= 360000) {
-        debris_theta_next -= 360000;
+    int32_t debris_radius_ref = target->r_m;
+    if (debris_r_next > 0) {
+        debris_radius_ref = (target->r_m + debris_r_next) / 2;
     }
-    while (debris_theta_next < 0) {
-        debris_theta_next += 360000;
-    }
+    int32_t debris_theta_next = wrap_theta_mdeg(
+        target->theta_mdeg + tangential_to_theta_delta_mdeg(target->vt_mps, debris_radius_ref, step_s));
 
     int32_t dr = abs_i32(debris_r_next - sat_r_next);
     int32_t dtheta = abs_i32(signed_delta_theta_mdeg(debris_theta_next, sat_theta_next));
@@ -69,17 +108,19 @@ void mission_init(mission_state_t *ms, const scenario_t *sc) {
 void task_orbit_propagation(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, int32_t now_s) {
     (void)now_s;
 
-    ms->sat_theta_mdeg += ms->sat_omega_mdegps * 5;
-    while (ms->sat_theta_mdeg >= 360000) {
-        ms->sat_theta_mdeg -= 360000;
-    }
+    ms->sat_theta_mdeg = wrap_theta_mdeg(ms->sat_theta_mdeg + ms->sat_omega_mdegps * 5);
 
     for (int i = 0; i < sc->debris_count; i++) {
-        sc->debris[i].theta_mdeg += (sc->debris[i].vt_mps * 5);
-        if (sc->debris[i].theta_mdeg >= 360000) {
-            sc->debris[i].theta_mdeg -= 360000;
+        int32_t current_r = sc->debris[i].r_m;
+        int32_t next_r = current_r + (sc->debris[i].vr_mps * 5);
+        int32_t radius_ref = current_r;
+        if (next_r > 0) {
+            radius_ref = (current_r + next_r) / 2;
         }
-        sc->debris[i].r_m += (sc->debris[i].vr_mps * 5);
+
+        sc->debris[i].theta_mdeg = wrap_theta_mdeg(
+            sc->debris[i].theta_mdeg + tangential_to_theta_delta_mdeg(sc->debris[i].vt_mps, radius_ref, 5));
+        sc->debris[i].r_m = next_r;
     }
 
     runtime_charge_cycles(rt, TASK_ORBIT, 1800 + 25 * sc->debris_count, 0);
@@ -172,13 +213,13 @@ void task_maneuver(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, int
 
     ms->planned_dv_cms = best_dv;
     ms->planned_dr_m = best_dr;
+    ms->sat_omega_mdegps += tangential_dv_to_omega_delta_mdegps(best_dv, ms->sat_r_m);
     ms->sat_r_m += best_dr;
-    ms->sat_omega_mdegps += best_dv;
     ms->maneuver_pending = 0;
 
     printf("\n[MANEUVER-RECOMMENDATION] timestamp=%d_s\n", now_s);
     printf("  [maneuver-target] debris_id=%d risk_level=HIGH-RISK\n", ms->last_high_risk_id);
-    printf("  [maneuver-action] type=thruster_burn time_to_execute_s=2 delta_v_mdegps=%d delta_r_m=%d\n", best_dv, best_dr);
+    printf("  [maneuver-action] type=thruster_burn time_to_execute_s=2 delta_v_cms=%d delta_r_m=%d\n", best_dv, best_dr);
     printf("  [maneuver-status] executed=true\n");
     
     runtime_charge_cycles(rt, TASK_MANEUVER, 2200, 0);
