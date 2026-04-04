@@ -20,9 +20,15 @@
 			"isBackground": false
 		},
 		{
-			"label": "commit-clean-tasks",
+			"label": "git-status-before-final-push",
 			"type": "shell",
-			"command": "git add .vscode/tasks.json; git commit --message 'Clean Part 1 task configuration'",
+			"command": "git status --short --branch; git remote -v; git log --oneline -3",
+			"isBackground": false
+		},
+		{
+			"label": "commit-tasks-normalize",
+			"type": "shell",
+			"command": "git add .vscode/tasks.json; git commit --message 'Normalize Part 1 task config'",
 			"isBackground": false
 		}
 	]
