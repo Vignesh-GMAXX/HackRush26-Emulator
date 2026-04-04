@@ -42,6 +42,30 @@
 			"type": "shell",
 			"command": "git add README.md build.sh build.ps1 run.sh run.ps1 docs part1 .vscode results; git add -u; git status --short; git commit -m \"Prepare Part 1-only project state\"",
 			"isBackground": false
+		},
+		{
+			"label": "git-commit-local",
+			"type": "shell",
+			"command": "git commit --message 'Prepare Part 1-only project state'",
+			"isBackground": false
+		},
+		{
+			"label": "gh-auth-status",
+			"type": "shell",
+			"command": "gh auth status",
+			"isBackground": false
+		},
+		{
+			"label": "final-git-status",
+			"type": "shell",
+			"command": "git status --short --branch; git log --oneline -1",
+			"isBackground": false
+		},
+		{
+			"label": "commit-final-taskfile",
+			"type": "shell",
+			"command": "git add .vscode/tasks.json; git commit --message 'Finalize Part 1-only task config'",
+			"isBackground": false
 		}
 	]
 }
