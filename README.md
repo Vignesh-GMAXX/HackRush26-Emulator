@@ -7,6 +7,7 @@ This repository contains the Part 1 Computer Architecture project:
 ## Structure
 
 - `part1/`: C simulation runtime, scheduler, power and cycle accounting
+- `part1/asm/`: MIPS32 assembly kernels for scheduler/risk logic
 - `docs/`: documentation and presentation templates
 - `build.sh`: build Part 1 simulator
 - `run.sh`: run Part 1 simulator with a scenario

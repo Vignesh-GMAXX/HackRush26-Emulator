@@ -14,20 +14,29 @@ static void print_summary(const scenario_t *sc, const runtime_stats_t *rt) {
         utilization = (100.0 * (double)rt->active_cycles) / (double)(rt->active_cycles + rt->sleep_cycles);
     }
 
-    printf("\n=== FINAL SUMMARY ===\n");
-    printf("total_cycles=%lld\n", (long long)rt->total_cycles);
-    printf("task_cycles.orbit=%lld\n", (long long)rt->task_cycles[TASK_ORBIT]);
-    printf("task_cycles.risk=%lld\n", (long long)rt->task_cycles[TASK_RISK]);
-    printf("task_cycles.maneuver=%lld\n", (long long)rt->task_cycles[TASK_MANEUVER]);
-    printf("task_cycles.telemetry=%lld\n", (long long)rt->task_cycles[TASK_TELEMETRY]);
-    printf("task_cycles.tx=%lld\n", (long long)rt->task_cycles[TASK_TX]);
-    printf("active_cycles=%lld sleep_cycles=%lld radio_cycles=%lld\n",
-           (long long)rt->active_cycles,
-           (long long)rt->sleep_cycles,
-           (long long)rt->radio_cycles);
-    printf("cpu_utilization_pct=%.2f\n", utilization);
-    printf("energy_mj=%.2f budget_mj=%d\n", rt->energy_mj, sc->energy_budget_mj);
-    printf("budget_status=%s\n", (rt->energy_mj <= sc->energy_budget_mj) ? "OK" : "EXCEEDED");
+    printf("\n================== FINAL RESOURCE REPORT ==================\n");
+    
+    printf("\n[CPU-UTILIZATION]\n");
+    printf("  cpu_utilization_pct=%.2f\n", utilization);
+    printf("  active_cycles=%lld\n", (long long)rt->active_cycles);
+    printf("  sleep_cycles=%lld\n", (long long)rt->sleep_cycles);
+    printf("  radio_cycles=%lld\n", (long long)rt->radio_cycles);
+    printf("  total_cycles=%lld\n", (long long)rt->total_cycles);
+    
+    printf("\n[PER-TASK-CYCLES]\n");
+    printf("  task_orbit_cycles=%lld\n", (long long)rt->task_cycles[TASK_ORBIT]);
+    printf("  task_risk_cycles=%lld\n", (long long)rt->task_cycles[TASK_RISK]);
+    printf("  task_maneuver_cycles=%lld\n", (long long)rt->task_cycles[TASK_MANEUVER]);
+    printf("  task_telemetry_cycles=%lld\n", (long long)rt->task_cycles[TASK_TELEMETRY]);
+    printf("  task_tx_cycles=%lld\n", (long long)rt->task_cycles[TASK_TX]);
+    
+    printf("\n[ENERGY-BUDGET]\n");
+    printf("  estimated_energy_mj=%.2f\n", rt->energy_mj);
+    printf("  budget_mj=%d\n", sc->energy_budget_mj);
+    printf("  remaining_energy_mj=%.2f\n", (double)sc->energy_budget_mj - rt->energy_mj);
+    printf("  battery_status=%s\n", (rt->energy_mj <= sc->energy_budget_mj) ? "HEALTHY" : "EXCEEDED");
+    
+    printf("\n=========================================================\n");
 }
 
 int main(int argc, char **argv) {
@@ -36,7 +45,8 @@ int main(int argc, char **argv) {
     scenario_t sc;
     int rc = load_scenario_file(scenario_path, &sc);
     if (rc != 0) {
-        fprintf(stderr, "[warn] using default scenario (failed to parse file: %s)\n", scenario_path);
+        fprintf(stderr, "[error] failed to load scenario file: %s\n", scenario_path);
+        return 1;
     }
 
     runtime_stats_t rt;
@@ -45,8 +55,16 @@ int main(int argc, char **argv) {
     mission_state_t ms;
     mission_init(&ms, &sc);
 
-    printf("[init] horizon_s=%d decision_step_s=%d debris_count=%d\n",
-           sc.horizon_s, sc.decision_step_s, sc.debris_count);
+    printf("================== MISSION INITIALIZATION ==================\n");
+    printf("[SCENARIO-PARAMETERS]\n");
+    printf("  horizon_seconds=%d\n", sc.horizon_s);
+    printf("  decision_window_seconds=%d\n", sc.decision_step_s);
+    printf("  debris_objects_tracked=%d\n", sc.debris_count);
+    printf("  energy_budget_mj=%d\n", sc.energy_budget_mj);
+    printf("  satellite_r_m=%d\n", sc.sat_r_m);
+    printf("  satellite_theta_mdeg=%d\n", sc.sat_theta_mdeg);
+    printf("  satellite_omega_mdegps=%d\n", sc.sat_omega_mdegps);
+    printf("=========================================================\n\n");
 
     for (int32_t now_s = 0; now_s <= sc.horizon_s; now_s++) {
         int64_t used_cycles = 0;

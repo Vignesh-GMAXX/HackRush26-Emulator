@@ -6,6 +6,12 @@
 			"type": "shell",
 			"command": "make",
 			"isBackground": false
+		},
+		{
+			"label": "run-converter-script",
+			"type": "shell",
+			"command": "python .\\convert_scenarios_to_conic.py",
+			"isBackground": false
 		}
 	]
 }

@@ -26,6 +26,5 @@ typedef struct {
 } scenario_t;
 
 int load_scenario_file(const char *path, scenario_t *sc);
-void load_default_scenario(scenario_t *sc);
 
 #endif

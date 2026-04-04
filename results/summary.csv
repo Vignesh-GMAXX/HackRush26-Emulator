@@ -1,5 +1,0 @@
-"scenario","total_cycles","cpu_utilization_pct","energy_mj","budget_mj","budget_status","high_risk_events","maneuvers","log"
-"sample_scenario.json","201250","1.11","13924.38","180000","OK","4","4",".\results\sample_scenario.log"
-"scenario_low_risk.json","262250","1.09","18398.88","220000","OK","10","10",".\results\scenario_low_risk.log"
-"scenario_medium_risk.json","348530","1.16","23366.33","200000","OK","9","9",".\results\scenario_medium_risk.log"
-"scenario_high_risk.json","458960","1.27","28804.72","180000","OK","10","10",".\results\scenario_high_risk.log"

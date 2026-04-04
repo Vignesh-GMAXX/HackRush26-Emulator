@@ -1,9 +1,0 @@
-{
-  "horizon_s": 360,
-  "decision_step_s": 10,
-  "energy_budget_mj": 180000,
-  "sat_r_m": 6800000,
-  "sat_theta_mdeg": 0,
-  "sat_omega_mdegps": 65,
-  "debris_count": 24
-}

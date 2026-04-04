@@ -1,0 +1,2397 @@
+﻿================== MISSION INITIALIZATION ==================
+[SCENARIO-PARAMETERS]
+  horizon_seconds=1800
+  decision_window_seconds=10
+  debris_objects_tracked=6
+  energy_budget_mj=15000000
+  satellite_r_m=6771000
+  satellite_theta_mdeg=0
+  satellite_omega_mdegps=65
+=========================================================
+
+
+[COLLISION-RISK-REPORT] timestamp=0_s
+  [risk-item] debris_id=1 class=SAFE proximity=10200158 size_cm=240 dr_m=10199557 dtheta_mdeg=120390
+  [risk-item] debris_id=2 class=SAFE proximity=47425 size_cm=68 dr_m=47415 dtheta_mdeg=2068
+  [risk-item] debris_id=3 class=SAFE proximity=56710 size_cm=135 dr_m=56258 dtheta_mdeg=90452
+  [risk-item] debris_id=4 class=SAFE proximity=954848 size_cm=66 dr_m=954833 dtheta_mdeg=3000
+  [risk-item] debris_id=5 class=SAFE proximity=159316 size_cm=24 dr_m=158520 dtheta_mdeg=159215
+  [risk-item] debris_id=6 class=SAFE proximity=1876706 size_cm=218 dr_m=1876703 dtheta_mdeg=799
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=0_s
+  [satellite-state] r_m=6771000 theta_mdeg=325 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=0_s
+  [transmission-packet] packet_number=1 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=10_s
+  [risk-item] debris_id=1 class=SAFE proximity=10164354 size_cm=240 dr_m=10163557 dtheta_mdeg=159480
+  [risk-item] debris_id=2 class=SAFE proximity=49064 size_cm=68 dr_m=48695 dtheta_mdeg=73812
+  [risk-item] debris_id=3 class=SAFE proximity=53370 size_cm=135 dr_m=52578 dtheta_mdeg=158478
+  [risk-item] debris_id=4 class=SAFE proximity=930973 size_cm=66 dr_m=930543 dtheta_mdeg=86130
+  [risk-item] debris_id=5 class=SAFE proximity=180964 size_cm=24 dr_m=180540 dtheta_mdeg=84925
+  [risk-item] debris_id=6 class=SAFE proximity=1828490 size_cm=218 dr_m=1828053 dtheta_mdeg=87589
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=20_s
+  [risk-item] debris_id=1 class=SAFE proximity=10128364 size_cm=240 dr_m=10127557 dtheta_mdeg=161430
+  [risk-item] debris_id=2 class=SAFE proximity=50723 size_cm=68 dr_m=49975 dtheta_mdeg=149692
+  [risk-item] debris_id=3 class=SAFE proximity=49135 size_cm=135 dr_m=48898 dtheta_mdeg=47408
+  [risk-item] debris_id=4 class=SAFE proximity=907099 size_cm=66 dr_m=906253 dtheta_mdeg=169260
+  [risk-item] debris_id=5 class=SAFE proximity=202714 size_cm=24 dr_m=202560 dtheta_mdeg=30935
+  [risk-item] debris_id=6 class=SAFE proximity=1780274 size_cm=218 dr_m=1779403 dtheta_mdeg=174379
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=20_s
+  [satellite-state] r_m=6771000 theta_mdeg=1625 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=20_s
+  [transmission-packet] packet_number=2 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=30_s
+  [risk-item] debris_id=1 class=SAFE proximity=10092168 size_cm=240 dr_m=10091557 dtheta_mdeg=122340
+  [risk-item] debris_id=2 class=SAFE proximity=51927 size_cm=68 dr_m=51255 dtheta_mdeg=134428
+  [risk-item] debris_id=3 class=SAFE proximity=45536 size_cm=135 dr_m=45218 dtheta_mdeg=63662
+  [risk-item] debris_id=4 class=SAFE proximity=882501 size_cm=66 dr_m=881963 dtheta_mdeg=107610
+  [risk-item] debris_id=5 class=SAFE proximity=225313 size_cm=24 dr_m=224580 dtheta_mdeg=146795
+  [risk-item] debris_id=6 class=SAFE proximity=1731247 size_cm=218 dr_m=1730753 dtheta_mdeg=98831
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=40_s
+  [risk-item] debris_id=1 class=SAFE proximity=10055973 size_cm=240 dr_m=10055557 dtheta_mdeg=83250
+  [risk-item] debris_id=2 class=SAFE proximity=52827 size_cm=68 dr_m=52535 dtheta_mdeg=58548
+  [risk-item] debris_id=3 class=SAFE proximity=42411 size_cm=135 dr_m=41538 dtheta_mdeg=174732
+  [risk-item] debris_id=4 class=SAFE proximity=857795 size_cm=66 dr_m=857673 dtheta_mdeg=24480
+  [risk-item] debris_id=5 class=SAFE proximity=247086 size_cm=24 dr_m=246600 dtheta_mdeg=97345
+  [risk-item] debris_id=6 class=SAFE proximity=1682163 size_cm=218 dr_m=1682103 dtheta_mdeg=12041
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=40_s
+  [satellite-state] r_m=6771000 theta_mdeg=2925 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=40_s
+  [transmission-packet] packet_number=3 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=50_s
+  [risk-item] debris_id=1 class=SAFE proximity=10019777 size_cm=240 dr_m=10019557 dtheta_mdeg=44160
+  [risk-item] debris_id=2 class=SAFE proximity=53901 size_cm=68 dr_m=53815 dtheta_mdeg=17332
+  [risk-item] debris_id=3 class=SAFE proximity=38228 size_cm=135 dr_m=37858 dtheta_mdeg=74198
+  [risk-item] debris_id=4 class=SAFE proximity=833676 size_cm=66 dr_m=833383 dtheta_mdeg=58650
+  [risk-item] debris_id=5 class=SAFE proximity=268712 size_cm=24 dr_m=268620 dtheta_mdeg=18515
+  [risk-item] debris_id=6 class=SAFE proximity=1633826 size_cm=218 dr_m=1633453 dtheta_mdeg=74749
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=60_s
+  [risk-item] debris_id=1 class=SAFE proximity=9983582 size_cm=240 dr_m=9983557 dtheta_mdeg=5070
+  [risk-item] debris_id=2 class=SAFE proximity=55561 size_cm=68 dr_m=55095 dtheta_mdeg=93212
+  [risk-item] debris_id=3 class=SAFE proximity=34362 size_cm=135 dr_m=34178 dtheta_mdeg=36872
+  [risk-item] debris_id=4 class=SAFE proximity=809801 size_cm=66 dr_m=809093 dtheta_mdeg=141780
+  [risk-item] debris_id=5 class=SAFE proximity=291311 size_cm=24 dr_m=290640 dtheta_mdeg=134375
+  [risk-item] debris_id=6 class=SAFE proximity=1585610 size_cm=218 dr_m=1584803 dtheta_mdeg=161539
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=60_s
+  [satellite-state] r_m=6771000 theta_mdeg=4225 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=60_s
+  [transmission-packet] packet_number=4 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=70_s
+  [risk-item] debris_id=1 class=SAFE proximity=9947727 size_cm=240 dr_m=9947557 dtheta_mdeg=34020
+  [risk-item] debris_id=2 class=SAFE proximity=57220 size_cm=68 dr_m=56375 dtheta_mdeg=169092
+  [risk-item] debris_id=3 class=SAFE proximity=31237 size_cm=135 dr_m=30498 dtheta_mdeg=147942
+  [risk-item] debris_id=4 class=SAFE proximity=785478 size_cm=66 dr_m=784803 dtheta_mdeg=135090
+  [risk-item] debris_id=5 class=SAFE proximity=313208 size_cm=24 dr_m=312660 dtheta_mdeg=109765
+  [risk-item] debris_id=6 class=SAFE proximity=1536711 size_cm=218 dr_m=1536153 dtheta_mdeg=111671
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=80_s
+  [risk-item] debris_id=1 class=SAFE proximity=9911922 size_cm=240 dr_m=9911557 dtheta_mdeg=73110
+  [risk-item] debris_id=2 class=SAFE proximity=58230 size_cm=68 dr_m=57655 dtheta_mdeg=115028
+  [risk-item] debris_id=3 class=SAFE proximity=27322 size_cm=135 dr_m=26818 dtheta_mdeg=100988
+  [risk-item] debris_id=4 class=SAFE proximity=760772 size_cm=66 dr_m=760513 dtheta_mdeg=51960
+  [risk-item] debris_id=5 class=SAFE proximity=334710 size_cm=24 dr_m=334680 dtheta_mdeg=6095
+  [risk-item] debris_id=6 class=SAFE proximity=1487627 size_cm=218 dr_m=1487503 dtheta_mdeg=24881
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=80_s
+  [satellite-state] r_m=6771000 theta_mdeg=5525 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=80_s
+  [transmission-packet] packet_number=5 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=90_s
+  [risk-item] debris_id=1 class=SAFE proximity=9876118 size_cm=240 dr_m=9875557 dtheta_mdeg=112200
+  [risk-item] debris_id=2 class=SAFE proximity=59130 size_cm=68 dr_m=58935 dtheta_mdeg=39148
+  [risk-item] debris_id=3 class=SAFE proximity=23188 size_cm=135 dr_m=23138 dtheta_mdeg=10082
+  [risk-item] debris_id=4 class=SAFE proximity=736378 size_cm=66 dr_m=736223 dtheta_mdeg=31170
+  [risk-item] debris_id=5 class=SAFE proximity=357309 size_cm=24 dr_m=356700 dtheta_mdeg=121955
+  [risk-item] debris_id=6 class=SAFE proximity=1439162 size_cm=218 dr_m=1438853 dtheta_mdeg=61909
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=100_s
+  [risk-item] debris_id=1 class=SAFE proximity=9840313 size_cm=240 dr_m=9839557 dtheta_mdeg=151290
+  [risk-item] debris_id=2 class=SAFE proximity=60398 size_cm=68 dr_m=60215 dtheta_mdeg=36732
+  [risk-item] debris_id=3 class=SAFE proximity=20063 size_cm=135 dr_m=19458 dtheta_mdeg=121152
+  [risk-item] debris_id=4 class=SAFE proximity=712504 size_cm=66 dr_m=711933 dtheta_mdeg=114300
+  [risk-item] debris_id=5 class=SAFE proximity=379330 size_cm=24 dr_m=378720 dtheta_mdeg=122185
+  [risk-item] debris_id=6 class=SAFE proximity=1390946 size_cm=218 dr_m=1390203 dtheta_mdeg=148699
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=100_s
+  [satellite-state] r_m=6771000 theta_mdeg=6825 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=100_s
+  [transmission-packet] packet_number=6 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=110_s
+  [risk-item] debris_id=1 class=SAFE proximity=9804405 size_cm=240 dr_m=9803557 dtheta_mdeg=169620
+  [risk-item] debris_id=2 class=SAFE proximity=62058 size_cm=68 dr_m=61495 dtheta_mdeg=112612
+  [risk-item] debris_id=3 class=SAFE proximity=16416 size_cm=135 dr_m=15778 dtheta_mdeg=127778
+  [risk-item] debris_id=4 class=SAFE proximity=688455 size_cm=66 dr_m=687643 dtheta_mdeg=162570
+  [risk-item] debris_id=5 class=SAFE proximity=400771 size_cm=24 dr_m=400740 dtheta_mdeg=6325
+  [risk-item] debris_id=6 class=SAFE proximity=1342175 size_cm=218 dr_m=1341553 dtheta_mdeg=124511
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=120_s
+  [risk-item] debris_id=1 class=SAFE proximity=9768209 size_cm=240 dr_m=9767557 dtheta_mdeg=130530
+  [risk-item] debris_id=2 class=SAFE proximity=63632 size_cm=68 dr_m=62775 dtheta_mdeg=171508
+  [risk-item] debris_id=3 class=WATCH proximity=12181 size_cm=135 dr_m=12098 dtheta_mdeg=16708
+  [risk-item] debris_id=4 class=SAFE proximity=663750 size_cm=66 dr_m=663353 dtheta_mdeg=79440
+  [risk-item] debris_id=5 class=SAFE proximity=423307 size_cm=24 dr_m=422760 dtheta_mdeg=109535
+  [risk-item] debris_id=6 class=SAFE proximity=1293091 size_cm=218 dr_m=1292903 dtheta_mdeg=37721
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[TELEMETRY-REPORT] timestamp=120_s
+  [satellite-state] r_m=6771000 theta_mdeg=8125 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=120_s
+  [transmission-packet] packet_number=7 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=130_s
+  [risk-item] debris_id=1 class=SAFE proximity=9732014 size_cm=240 dr_m=9731557 dtheta_mdeg=91440
+  [risk-item] debris_id=2 class=SAFE proximity=64533 size_cm=68 dr_m=64055 dtheta_mdeg=95628
+  [risk-item] debris_id=3 class=WATCH proximity=8889 size_cm=135 dr_m=8418 dtheta_mdeg=94362
+  [risk-item] debris_id=4 class=SAFE proximity=639081 size_cm=66 dr_m=639063 dtheta_mdeg=3690
+  [risk-item] debris_id=5 class=SAFE proximity=445453 size_cm=24 dr_m=444780 dtheta_mdeg=134605
+  [risk-item] debris_id=6 class=SAFE proximity=1244498 size_cm=218 dr_m=1244253 dtheta_mdeg=49069
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[COLLISION-RISK-REPORT] timestamp=140_s
+  [risk-item] debris_id=1 class=SAFE proximity=9695818 size_cm=240 dr_m=9695557 dtheta_mdeg=52350
+  [risk-item] debris_id=2 class=SAFE proximity=65433 size_cm=68 dr_m=65335 dtheta_mdeg=19748
+  [risk-item] debris_id=3 class=WATCH proximity=5510 size_cm=135 dr_m=4738 dtheta_mdeg=154568
+  [risk-item] debris_id=4 class=SAFE proximity=615207 size_cm=66 dr_m=614773 dtheta_mdeg=86820
+  [risk-item] debris_id=5 class=SAFE proximity=466893 size_cm=24 dr_m=466800 dtheta_mdeg=18745
+  [risk-item] debris_id=6 class=SAFE proximity=1196282 size_cm=218 dr_m=1195603 dtheta_mdeg=135859
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[TELEMETRY-REPORT] timestamp=140_s
+  [satellite-state] r_m=6771000 theta_mdeg=9425 omega_mdegps=65
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=140_s
+  [transmission-packet] packet_number=8 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=150_s
+  [risk-item] debris_id=1 class=SAFE proximity=9659623 size_cm=240 dr_m=9659557 dtheta_mdeg=13260
+  [risk-item] debris_id=2 class=SAFE proximity=66895 size_cm=68 dr_m=66615 dtheta_mdeg=56132
+  [risk-item] debris_id=3 class=HIGH-RISK proximity=1275 size_cm=135 dr_m=1058 dtheta_mdeg=43498
+  [risk-item] debris_id=4 class=SAFE proximity=591332 size_cm=66 dr_m=590483 dtheta_mdeg=169950
+  [risk-item] debris_id=5 class=SAFE proximity=489305 size_cm=24 dr_m=488820 dtheta_mdeg=97115
+  [risk-item] debris_id=6 class=SAFE proximity=1147639 size_cm=218 dr_m=1146953 dtheta_mdeg=137351
+[COLLISION-RISK-SUMMARY] high_risk=1 watch=0 safe=5
+
+[MANEUVER-RECOMMENDATION] timestamp=150_s
+  [maneuver-target] debris_id=3 risk_level=HIGH-RISK
+  [maneuver-action] type=thruster_burn time_to_execute_s=2 delta_v_mdegps=-3 delta_r_m=1
+  [maneuver-status] executed=true
+
+[COLLISION-RISK-REPORT] timestamp=160_s
+  [risk-item] debris_id=1 class=SAFE proximity=9623685 size_cm=240 dr_m=9623556 dtheta_mdeg=25860
+  [risk-item] debris_id=2 class=SAFE proximity=68554 size_cm=68 dr_m=67894 dtheta_mdeg=132042
+  [risk-item] debris_id=3 class=WATCH proximity=2961 size_cm=135 dr_m=2623 dtheta_mdeg=67602
+  [risk-item] debris_id=4 class=SAFE proximity=566726 size_cm=66 dr_m=566192 dtheta_mdeg=106890
+  [risk-item] debris_id=5 class=SAFE proximity=511573 size_cm=24 dr_m=510839 dtheta_mdeg=146995
+  [risk-item] debris_id=6 class=SAFE proximity=1098554 size_cm=218 dr_m=1098302 dtheta_mdeg=50531
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[TELEMETRY-REPORT] timestamp=160_s
+  [satellite-state] r_m=6771001 theta_mdeg=10695 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=1 max_in_window=1 total_events=1
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=160_s
+  [transmission-packet] packet_number=9 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=170_s
+  [risk-item] debris_id=1 class=SAFE proximity=9587880 size_cm=240 dr_m=9587556 dtheta_mdeg=64980
+  [risk-item] debris_id=2 class=SAFE proximity=69934 size_cm=68 dr_m=69174 dtheta_mdeg=152048
+  [risk-item] debris_id=3 class=WATCH proximity=7196 size_cm=135 dr_m=6303 dtheta_mdeg=178702
+  [risk-item] debris_id=4 class=SAFE proximity=542020 size_cm=66 dr_m=541902 dtheta_mdeg=23730
+  [risk-item] debris_id=5 class=SAFE proximity=533014 size_cm=24 dr_m=532859 dtheta_mdeg=31105
+  [risk-item] debris_id=6 class=SAFE proximity=1049833 size_cm=218 dr_m=1049652 dtheta_mdeg=36289
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[COLLISION-RISK-REPORT] timestamp=180_s
+  [risk-item] debris_id=1 class=SAFE proximity=9552076 size_cm=240 dr_m=9551556 dtheta_mdeg=104100
+  [risk-item] debris_id=2 class=SAFE proximity=70834 size_cm=68 dr_m=70454 dtheta_mdeg=76138
+  [risk-item] debris_id=3 class=WATCH proximity=10333 size_cm=135 dr_m=9983 dtheta_mdeg=70198
+  [risk-item] debris_id=4 class=SAFE proximity=517909 size_cm=66 dr_m=517612 dtheta_mdeg=59430
+  [risk-item] debris_id=5 class=SAFE proximity=555302 size_cm=24 dr_m=554879 dtheta_mdeg=84785
+  [risk-item] debris_id=6 class=SAFE proximity=1001617 size_cm=218 dr_m=1001002 dtheta_mdeg=123109
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[TELEMETRY-REPORT] timestamp=180_s
+  [satellite-state] r_m=6771001 theta_mdeg=11935 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=180_s
+  [transmission-packet] packet_number=10 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=190_s
+  [risk-item] debris_id=1 class=SAFE proximity=9516272 size_cm=240 dr_m=9515556 dtheta_mdeg=143220
+  [risk-item] debris_id=2 class=SAFE proximity=71735 size_cm=68 dr_m=71734 dtheta_mdeg=228
+  [risk-item] debris_id=3 class=SAFE proximity=13867 size_cm=135 dr_m=13663 dtheta_mdeg=40902
+  [risk-item] debris_id=4 class=SAFE proximity=494034 size_cm=66 dr_m=493322 dtheta_mdeg=142590
+  [risk-item] debris_id=5 class=SAFE proximity=577695 size_cm=24 dr_m=576899 dtheta_mdeg=159325
+  [risk-item] debris_id=6 class=SAFE proximity=953102 size_cm=218 dr_m=952352 dtheta_mdeg=150071
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=200_s
+  [risk-item] debris_id=1 class=SAFE proximity=9480444 size_cm=240 dr_m=9479556 dtheta_mdeg=177660
+  [risk-item] debris_id=2 class=SAFE proximity=73392 size_cm=68 dr_m=73014 dtheta_mdeg=75682
+  [risk-item] debris_id=3 class=SAFE proximity=18103 size_cm=135 dr_m=17343 dtheta_mdeg=152002
+  [risk-item] debris_id=4 class=SAFE proximity=469703 size_cm=66 dr_m=469032 dtheta_mdeg=134250
+  [risk-item] debris_id=5 class=SAFE proximity=599136 size_cm=24 dr_m=598919 dtheta_mdeg=43435
+  [risk-item] debris_id=6 class=SAFE proximity=904018 size_cm=218 dr_m=903702 dtheta_mdeg=63251
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=200_s
+  [satellite-state] r_m=6771001 theta_mdeg=13175 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=200_s
+  [transmission-packet] packet_number=11 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=210_s
+  [risk-item] debris_id=1 class=SAFE proximity=9444248 size_cm=240 dr_m=9443556 dtheta_mdeg=138540
+  [risk-item] debris_id=2 class=SAFE proximity=75051 size_cm=68 dr_m=74294 dtheta_mdeg=151592
+  [risk-item] debris_id=3 class=SAFE proximity=21507 size_cm=135 dr_m=21023 dtheta_mdeg=96898
+  [risk-item] debris_id=4 class=SAFE proximity=444997 size_cm=66 dr_m=444742 dtheta_mdeg=51090
+  [risk-item] debris_id=5 class=SAFE proximity=621301 size_cm=24 dr_m=620939 dtheta_mdeg=72455
+  [risk-item] debris_id=6 class=SAFE proximity=855169 size_cm=218 dr_m=855052 dtheta_mdeg=23569
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=220_s
+  [risk-item] debris_id=1 class=SAFE proximity=9408053 size_cm=240 dr_m=9407556 dtheta_mdeg=99420
+  [risk-item] debris_id=2 class=SAFE proximity=76236 size_cm=68 dr_m=75574 dtheta_mdeg=132498
+  [risk-item] debris_id=3 class=SAFE proximity=24774 size_cm=135 dr_m=24703 dtheta_mdeg=14202
+  [risk-item] debris_id=4 class=SAFE proximity=420612 size_cm=66 dr_m=420452 dtheta_mdeg=32070
+  [risk-item] debris_id=5 class=SAFE proximity=643817 size_cm=24 dr_m=642959 dtheta_mdeg=171655
+  [risk-item] debris_id=6 class=SAFE proximity=806953 size_cm=218 dr_m=806402 dtheta_mdeg=110389
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=220_s
+  [satellite-state] r_m=6771001 theta_mdeg=14415 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=220_s
+  [transmission-packet] packet_number=12 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=230_s
+  [risk-item] debris_id=1 class=SAFE proximity=9371857 size_cm=240 dr_m=9371556 dtheta_mdeg=60300
+  [risk-item] debris_id=2 class=SAFE proximity=77136 size_cm=68 dr_m=76854 dtheta_mdeg=56588
+  [risk-item] debris_id=3 class=SAFE proximity=29009 size_cm=135 dr_m=28383 dtheta_mdeg=125302
+  [risk-item] debris_id=4 class=SAFE proximity=396738 size_cm=66 dr_m=396162 dtheta_mdeg=115230
+  [risk-item] debris_id=5 class=SAFE proximity=665257 size_cm=24 dr_m=664979 dtheta_mdeg=55765
+  [risk-item] debris_id=6 class=SAFE proximity=758565 size_cm=218 dr_m=757752 dtheta_mdeg=162791
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=240_s
+  [risk-item] debris_id=1 class=SAFE proximity=9335661 size_cm=240 dr_m=9335556 dtheta_mdeg=21180
+  [risk-item] debris_id=2 class=SAFE proximity=78230 size_cm=68 dr_m=78134 dtheta_mdeg=19322
+  [risk-item] debris_id=3 class=SAFE proximity=32680 size_cm=135 dr_m=32063 dtheta_mdeg=123598
+  [risk-item] debris_id=4 class=SAFE proximity=372680 size_cm=66 dr_m=371872 dtheta_mdeg=161610
+  [risk-item] debris_id=5 class=SAFE proximity=687299 size_cm=24 dr_m=686999 dtheta_mdeg=60125
+  [risk-item] debris_id=6 class=SAFE proximity=709481 size_cm=218 dr_m=709102 dtheta_mdeg=75971
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=240_s
+  [satellite-state] r_m=6771001 theta_mdeg=15655 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=240_s
+  [transmission-packet] packet_number=13 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=250_s
+  [risk-item] debris_id=1 class=SAFE proximity=9299645 size_cm=240 dr_m=9299556 dtheta_mdeg=17940
+  [risk-item] debris_id=2 class=SAFE proximity=79890 size_cm=68 dr_m=79414 dtheta_mdeg=95232
+  [risk-item] debris_id=3 class=SAFE proximity=35805 size_cm=135 dr_m=35743 dtheta_mdeg=12498
+  [risk-item] debris_id=4 class=SAFE proximity=347974 size_cm=66 dr_m=347582 dtheta_mdeg=78450
+  [risk-item] debris_id=5 class=SAFE proximity=709899 size_cm=24 dr_m=709019 dtheta_mdeg=176015
+  [risk-item] debris_id=6 class=SAFE proximity=660506 size_cm=218 dr_m=660452 dtheta_mdeg=10849
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=260_s
+  [risk-item] debris_id=1 class=SAFE proximity=9263841 size_cm=240 dr_m=9263556 dtheta_mdeg=57060
+  [risk-item] debris_id=2 class=SAFE proximity=81549 size_cm=68 dr_m=80694 dtheta_mdeg=171142
+  [risk-item] debris_id=3 class=SAFE proximity=39916 size_cm=135 dr_m=39423 dtheta_mdeg=98602
+  [risk-item] debris_id=4 class=SAFE proximity=323315 size_cm=66 dr_m=323292 dtheta_mdeg=4710
+  [risk-item] debris_id=5 class=SAFE proximity=731379 size_cm=24 dr_m=731039 dtheta_mdeg=68095
+  [risk-item] debris_id=6 class=SAFE proximity=612290 size_cm=218 dr_m=611802 dtheta_mdeg=97669
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=260_s
+  [satellite-state] r_m=6771001 theta_mdeg=16895 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=260_s
+  [transmission-packet] packet_number=14 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=270_s
+  [risk-item] debris_id=1 class=SAFE proximity=9228036 size_cm=240 dr_m=9227556 dtheta_mdeg=96180
+  [risk-item] debris_id=2 class=SAFE proximity=82538 size_cm=68 dr_m=81974 dtheta_mdeg=112948
+  [risk-item] debris_id=3 class=SAFE proximity=43854 size_cm=135 dr_m=43103 dtheta_mdeg=150298
+  [risk-item] debris_id=4 class=SAFE proximity=299441 size_cm=66 dr_m=299002 dtheta_mdeg=87870
+  [risk-item] debris_id=5 class=SAFE proximity=753297 size_cm=24 dr_m=753059 dtheta_mdeg=47795
+  [risk-item] debris_id=6 class=SAFE proximity=564029 size_cm=218 dr_m=563152 dtheta_mdeg=175511
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=280_s
+  [risk-item] debris_id=1 class=SAFE proximity=9192232 size_cm=240 dr_m=9191556 dtheta_mdeg=135300
+  [risk-item] debris_id=2 class=SAFE proximity=83439 size_cm=68 dr_m=83254 dtheta_mdeg=37038
+  [risk-item] debris_id=3 class=SAFE proximity=46978 size_cm=135 dr_m=46783 dtheta_mdeg=39198
+  [risk-item] debris_id=4 class=SAFE proximity=275567 size_cm=66 dr_m=274712 dtheta_mdeg=171030
+  [risk-item] debris_id=5 class=SAFE proximity=775897 size_cm=24 dr_m=775079 dtheta_mdeg=163685
+  [risk-item] debris_id=6 class=SAFE proximity=514945 size_cm=218 dr_m=514502 dtheta_mdeg=88691
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=280_s
+  [satellite-state] r_m=6771001 theta_mdeg=18135 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=280_s
+  [transmission-packet] packet_number=15 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=290_s
+  [risk-item] debris_id=1 class=SAFE proximity=9156428 size_cm=240 dr_m=9155556 dtheta_mdeg=174420
+  [risk-item] debris_id=2 class=SAFE proximity=84728 size_cm=68 dr_m=84534 dtheta_mdeg=38872
+  [risk-item] debris_id=3 class=SAFE proximity=50822 size_cm=135 dr_m=50463 dtheta_mdeg=71902
+  [risk-item] debris_id=4 class=SAFE proximity=250951 size_cm=66 dr_m=250422 dtheta_mdeg=105810
+  [risk-item] debris_id=5 class=SAFE proximity=797501 size_cm=24 dr_m=797099 dtheta_mdeg=80425
+  [risk-item] debris_id=6 class=SAFE proximity=465861 size_cm=218 dr_m=465852 dtheta_mdeg=1871
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=300_s
+  [risk-item] debris_id=1 class=SAFE proximity=9120288 size_cm=240 dr_m=9119556 dtheta_mdeg=146460
+  [risk-item] debris_id=2 class=SAFE proximity=86387 size_cm=68 dr_m=85814 dtheta_mdeg=114782
+  [risk-item] debris_id=3 class=SAFE proximity=55027 size_cm=135 dr_m=54143 dtheta_mdeg=176998
+  [risk-item] debris_id=4 class=SAFE proximity=226245 size_cm=66 dr_m=226132 dtheta_mdeg=22650
+  [risk-item] debris_id=5 class=SAFE proximity=819296 size_cm=24 dr_m=819119 dtheta_mdeg=35465
+  [risk-item] debris_id=6 class=SAFE proximity=417626 size_cm=218 dr_m=417202 dtheta_mdeg=84949
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=300_s
+  [satellite-state] r_m=6771001 theta_mdeg=19375 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=300_s
+  [transmission-packet] packet_number=16 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=310_s
+  [risk-item] debris_id=1 class=SAFE proximity=9084092 size_cm=240 dr_m=9083556 dtheta_mdeg=107340
+  [risk-item] debris_id=2 class=SAFE proximity=87940 size_cm=68 dr_m=87094 dtheta_mdeg=169308
+  [risk-item] debris_id=3 class=SAFE proximity=58152 size_cm=135 dr_m=57823 dtheta_mdeg=65898
+  [risk-item] debris_id=4 class=SAFE proximity=202144 size_cm=66 dr_m=201842 dtheta_mdeg=60510
+  [risk-item] debris_id=5 class=SAFE proximity=841895 size_cm=24 dr_m=841139 dtheta_mdeg=151355
+  [risk-item] debris_id=6 class=SAFE proximity=369410 size_cm=218 dr_m=368552 dtheta_mdeg=171769
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=320_s
+  [risk-item] debris_id=1 class=SAFE proximity=9047897 size_cm=240 dr_m=9047556 dtheta_mdeg=68220
+  [risk-item] debris_id=2 class=SAFE proximity=88840 size_cm=68 dr_m=88374 dtheta_mdeg=93398
+  [risk-item] debris_id=3 class=SAFE proximity=61729 size_cm=135 dr_m=61503 dtheta_mdeg=45202
+  [risk-item] debris_id=4 class=SAFE proximity=178270 size_cm=66 dr_m=177552 dtheta_mdeg=143670
+  [risk-item] debris_id=5 class=SAFE proximity=863622 size_cm=24 dr_m=863159 dtheta_mdeg=92755
+  [risk-item] debris_id=6 class=SAFE proximity=320409 size_cm=218 dr_m=319902 dtheta_mdeg=101411
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=320_s
+  [satellite-state] r_m=6771001 theta_mdeg=20615 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=320_s
+  [transmission-packet] packet_number=17 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=330_s
+  [risk-item] debris_id=1 class=SAFE proximity=9011701 size_cm=240 dr_m=9011556 dtheta_mdeg=29100
+  [risk-item] debris_id=2 class=SAFE proximity=89741 size_cm=68 dr_m=89654 dtheta_mdeg=17488
+  [risk-item] debris_id=3 class=SAFE proximity=65964 size_cm=135 dr_m=65183 dtheta_mdeg=156302
+  [risk-item] debris_id=4 class=SAFE proximity=153927 size_cm=66 dr_m=153262 dtheta_mdeg=133170
+  [risk-item] debris_id=5 class=SAFE proximity=885294 size_cm=24 dr_m=885179 dtheta_mdeg=23135
+  [risk-item] debris_id=6 class=SAFE proximity=271324 size_cm=218 dr_m=271252 dtheta_mdeg=14591
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=340_s
+  [risk-item] debris_id=1 class=SAFE proximity=8975606 size_cm=240 dr_m=8975556 dtheta_mdeg=10020
+  [risk-item] debris_id=2 class=SAFE proximity=91226 size_cm=68 dr_m=90934 dtheta_mdeg=58422
+  [risk-item] debris_id=3 class=SAFE proximity=69325 size_cm=135 dr_m=68863 dtheta_mdeg=92598
+  [risk-item] debris_id=4 class=SAFE proximity=129222 size_cm=66 dr_m=128972 dtheta_mdeg=50010
+  [risk-item] debris_id=5 class=SAFE proximity=907894 size_cm=24 dr_m=907199 dtheta_mdeg=139025
+  [risk-item] debris_id=6 class=SAFE proximity=222963 size_cm=218 dr_m=222602 dtheta_mdeg=72229
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=340_s
+  [satellite-state] r_m=6771001 theta_mdeg=21855 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=340_s
+  [transmission-packet] packet_number=18 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=350_s
+  [risk-item] debris_id=1 class=SAFE proximity=8939801 size_cm=240 dr_m=8939556 dtheta_mdeg=49140
+  [risk-item] debris_id=2 class=SAFE proximity=92885 size_cm=68 dr_m=92214 dtheta_mdeg=134332
+  [risk-item] debris_id=3 class=SAFE proximity=72635 size_cm=135 dr_m=72543 dtheta_mdeg=18502
+  [risk-item] debris_id=4 class=SAFE proximity=104847 size_cm=66 dr_m=104682 dtheta_mdeg=33150
+  [risk-item] debris_id=5 class=SAFE proximity=929744 size_cm=24 dr_m=929219 dtheta_mdeg=105085
+  [risk-item] debris_id=6 class=SAFE proximity=174747 size_cm=218 dr_m=173952 dtheta_mdeg=159049
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=360_s
+  [risk-item] debris_id=1 class=SAFE proximity=8903997 size_cm=240 dr_m=8903556 dtheta_mdeg=88260
+  [risk-item] debris_id=2 class=SAFE proximity=94242 size_cm=68 dr_m=93494 dtheta_mdeg=149758
+  [risk-item] debris_id=3 class=SAFE proximity=76871 size_cm=135 dr_m=76223 dtheta_mdeg=129602
+  [risk-item] debris_id=4 class=SAFE proximity=80973 size_cm=66 dr_m=80392 dtheta_mdeg=116310
+  [risk-item] debris_id=5 class=SAFE proximity=951293 size_cm=24 dr_m=951239 dtheta_mdeg=10805
+  [risk-item] debris_id=6 class=SAFE proximity=125872 size_cm=218 dr_m=125302 dtheta_mdeg=114131
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=360_s
+  [satellite-state] r_m=6771001 theta_mdeg=23095 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=360_s
+  [transmission-packet] packet_number=19 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=370_s
+  [risk-item] debris_id=1 class=SAFE proximity=8868192 size_cm=240 dr_m=8867556 dtheta_mdeg=127380
+  [risk-item] debris_id=2 class=SAFE proximity=95143 size_cm=68 dr_m=94774 dtheta_mdeg=73848
+  [risk-item] debris_id=3 class=SAFE proximity=80499 size_cm=135 dr_m=79903 dtheta_mdeg=119298
+  [risk-item] debris_id=4 class=SAFE proximity=56904 size_cm=66 dr_m=56102 dtheta_mdeg=160530
+  [risk-item] debris_id=5 class=SAFE proximity=973892 size_cm=24 dr_m=973259 dtheta_mdeg=126695
+  [risk-item] debris_id=6 class=SAFE proximity=76788 size_cm=218 dr_m=76652 dtheta_mdeg=27311
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=380_s
+  [risk-item] debris_id=1 class=SAFE proximity=8832388 size_cm=240 dr_m=8831556 dtheta_mdeg=166500
+  [risk-item] debris_id=2 class=SAFE proximity=96064 size_cm=68 dr_m=96054 dtheta_mdeg=2062
+  [risk-item] debris_id=3 class=SAFE proximity=83623 size_cm=135 dr_m=83583 dtheta_mdeg=8198
+  [risk-item] debris_id=4 class=SAFE proximity=32198 size_cm=66 dr_m=31812 dtheta_mdeg=77370
+  [risk-item] debris_id=5 class=SAFE proximity=995866 size_cm=24 dr_m=995279 dtheta_mdeg=117415
+  [risk-item] debris_id=6 class=SAFE proximity=28299 size_cm=218 dr_m=28002 dtheta_mdeg=59509
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=380_s
+  [satellite-state] r_m=6771001 theta_mdeg=24335 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=380_s
+  [transmission-packet] packet_number=20 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=390_s
+  [risk-item] debris_id=1 class=SAFE proximity=8796327 size_cm=240 dr_m=8795556 dtheta_mdeg=154380
+  [risk-item] debris_id=2 class=SAFE proximity=97723 size_cm=68 dr_m=97334 dtheta_mdeg=77972
+  [risk-item] debris_id=3 class=SAFE proximity=87777 size_cm=135 dr_m=87263 dtheta_mdeg=102902
+  [risk-item] debris_id=4 class=SAFE proximity=7550 size_cm=66 dr_m=7522 dtheta_mdeg=5790
+  [risk-item] debris_id=5 class=SAFE proximity=1017306 size_cm=24 dr_m=1017299 dtheta_mdeg=1525
+  [risk-item] debris_id=6 class=WATCH proximity=21379 size_cm=218 dr_m=20648 dtheta_mdeg=146329
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=1 safe=5
+
+[COLLISION-RISK-REPORT] timestamp=400_s
+  [risk-item] debris_id=1 class=SAFE proximity=8760132 size_cm=240 dr_m=8759556 dtheta_mdeg=115260
+  [risk-item] debris_id=2 class=SAFE proximity=99383 size_cm=68 dr_m=98614 dtheta_mdeg=153882
+  [risk-item] debris_id=3 class=SAFE proximity=91672 size_cm=135 dr_m=90943 dtheta_mdeg=145998
+  [risk-item] debris_id=4 class=SAFE proximity=17212 size_cm=66 dr_m=16768 dtheta_mdeg=88950
+  [risk-item] debris_id=5 class=SAFE proximity=1039890 size_cm=24 dr_m=1039319 dtheta_mdeg=114365
+  [risk-item] debris_id=6 class=SAFE proximity=69932 size_cm=218 dr_m=69298 dtheta_mdeg=126851
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=400_s
+  [satellite-state] r_m=6771001 theta_mdeg=25575 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=400_s
+  [transmission-packet] packet_number=21 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=410_s
+  [risk-item] debris_id=1 class=SAFE proximity=8723936 size_cm=240 dr_m=8723556 dtheta_mdeg=76140
+  [risk-item] debris_id=2 class=SAFE proximity=100545 size_cm=68 dr_m=99894 dtheta_mdeg=130208
+  [risk-item] debris_id=3 class=SAFE proximity=94797 size_cm=135 dr_m=94623 dtheta_mdeg=34898
+  [risk-item] debris_id=4 class=SAFE proximity=41918 size_cm=66 dr_m=41058 dtheta_mdeg=172110
+  [risk-item] debris_id=5 class=SAFE proximity=1061987 size_cm=24 dr_m=1061339 dtheta_mdeg=129745
+  [risk-item] debris_id=6 class=SAFE proximity=118148 size_cm=218 dr_m=117948 dtheta_mdeg=40031
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=420_s
+  [risk-item] debris_id=1 class=SAFE proximity=8687741 size_cm=240 dr_m=8687556 dtheta_mdeg=37020
+  [risk-item] debris_id=2 class=SAFE proximity=101445 size_cm=68 dr_m=101174 dtheta_mdeg=54298
+  [risk-item] debris_id=3 class=SAFE proximity=98684 size_cm=135 dr_m=98303 dtheta_mdeg=76202
+  [risk-item] debris_id=4 class=SAFE proximity=65871 size_cm=66 dr_m=65348 dtheta_mdeg=104730
+  [risk-item] debris_id=5 class=SAFE proximity=1083428 size_cm=24 dr_m=1083359 dtheta_mdeg=13855
+  [risk-item] debris_id=6 class=SAFE proximity=166831 size_cm=218 dr_m=166598 dtheta_mdeg=46789
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=420_s
+  [satellite-state] r_m=6771001 theta_mdeg=26815 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=420_s
+  [transmission-packet] packet_number=22 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=430_s
+  [risk-item] debris_id=1 class=SAFE proximity=8651566 size_cm=240 dr_m=8651556 dtheta_mdeg=2100
+  [risk-item] debris_id=2 class=SAFE proximity=102562 size_cm=68 dr_m=102454 dtheta_mdeg=21612
+  [risk-item] debris_id=3 class=SAFE proximity=102846 size_cm=135 dr_m=101983 dtheta_mdeg=172698
+  [risk-item] debris_id=4 class=SAFE proximity=89745 size_cm=66 dr_m=89638 dtheta_mdeg=21570
+  [risk-item] debris_id=5 class=SAFE proximity=1105889 size_cm=24 dr_m=1105379 dtheta_mdeg=102035
+  [risk-item] debris_id=6 class=SAFE proximity=215916 size_cm=218 dr_m=215248 dtheta_mdeg=133609
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=440_s
+  [risk-item] debris_id=1 class=SAFE proximity=8615762 size_cm=240 dr_m=8615556 dtheta_mdeg=41220
+  [risk-item] debris_id=2 class=SAFE proximity=104221 size_cm=68 dr_m=103734 dtheta_mdeg=97522
+  [risk-item] debris_id=3 class=SAFE proximity=105970 size_cm=135 dr_m=105663 dtheta_mdeg=61598
+  [risk-item] debris_id=4 class=SAFE proximity=114235 size_cm=66 dr_m=113928 dtheta_mdeg=61590
+  [risk-item] debris_id=5 class=SAFE proximity=1128109 size_cm=24 dr_m=1127399 dtheta_mdeg=142075
+  [risk-item] debris_id=6 class=SAFE proximity=264595 size_cm=218 dr_m=263898 dtheta_mdeg=139571
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=440_s
+  [satellite-state] r_m=6771001 theta_mdeg=28055 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=440_s
+  [transmission-packet] packet_number=23 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=450_s
+  [risk-item] debris_id=1 class=SAFE proximity=8579957 size_cm=240 dr_m=8579556 dtheta_mdeg=80340
+  [risk-item] debris_id=2 class=SAFE proximity=105881 size_cm=68 dr_m=105014 dtheta_mdeg=173432
+  [risk-item] debris_id=3 class=SAFE proximity=109590 size_cm=135 dr_m=109343 dtheta_mdeg=49502
+  [risk-item] debris_id=4 class=SAFE proximity=138941 size_cm=66 dr_m=138218 dtheta_mdeg=144750
+  [risk-item] debris_id=5 class=SAFE proximity=1149549 size_cm=24 dr_m=1149419 dtheta_mdeg=26185
+  [risk-item] debris_id=6 class=SAFE proximity=312811 size_cm=218 dr_m=312548 dtheta_mdeg=52751
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=460_s
+  [risk-item] debris_id=1 class=SAFE proximity=8544153 size_cm=240 dr_m=8543556 dtheta_mdeg=119460
+  [risk-item] debris_id=2 class=SAFE proximity=106847 size_cm=68 dr_m=106294 dtheta_mdeg=110658
+  [risk-item] debris_id=3 class=SAFE proximity=113826 size_cm=135 dr_m=113023 dtheta_mdeg=160602
+  [risk-item] debris_id=4 class=SAFE proximity=163168 size_cm=66 dr_m=162508 dtheta_mdeg=132090
+  [risk-item] debris_id=5 class=SAFE proximity=1171887 size_cm=24 dr_m=1171439 dtheta_mdeg=89705
+  [risk-item] debris_id=6 class=SAFE proximity=361368 size_cm=218 dr_m=361198 dtheta_mdeg=34069
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=460_s
+  [satellite-state] r_m=6771001 theta_mdeg=29295 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=460_s
+  [transmission-packet] packet_number=24 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=470_s
+  [risk-item] debris_id=1 class=SAFE proximity=8508348 size_cm=240 dr_m=8507556 dtheta_mdeg=158580
+  [risk-item] debris_id=2 class=SAFE proximity=107747 size_cm=68 dr_m=107574 dtheta_mdeg=34748
+  [risk-item] debris_id=3 class=SAFE proximity=117144 size_cm=135 dr_m=116703 dtheta_mdeg=88298
+  [risk-item] debris_id=4 class=SAFE proximity=187042 size_cm=66 dr_m=186798 dtheta_mdeg=48930
+  [risk-item] debris_id=5 class=SAFE proximity=1194231 size_cm=24 dr_m=1193459 dtheta_mdeg=154405
+  [risk-item] debris_id=6 class=SAFE proximity=410452 size_cm=218 dr_m=409848 dtheta_mdeg=120889
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=480_s
+  [risk-item] debris_id=1 class=SAFE proximity=8472367 size_cm=240 dr_m=8471556 dtheta_mdeg=162300
+  [risk-item] debris_id=2 class=SAFE proximity=109059 size_cm=68 dr_m=108854 dtheta_mdeg=41162
+  [risk-item] debris_id=3 class=SAFE proximity=120497 size_cm=135 dr_m=120383 dtheta_mdeg=22802
+  [risk-item] debris_id=4 class=SAFE proximity=211259 size_cm=66 dr_m=211088 dtheta_mdeg=34230
+  [risk-item] debris_id=5 class=SAFE proximity=1215671 size_cm=24 dr_m=1215479 dtheta_mdeg=38515
+  [risk-item] debris_id=6 class=SAFE proximity=459259 size_cm=218 dr_m=458498 dtheta_mdeg=152291
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=480_s
+  [satellite-state] r_m=6771001 theta_mdeg=30535 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=480_s
+  [transmission-packet] packet_number=25 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=490_s
+  [risk-item] debris_id=1 class=SAFE proximity=8436171 size_cm=240 dr_m=8435556 dtheta_mdeg=123180
+  [risk-item] debris_id=2 class=SAFE proximity=110719 size_cm=68 dr_m=110134 dtheta_mdeg=117072
+  [risk-item] debris_id=3 class=SAFE proximity=124732 size_cm=135 dr_m=124063 dtheta_mdeg=133902
+  [risk-item] debris_id=4 class=SAFE proximity=235964 size_cm=66 dr_m=235378 dtheta_mdeg=117390
+  [risk-item] debris_id=5 class=SAFE proximity=1237885 size_cm=24 dr_m=1237499 dtheta_mdeg=77375
+  [risk-item] debris_id=6 class=SAFE proximity=507475 size_cm=218 dr_m=507148 dtheta_mdeg=65471
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=500_s
+  [risk-item] debris_id=1 class=SAFE proximity=8399976 size_cm=240 dr_m=8399556 dtheta_mdeg=84060
+  [risk-item] debris_id=2 class=SAFE proximity=112249 size_cm=68 dr_m=111414 dtheta_mdeg=167018
+  [risk-item] debris_id=3 class=SAFE proximity=128317 size_cm=135 dr_m=127743 dtheta_mdeg=114998
+  [risk-item] debris_id=4 class=SAFE proximity=260465 size_cm=66 dr_m=259668 dtheta_mdeg=159450
+  [risk-item] debris_id=5 class=SAFE proximity=1260352 size_cm=24 dr_m=1259519 dtheta_mdeg=166735
+  [risk-item] debris_id=6 class=SAFE proximity=555904 size_cm=218 dr_m=555798 dtheta_mdeg=21349
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=500_s
+  [satellite-state] r_m=6771001 theta_mdeg=31775 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=500_s
+  [transmission-packet] packet_number=26 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=510_s
+  [risk-item] debris_id=1 class=SAFE proximity=8363780 size_cm=240 dr_m=8363556 dtheta_mdeg=44940
+  [risk-item] debris_id=2 class=SAFE proximity=113149 size_cm=68 dr_m=112694 dtheta_mdeg=91108
+  [risk-item] debris_id=3 class=SAFE proximity=131442 size_cm=135 dr_m=131423 dtheta_mdeg=3898
+  [risk-item] debris_id=4 class=SAFE proximity=284339 size_cm=66 dr_m=283958 dtheta_mdeg=76290
+  [risk-item] debris_id=5 class=SAFE proximity=1281793 size_cm=24 dr_m=1281539 dtheta_mdeg=50845
+  [risk-item] debris_id=6 class=SAFE proximity=604988 size_cm=218 dr_m=604448 dtheta_mdeg=108169
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=520_s
+  [risk-item] debris_id=1 class=SAFE proximity=8327585 size_cm=240 dr_m=8327556 dtheta_mdeg=5820
+  [risk-item] debris_id=2 class=SAFE proximity=114049 size_cm=68 dr_m=113974 dtheta_mdeg=15198
+  [risk-item] debris_id=3 class=SAFE proximity=135639 size_cm=135 dr_m=135103 dtheta_mdeg=107202
+  [risk-item] debris_id=4 class=SAFE proximity=308282 size_cm=66 dr_m=308248 dtheta_mdeg=6870
+  [risk-item] debris_id=5 class=SAFE proximity=1303884 size_cm=24 dr_m=1303559 dtheta_mdeg=65045
+  [risk-item] debris_id=6 class=SAFE proximity=653923 size_cm=218 dr_m=653098 dtheta_mdeg=165011
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=520_s
+  [satellite-state] r_m=6771001 theta_mdeg=33015 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=520_s
+  [transmission-packet] packet_number=27 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=530_s
+  [risk-item] debris_id=1 class=SAFE proximity=8291722 size_cm=240 dr_m=8291556 dtheta_mdeg=33300
+  [risk-item] debris_id=2 class=SAFE proximity=115557 size_cm=68 dr_m=115254 dtheta_mdeg=60712
+  [risk-item] debris_id=3 class=SAFE proximity=139491 size_cm=135 dr_m=138783 dtheta_mdeg=141698
+  [risk-item] debris_id=4 class=SAFE proximity=332988 size_cm=66 dr_m=332538 dtheta_mdeg=90030
+  [risk-item] debris_id=5 class=SAFE proximity=1326474 size_cm=24 dr_m=1325579 dtheta_mdeg=179065
+  [risk-item] debris_id=6 class=SAFE proximity=702138 size_cm=218 dr_m=701748 dtheta_mdeg=78191
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=540_s
+  [risk-item] debris_id=1 class=SAFE proximity=8255918 size_cm=240 dr_m=8255556 dtheta_mdeg=72420
+  [risk-item] debris_id=2 class=SAFE proximity=117217 size_cm=68 dr_m=116534 dtheta_mdeg=136622
+  [risk-item] debris_id=3 class=SAFE proximity=142615 size_cm=135 dr_m=142463 dtheta_mdeg=30598
+  [risk-item] debris_id=4 class=SAFE proximity=357693 size_cm=66 dr_m=356828 dtheta_mdeg=173190
+  [risk-item] debris_id=5 class=SAFE proximity=1347914 size_cm=24 dr_m=1347599 dtheta_mdeg=63175
+  [risk-item] debris_id=6 class=SAFE proximity=750441 size_cm=218 dr_m=750398 dtheta_mdeg=8629
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=540_s
+  [satellite-state] r_m=6771001 theta_mdeg=34255 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=540_s
+  [transmission-packet] packet_number=28 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=550_s
+  [risk-item] debris_id=1 class=SAFE proximity=8220113 size_cm=240 dr_m=8219556 dtheta_mdeg=111540
+  [risk-item] debris_id=2 class=SAFE proximity=118551 size_cm=68 dr_m=117814 dtheta_mdeg=147468
+  [risk-item] debris_id=3 class=SAFE proximity=146545 size_cm=135 dr_m=146143 dtheta_mdeg=80502
+  [risk-item] debris_id=4 class=SAFE proximity=381636 size_cm=66 dr_m=381118 dtheta_mdeg=103650
+  [risk-item] debris_id=5 class=SAFE proximity=1369882 size_cm=24 dr_m=1369619 dtheta_mdeg=52715
+  [risk-item] debris_id=6 class=SAFE proximity=799525 size_cm=218 dr_m=799048 dtheta_mdeg=95449
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=560_s
+  [risk-item] debris_id=1 class=SAFE proximity=8184309 size_cm=240 dr_m=8183556 dtheta_mdeg=150660
+  [risk-item] debris_id=2 class=SAFE proximity=119451 size_cm=68 dr_m=119094 dtheta_mdeg=71558
+  [risk-item] debris_id=3 class=SAFE proximity=150664 size_cm=135 dr_m=149823 dtheta_mdeg=168398
+  [risk-item] debris_id=4 class=SAFE proximity=405510 size_cm=66 dr_m=405408 dtheta_mdeg=20490
+  [risk-item] debris_id=5 class=SAFE proximity=1392482 size_cm=24 dr_m=1391639 dtheta_mdeg=168605
+  [risk-item] debris_id=6 class=SAFE proximity=848586 size_cm=218 dr_m=847698 dtheta_mdeg=177731
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=560_s
+  [satellite-state] r_m=6771001 theta_mdeg=35495 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=560_s
+  [transmission-packet] packet_number=29 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=570_s
+  [risk-item] debris_id=1 class=SAFE proximity=8148407 size_cm=240 dr_m=8147556 dtheta_mdeg=170220
+  [risk-item] debris_id=2 class=SAFE proximity=120395 size_cm=68 dr_m=120374 dtheta_mdeg=4352
+  [risk-item] debris_id=3 class=SAFE proximity=153789 size_cm=135 dr_m=153503 dtheta_mdeg=57298
+  [risk-item] debris_id=4 class=SAFE proximity=430011 size_cm=66 dr_m=429698 dtheta_mdeg=62670
+  [risk-item] debris_id=5 class=SAFE proximity=1414036 size_cm=24 dr_m=1413659 dtheta_mdeg=75505
+  [risk-item] debris_id=6 class=SAFE proximity=896802 size_cm=218 dr_m=896348 dtheta_mdeg=90911
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=580_s
+  [risk-item] debris_id=1 class=SAFE proximity=8112211 size_cm=240 dr_m=8111556 dtheta_mdeg=131100
+  [risk-item] debris_id=2 class=SAFE proximity=122055 size_cm=68 dr_m=121654 dtheta_mdeg=80262
+  [risk-item] debris_id=3 class=SAFE proximity=157452 size_cm=135 dr_m=157183 dtheta_mdeg=53802
+  [risk-item] debris_id=4 class=SAFE proximity=454717 size_cm=66 dr_m=453988 dtheta_mdeg=145830
+  [risk-item] debris_id=5 class=SAFE proximity=1435880 size_cm=24 dr_m=1435679 dtheta_mdeg=40385
+  [risk-item] debris_id=6 class=SAFE proximity=945018 size_cm=218 dr_m=944998 dtheta_mdeg=4091
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=580_s
+  [satellite-state] r_m=6771001 theta_mdeg=36735 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=580_s
+  [transmission-packet] packet_number=30 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=590_s
+  [risk-item] debris_id=1 class=SAFE proximity=8076015 size_cm=240 dr_m=8075556 dtheta_mdeg=91980
+  [risk-item] debris_id=2 class=SAFE proximity=123714 size_cm=68 dr_m=122934 dtheta_mdeg=156172
+  [risk-item] debris_id=3 class=SAFE proximity=161687 size_cm=135 dr_m=160863 dtheta_mdeg=164902
+  [risk-item] debris_id=4 class=SAFE proximity=478933 size_cm=66 dr_m=478278 dtheta_mdeg=131010
+  [risk-item] debris_id=5 class=SAFE proximity=1458480 size_cm=24 dr_m=1457699 dtheta_mdeg=156275
+  [risk-item] debris_id=6 class=SAFE proximity=994061 size_cm=218 dr_m=993648 dtheta_mdeg=82729
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=600_s
+  [risk-item] debris_id=1 class=SAFE proximity=8039820 size_cm=240 dr_m=8039556 dtheta_mdeg=52860
+  [risk-item] debris_id=2 class=SAFE proximity=124853 size_cm=68 dr_m=124214 dtheta_mdeg=127918
+  [risk-item] debris_id=3 class=SAFE proximity=164962 size_cm=135 dr_m=164543 dtheta_mdeg=83998
+  [risk-item] debris_id=4 class=SAFE proximity=502807 size_cm=66 dr_m=502568 dtheta_mdeg=47850
+  [risk-item] debris_id=5 class=SAFE proximity=1480158 size_cm=24 dr_m=1479719 dtheta_mdeg=87835
+  [risk-item] debris_id=6 class=SAFE proximity=1043145 size_cm=218 dr_m=1042298 dtheta_mdeg=169549
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=600_s
+  [satellite-state] r_m=6771001 theta_mdeg=37975 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=600_s
+  [transmission-packet] packet_number=31 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=610_s
+  [risk-item] debris_id=1 class=SAFE proximity=8003624 size_cm=240 dr_m=8003556 dtheta_mdeg=13740
+  [risk-item] debris_id=2 class=SAFE proximity=125754 size_cm=68 dr_m=125494 dtheta_mdeg=52008
+  [risk-item] debris_id=3 class=SAFE proximity=168358 size_cm=135 dr_m=168223 dtheta_mdeg=27102
+  [risk-item] debris_id=4 class=SAFE proximity=527034 size_cm=66 dr_m=526858 dtheta_mdeg=35310
+  [risk-item] debris_id=5 class=SAFE proximity=1501879 size_cm=24 dr_m=1501739 dtheta_mdeg=28055
+  [risk-item] debris_id=6 class=SAFE proximity=1091466 size_cm=218 dr_m=1090948 dtheta_mdeg=103631
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=620_s
+  [risk-item] debris_id=1 class=SAFE proximity=7967682 size_cm=240 dr_m=7967556 dtheta_mdeg=25380
+  [risk-item] debris_id=2 class=SAFE proximity=126893 size_cm=68 dr_m=126774 dtheta_mdeg=23902
+  [risk-item] debris_id=3 class=SAFE proximity=172594 size_cm=135 dr_m=171903 dtheta_mdeg=138202
+  [risk-item] debris_id=4 class=SAFE proximity=551740 size_cm=66 dr_m=551148 dtheta_mdeg=118470
+  [risk-item] debris_id=5 class=SAFE proximity=1524478 size_cm=24 dr_m=1523759 dtheta_mdeg=143945
+  [risk-item] debris_id=6 class=SAFE proximity=1139682 size_cm=218 dr_m=1139598 dtheta_mdeg=16811
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=620_s
+  [satellite-state] r_m=6771001 theta_mdeg=39215 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=620_s
+  [transmission-packet] packet_number=32 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=630_s
+  [risk-item] debris_id=1 class=SAFE proximity=7931878 size_cm=240 dr_m=7931556 dtheta_mdeg=64500
+  [risk-item] debris_id=2 class=SAFE proximity=128553 size_cm=68 dr_m=128054 dtheta_mdeg=99812
+  [risk-item] debris_id=3 class=SAFE proximity=176136 size_cm=135 dr_m=175583 dtheta_mdeg=110698
+  [risk-item] debris_id=4 class=SAFE proximity=576229 size_cm=66 dr_m=575438 dtheta_mdeg=158370
+  [risk-item] debris_id=5 class=SAFE proximity=1546279 size_cm=24 dr_m=1545779 dtheta_mdeg=100165
+  [risk-item] debris_id=6 class=SAFE proximity=1188598 size_cm=218 dr_m=1188248 dtheta_mdeg=70009
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=640_s
+  [risk-item] debris_id=1 class=SAFE proximity=7896074 size_cm=240 dr_m=7895556 dtheta_mdeg=103620
+  [risk-item] debris_id=2 class=SAFE proximity=130212 size_cm=68 dr_m=129334 dtheta_mdeg=175722
+  [risk-item] debris_id=3 class=SAFE proximity=179265 size_cm=135 dr_m=179263 dtheta_mdeg=402
+  [risk-item] debris_id=4 class=SAFE proximity=600104 size_cm=66 dr_m=599728 dtheta_mdeg=75210
+  [risk-item] debris_id=5 class=SAFE proximity=1567877 size_cm=24 dr_m=1567799 dtheta_mdeg=15725
+  [risk-item] debris_id=6 class=SAFE proximity=1237682 size_cm=218 dr_m=1236898 dtheta_mdeg=156829
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=640_s
+  [satellite-state] r_m=6771001 theta_mdeg=40455 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=640_s
+  [transmission-packet] packet_number=33 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=650_s
+  [risk-item] debris_id=1 class=SAFE proximity=7860269 size_cm=240 dr_m=7859556 dtheta_mdeg=142740
+  [risk-item] debris_id=2 class=SAFE proximity=131155 size_cm=68 dr_m=130614 dtheta_mdeg=108368
+  [risk-item] debris_id=3 class=SAFE proximity=183500 size_cm=135 dr_m=182943 dtheta_mdeg=111502
+  [risk-item] debris_id=4 class=SAFE proximity=624057 size_cm=66 dr_m=624018 dtheta_mdeg=7950
+  [risk-item] debris_id=5 class=SAFE proximity=1590477 size_cm=24 dr_m=1589819 dtheta_mdeg=131615
+  [risk-item] debris_id=6 class=SAFE proximity=1286129 size_cm=218 dr_m=1285548 dtheta_mdeg=116351
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=660_s
+  [risk-item] debris_id=1 class=SAFE proximity=7824446 size_cm=240 dr_m=7823556 dtheta_mdeg=178140
+  [risk-item] debris_id=2 class=SAFE proximity=132056 size_cm=68 dr_m=131894 dtheta_mdeg=32458
+  [risk-item] debris_id=3 class=SAFE proximity=187309 size_cm=135 dr_m=186623 dtheta_mdeg=137398
+  [risk-item] debris_id=4 class=SAFE proximity=648763 size_cm=66 dr_m=648308 dtheta_mdeg=91110
+  [risk-item] debris_id=5 class=SAFE proximity=1612401 size_cm=24 dr_m=1611839 dtheta_mdeg=112495
+  [risk-item] debris_id=6 class=SAFE proximity=1334345 size_cm=218 dr_m=1334198 dtheta_mdeg=29531
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=660_s
+  [satellite-state] r_m=6771001 theta_mdeg=41695 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=660_s
+  [transmission-packet] packet_number=34 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=670_s
+  [risk-item] debris_id=1 class=SAFE proximity=7788251 size_cm=240 dr_m=7787556 dtheta_mdeg=139020
+  [risk-item] debris_id=2 class=SAFE proximity=133391 size_cm=68 dr_m=133174 dtheta_mdeg=43452
+  [risk-item] debris_id=3 class=SAFE proximity=190434 size_cm=135 dr_m=190303 dtheta_mdeg=26298
+  [risk-item] debris_id=4 class=SAFE proximity=673469 size_cm=66 dr_m=672598 dtheta_mdeg=174270
+  [risk-item] debris_id=5 class=SAFE proximity=1633875 size_cm=24 dr_m=1633859 dtheta_mdeg=3395
+  [risk-item] debris_id=6 class=SAFE proximity=1383134 size_cm=218 dr_m=1382848 dtheta_mdeg=57289
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=680_s
+  [risk-item] debris_id=1 class=SAFE proximity=7752055 size_cm=240 dr_m=7751556 dtheta_mdeg=99900
+  [risk-item] debris_id=2 class=SAFE proximity=135050 size_cm=68 dr_m=134454 dtheta_mdeg=119362
+  [risk-item] debris_id=3 class=SAFE proximity=194407 size_cm=135 dr_m=193983 dtheta_mdeg=84802
+  [risk-item] debris_id=4 class=SAFE proximity=697400 size_cm=66 dr_m=696888 dtheta_mdeg=102570
+  [risk-item] debris_id=5 class=SAFE proximity=1656475 size_cm=24 dr_m=1655879 dtheta_mdeg=119285
+  [risk-item] debris_id=6 class=SAFE proximity=1432218 size_cm=218 dr_m=1431498 dtheta_mdeg=144109
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=680_s
+  [satellite-state] r_m=6771001 theta_mdeg=42935 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=680_s
+  [transmission-packet] packet_number=35 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=690_s
+  [risk-item] debris_id=1 class=SAFE proximity=7715859 size_cm=240 dr_m=7715556 dtheta_mdeg=60780
+  [risk-item] debris_id=2 class=SAFE proximity=136557 size_cm=68 dr_m=135734 dtheta_mdeg=164728
+  [risk-item] debris_id=3 class=SAFE proximity=198483 size_cm=135 dr_m=197663 dtheta_mdeg=164098
+  [risk-item] debris_id=4 class=SAFE proximity=721275 size_cm=66 dr_m=721178 dtheta_mdeg=19410
+  [risk-item] debris_id=5 class=SAFE proximity=1678523 size_cm=24 dr_m=1677899 dtheta_mdeg=124825
+  [risk-item] debris_id=6 class=SAFE proximity=1480793 size_cm=218 dr_m=1480148 dtheta_mdeg=129071
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=700_s
+  [risk-item] debris_id=1 class=SAFE proximity=7679664 size_cm=240 dr_m=7679556 dtheta_mdeg=21660
+  [risk-item] debris_id=2 class=SAFE proximity=137458 size_cm=68 dr_m=137014 dtheta_mdeg=88818
+  [risk-item] debris_id=3 class=SAFE proximity=201607 size_cm=135 dr_m=201343 dtheta_mdeg=52998
+  [risk-item] debris_id=4 class=SAFE proximity=745786 size_cm=66 dr_m=745468 dtheta_mdeg=63750
+  [risk-item] debris_id=5 class=SAFE proximity=1699963 size_cm=24 dr_m=1699919 dtheta_mdeg=8935
+  [risk-item] debris_id=6 class=SAFE proximity=1529009 size_cm=218 dr_m=1528798 dtheta_mdeg=42251
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=700_s
+  [satellite-state] r_m=6771001 theta_mdeg=44175 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=700_s
+  [transmission-packet] packet_number=36 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=710_s
+  [risk-item] debris_id=1 class=SAFE proximity=7643643 size_cm=240 dr_m=7643556 dtheta_mdeg=17460
+  [risk-item] debris_id=2 class=SAFE proximity=138358 size_cm=68 dr_m=138294 dtheta_mdeg=12908
+  [risk-item] debris_id=3 class=SAFE proximity=205313 size_cm=135 dr_m=205023 dtheta_mdeg=58102
+  [risk-item] debris_id=4 class=SAFE proximity=770492 size_cm=66 dr_m=769758 dtheta_mdeg=146910
+  [risk-item] debris_id=5 class=SAFE proximity=1722473 size_cm=24 dr_m=1721939 dtheta_mdeg=106955
+  [risk-item] debris_id=6 class=SAFE proximity=1577670 size_cm=218 dr_m=1577448 dtheta_mdeg=44569
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=720_s
+  [risk-item] debris_id=1 class=SAFE proximity=7607838 size_cm=240 dr_m=7607556 dtheta_mdeg=56580
+  [risk-item] debris_id=2 class=SAFE proximity=139889 size_cm=68 dr_m=139574 dtheta_mdeg=63002
+  [risk-item] debris_id=3 class=SAFE proximity=209549 size_cm=135 dr_m=208703 dtheta_mdeg=169202
+  [risk-item] debris_id=4 class=SAFE proximity=794697 size_cm=66 dr_m=794048 dtheta_mdeg=129930
+  [risk-item] debris_id=5 class=SAFE proximity=1744644 size_cm=24 dr_m=1743959 dtheta_mdeg=137155
+  [risk-item] debris_id=6 class=SAFE proximity=1626754 size_cm=218 dr_m=1626098 dtheta_mdeg=131389
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=720_s
+  [satellite-state] r_m=6771001 theta_mdeg=45415 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=720_s
+  [transmission-packet] packet_number=37 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=730_s
+  [risk-item] debris_id=1 class=SAFE proximity=7572034 size_cm=240 dr_m=7571556 dtheta_mdeg=95700
+  [risk-item] debris_id=2 class=SAFE proximity=141548 size_cm=68 dr_m=140854 dtheta_mdeg=138912
+  [risk-item] debris_id=3 class=SAFE proximity=212781 size_cm=135 dr_m=212383 dtheta_mdeg=79698
+  [risk-item] debris_id=4 class=SAFE proximity=818571 size_cm=66 dr_m=818338 dtheta_mdeg=46770
+  [risk-item] debris_id=5 class=SAFE proximity=1766085 size_cm=24 dr_m=1765979 dtheta_mdeg=21265
+  [risk-item] debris_id=6 class=SAFE proximity=1675456 size_cm=218 dr_m=1674748 dtheta_mdeg=141791
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=740_s
+  [risk-item] debris_id=1 class=SAFE proximity=7536230 size_cm=240 dr_m=7535556 dtheta_mdeg=134820
+  [risk-item] debris_id=2 class=SAFE proximity=142859 size_cm=68 dr_m=142134 dtheta_mdeg=145178
+  [risk-item] debris_id=3 class=SAFE proximity=216220 size_cm=135 dr_m=216063 dtheta_mdeg=31402
+  [risk-item] debris_id=4 class=SAFE proximity=842809 size_cm=66 dr_m=842628 dtheta_mdeg=36390
+  [risk-item] debris_id=5 class=SAFE proximity=1788472 size_cm=24 dr_m=1787999 dtheta_mdeg=94625
+  [risk-item] debris_id=6 class=SAFE proximity=1723672 size_cm=218 dr_m=1723398 dtheta_mdeg=54971
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=740_s
+  [satellite-state] r_m=6771001 theta_mdeg=46655 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=740_s
+  [transmission-packet] packet_number=38 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=750_s
+  [risk-item] debris_id=1 class=SAFE proximity=7500425 size_cm=240 dr_m=7499556 dtheta_mdeg=173940
+  [risk-item] debris_id=2 class=SAFE proximity=143760 size_cm=68 dr_m=143414 dtheta_mdeg=69268
+  [risk-item] debris_id=3 class=SAFE proximity=220455 size_cm=135 dr_m=219743 dtheta_mdeg=142502
+  [risk-item] debris_id=4 class=SAFE proximity=867515 size_cm=66 dr_m=866918 dtheta_mdeg=119550
+  [risk-item] debris_id=5 class=SAFE proximity=1810766 size_cm=24 dr_m=1810019 dtheta_mdeg=149485
+  [risk-item] debris_id=6 class=SAFE proximity=1772207 size_cm=218 dr_m=1772048 dtheta_mdeg=31849
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=760_s
+  [risk-item] debris_id=1 class=SAFE proximity=7464290 size_cm=240 dr_m=7463556 dtheta_mdeg=146940
+  [risk-item] debris_id=2 class=SAFE proximity=144727 size_cm=68 dr_m=144694 dtheta_mdeg=6642
+  [risk-item] debris_id=3 class=SAFE proximity=223954 size_cm=135 dr_m=223423 dtheta_mdeg=106398
+  [risk-item] debris_id=4 class=SAFE proximity=891994 size_cm=66 dr_m=891208 dtheta_mdeg=157290
+  [risk-item] debris_id=5 class=SAFE proximity=1832206 size_cm=24 dr_m=1832039 dtheta_mdeg=33595
+  [risk-item] debris_id=6 class=SAFE proximity=1821291 size_cm=218 dr_m=1820698 dtheta_mdeg=118669
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=760_s
+  [satellite-state] r_m=6771001 theta_mdeg=47895 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=760_s
+  [transmission-packet] packet_number=39 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=770_s
+  [risk-item] debris_id=1 class=SAFE proximity=7428095 size_cm=240 dr_m=7427556 dtheta_mdeg=107820
+  [risk-item] debris_id=2 class=SAFE proximity=146386 size_cm=68 dr_m=145974 dtheta_mdeg=82552
+  [risk-item] debris_id=3 class=SAFE proximity=227126 size_cm=135 dr_m=227103 dtheta_mdeg=4702
+  [risk-item] debris_id=4 class=SAFE proximity=915868 size_cm=66 dr_m=915498 dtheta_mdeg=74130
+  [risk-item] debris_id=5 class=SAFE proximity=1854470 size_cm=24 dr_m=1854059 dtheta_mdeg=82295
+  [risk-item] debris_id=6 class=SAFE proximity=1870120 size_cm=218 dr_m=1869348 dtheta_mdeg=154511
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=780_s
+  [risk-item] debris_id=1 class=SAFE proximity=7391899 size_cm=240 dr_m=7391556 dtheta_mdeg=68700
+  [risk-item] debris_id=2 class=SAFE proximity=148046 size_cm=68 dr_m=147254 dtheta_mdeg=158462
+  [risk-item] debris_id=3 class=SAFE proximity=231362 size_cm=135 dr_m=230783 dtheta_mdeg=115802
+  [risk-item] debris_id=4 class=SAFE proximity=939833 size_cm=66 dr_m=939788 dtheta_mdeg=9030
+  [risk-item] debris_id=5 class=SAFE proximity=1876888 size_cm=24 dr_m=1876079 dtheta_mdeg=161815
+  [risk-item] debris_id=6 class=SAFE proximity=1918336 size_cm=218 dr_m=1917998 dtheta_mdeg=67691
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=780_s
+  [satellite-state] r_m=6771001 theta_mdeg=49135 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=780_s
+  [transmission-packet] packet_number=40 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=790_s
+  [risk-item] debris_id=1 class=SAFE proximity=7355703 size_cm=240 dr_m=7355556 dtheta_mdeg=29580
+  [risk-item] debris_id=2 class=SAFE proximity=149162 size_cm=68 dr_m=148534 dtheta_mdeg=125628
+  [risk-item] debris_id=3 class=SAFE proximity=235128 size_cm=135 dr_m=234463 dtheta_mdeg=133098
+  [risk-item] debris_id=4 class=SAFE proximity=964538 size_cm=66 dr_m=964078 dtheta_mdeg=92190
+  [risk-item] debris_id=5 class=SAFE proximity=1898328 size_cm=24 dr_m=1898099 dtheta_mdeg=45925
+  [risk-item] debris_id=6 class=SAFE proximity=1966743 size_cm=218 dr_m=1966648 dtheta_mdeg=19129
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=800_s
+  [risk-item] debris_id=1 class=SAFE proximity=7319603 size_cm=240 dr_m=7319556 dtheta_mdeg=9540
+  [risk-item] debris_id=2 class=SAFE proximity=150062 size_cm=68 dr_m=149814 dtheta_mdeg=49718
+  [risk-item] debris_id=3 class=SAFE proximity=238252 size_cm=135 dr_m=238143 dtheta_mdeg=21998
+  [risk-item] debris_id=4 class=SAFE proximity=989244 size_cm=66 dr_m=988368 dtheta_mdeg=175350
+  [risk-item] debris_id=5 class=SAFE proximity=1920468 size_cm=24 dr_m=1920119 dtheta_mdeg=69965
+  [risk-item] debris_id=6 class=SAFE proximity=2015827 size_cm=218 dr_m=2015298 dtheta_mdeg=105949
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=800_s
+  [satellite-state] r_m=6771001 theta_mdeg=50375 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=800_s
+  [transmission-packet] packet_number=41 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=810_s
+  [risk-item] debris_id=1 class=SAFE proximity=7283799 size_cm=240 dr_m=7283556 dtheta_mdeg=48660
+  [risk-item] debris_id=2 class=SAFE proximity=151224 size_cm=68 dr_m=151094 dtheta_mdeg=26192
+  [risk-item] debris_id=3 class=SAFE proximity=242268 size_cm=135 dr_m=241823 dtheta_mdeg=89102
+  [risk-item] debris_id=4 class=SAFE proximity=1013165 size_cm=66 dr_m=1012658 dtheta_mdeg=101490
+  [risk-item] debris_id=5 class=SAFE proximity=1943009 size_cm=24 dr_m=1942139 dtheta_mdeg=174145
+  [risk-item] debris_id=6 class=SAFE proximity=2064784 size_cm=218 dr_m=2063948 dtheta_mdeg=167231
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=820_s
+  [risk-item] debris_id=1 class=SAFE proximity=7247994 size_cm=240 dr_m=7247556 dtheta_mdeg=87780
+  [risk-item] debris_id=2 class=SAFE proximity=152884 size_cm=68 dr_m=152374 dtheta_mdeg=102102
+  [risk-item] debris_id=3 class=SAFE proximity=246301 size_cm=135 dr_m=245503 dtheta_mdeg=159798
+  [risk-item] debris_id=4 class=SAFE proximity=1037039 size_cm=66 dr_m=1036948 dtheta_mdeg=18330
+  [risk-item] debris_id=5 class=SAFE proximity=1964450 size_cm=24 dr_m=1964159 dtheta_mdeg=58255
+  [risk-item] debris_id=6 class=SAFE proximity=2113000 size_cm=218 dr_m=2112598 dtheta_mdeg=80411
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=820_s
+  [satellite-state] r_m=6771001 theta_mdeg=51615 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=820_s
+  [transmission-packet] packet_number=42 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=830_s
+  [risk-item] debris_id=1 class=SAFE proximity=7212190 size_cm=240 dr_m=7211556 dtheta_mdeg=126900
+  [risk-item] debris_id=2 class=SAFE proximity=154544 size_cm=68 dr_m=153654 dtheta_mdeg=178012
+  [risk-item] debris_id=3 class=SAFE proximity=249426 size_cm=135 dr_m=249183 dtheta_mdeg=48698
+  [risk-item] debris_id=4 class=SAFE proximity=1061562 size_cm=66 dr_m=1061238 dtheta_mdeg=64830
+  [risk-item] debris_id=5 class=SAFE proximity=1986467 size_cm=24 dr_m=1986179 dtheta_mdeg=57635
+  [risk-item] debris_id=6 class=SAFE proximity=2161280 size_cm=218 dr_m=2161248 dtheta_mdeg=6409
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=840_s
+  [risk-item] debris_id=1 class=SAFE proximity=7176386 size_cm=240 dr_m=7175556 dtheta_mdeg=166020
+  [risk-item] debris_id=2 class=SAFE proximity=155464 size_cm=68 dr_m=154934 dtheta_mdeg=106078
+  [risk-item] debris_id=3 class=SAFE proximity=253175 size_cm=135 dr_m=252863 dtheta_mdeg=62402
+  [risk-item] debris_id=4 class=SAFE proximity=1086267 size_cm=66 dr_m=1085528 dtheta_mdeg=147990
+  [risk-item] debris_id=5 class=SAFE proximity=2009066 size_cm=24 dr_m=2008199 dtheta_mdeg=173525
+  [risk-item] debris_id=6 class=SAFE proximity=2210364 size_cm=218 dr_m=2209898 dtheta_mdeg=93229
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=840_s
+  [satellite-state] r_m=6771001 theta_mdeg=52855 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=840_s
+  [transmission-packet] packet_number=43 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=850_s
+  [risk-item] debris_id=1 class=SAFE proximity=7140330 size_cm=240 dr_m=7139556 dtheta_mdeg=154860
+  [risk-item] debris_id=2 class=SAFE proximity=156364 size_cm=68 dr_m=156214 dtheta_mdeg=30168
+  [risk-item] debris_id=3 class=SAFE proximity=257410 size_cm=135 dr_m=256543 dtheta_mdeg=173502
+  [risk-item] debris_id=4 class=SAFE proximity=1110462 size_cm=66 dr_m=1109818 dtheta_mdeg=128850
+  [risk-item] debris_id=5 class=SAFE proximity=2030571 size_cm=24 dr_m=2030219 dtheta_mdeg=70585
+  [risk-item] debris_id=6 class=SAFE proximity=2259447 size_cm=218 dr_m=2258548 dtheta_mdeg=179951
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=860_s
+  [risk-item] debris_id=1 class=SAFE proximity=7104134 size_cm=240 dr_m=7103556 dtheta_mdeg=115740
+  [risk-item] debris_id=2 class=SAFE proximity=157722 size_cm=68 dr_m=157494 dtheta_mdeg=45742
+  [risk-item] debris_id=3 class=SAFE proximity=260599 size_cm=135 dr_m=260223 dtheta_mdeg=75398
+  [risk-item] debris_id=4 class=SAFE proximity=1134336 size_cm=66 dr_m=1134108 dtheta_mdeg=45690
+  [risk-item] debris_id=5 class=SAFE proximity=2052465 size_cm=24 dr_m=2052239 dtheta_mdeg=45305
+  [risk-item] debris_id=6 class=SAFE proximity=2307663 size_cm=218 dr_m=2307198 dtheta_mdeg=93131
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=860_s
+  [satellite-state] r_m=6771001 theta_mdeg=54095 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=860_s
+  [transmission-packet] packet_number=44 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=870_s
+  [risk-item] debris_id=1 class=SAFE proximity=7067939 size_cm=240 dr_m=7067556 dtheta_mdeg=76620
+  [risk-item] debris_id=2 class=SAFE proximity=159382 size_cm=68 dr_m=158774 dtheta_mdeg=121652
+  [risk-item] debris_id=3 class=SAFE proximity=264081 size_cm=135 dr_m=263903 dtheta_mdeg=35702
+  [risk-item] debris_id=4 class=SAFE proximity=1158585 size_cm=66 dr_m=1158398 dtheta_mdeg=37470
+  [risk-item] debris_id=5 class=SAFE proximity=2075064 size_cm=24 dr_m=2074259 dtheta_mdeg=161195
+  [risk-item] debris_id=6 class=SAFE proximity=2355879 size_cm=218 dr_m=2355848 dtheta_mdeg=6311
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=880_s
+  [risk-item] debris_id=1 class=SAFE proximity=7031743 size_cm=240 dr_m=7031556 dtheta_mdeg=37500
+  [risk-item] debris_id=2 class=SAFE proximity=160866 size_cm=68 dr_m=160054 dtheta_mdeg=162438
+  [risk-item] debris_id=3 class=SAFE proximity=268317 size_cm=135 dr_m=267583 dtheta_mdeg=146802
+  [risk-item] debris_id=4 class=SAFE proximity=1183291 size_cm=66 dr_m=1182688 dtheta_mdeg=120630
+  [risk-item] debris_id=5 class=SAFE proximity=2096693 size_cm=24 dr_m=2096279 dtheta_mdeg=82915
+  [risk-item] debris_id=6 class=SAFE proximity=2404900 size_cm=218 dr_m=2404498 dtheta_mdeg=80509
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=880_s
+  [satellite-state] r_m=6771001 theta_mdeg=55335 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=880_s
+  [transmission-packet] packet_number=45 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=890_s
+  [risk-item] debris_id=1 class=SAFE proximity=6995564 size_cm=240 dr_m=6995556 dtheta_mdeg=1620
+  [risk-item] debris_id=2 class=SAFE proximity=161766 size_cm=68 dr_m=161334 dtheta_mdeg=86528
+  [risk-item] debris_id=3 class=SAFE proximity=271773 size_cm=135 dr_m=271263 dtheta_mdeg=102098
+  [risk-item] debris_id=4 class=SAFE proximity=1207759 size_cm=66 dr_m=1206978 dtheta_mdeg=156210
+  [risk-item] debris_id=5 class=SAFE proximity=2118463 size_cm=24 dr_m=2118299 dtheta_mdeg=32975
+  [risk-item] debris_id=6 class=SAFE proximity=2453984 size_cm=218 dr_m=2453148 dtheta_mdeg=167329
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=900_s
+  [risk-item] debris_id=1 class=SAFE proximity=6959759 size_cm=240 dr_m=6959556 dtheta_mdeg=40740
+  [risk-item] debris_id=2 class=SAFE proximity=162667 size_cm=68 dr_m=162614 dtheta_mdeg=10618
+  [risk-item] debris_id=3 class=SAFE proximity=274988 size_cm=135 dr_m=274943 dtheta_mdeg=9002
+  [risk-item] debris_id=4 class=SAFE proximity=1231633 size_cm=66 dr_m=1231268 dtheta_mdeg=73050
+  [risk-item] debris_id=5 class=SAFE proximity=2141063 size_cm=24 dr_m=2140319 dtheta_mdeg=148865
+  [risk-item] debris_id=6 class=SAFE proximity=2502327 size_cm=218 dr_m=2501798 dtheta_mdeg=105851
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=900_s
+  [satellite-state] r_m=6771001 theta_mdeg=56575 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=900_s
+  [transmission-packet] packet_number=46 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=910_s
+  [risk-item] debris_id=1 class=SAFE proximity=6923955 size_cm=240 dr_m=6923556 dtheta_mdeg=79860
+  [risk-item] debris_id=2 class=SAFE proximity=164220 size_cm=68 dr_m=163894 dtheta_mdeg=65292
+  [risk-item] debris_id=3 class=SAFE proximity=279223 size_cm=135 dr_m=278623 dtheta_mdeg=120102
+  [risk-item] debris_id=4 class=SAFE proximity=1255608 size_cm=66 dr_m=1255558 dtheta_mdeg=10110
+  [risk-item] debris_id=5 class=SAFE proximity=2162815 size_cm=24 dr_m=2162339 dtheta_mdeg=95245
+  [risk-item] debris_id=6 class=SAFE proximity=2550543 size_cm=218 dr_m=2550448 dtheta_mdeg=19031
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=920_s
+  [risk-item] debris_id=1 class=SAFE proximity=6888150 size_cm=240 dr_m=6887556 dtheta_mdeg=118980
+  [risk-item] debris_id=2 class=SAFE proximity=165880 size_cm=68 dr_m=165174 dtheta_mdeg=141202
+  [risk-item] debris_id=3 class=SAFE proximity=282946 size_cm=135 dr_m=282303 dtheta_mdeg=128798
+  [risk-item] debris_id=4 class=SAFE proximity=1280314 size_cm=66 dr_m=1279848 dtheta_mdeg=93270
+  [risk-item] debris_id=5 class=SAFE proximity=2184462 size_cm=24 dr_m=2184359 dtheta_mdeg=20645
+  [risk-item] debris_id=6 class=SAFE proximity=2599436 size_cm=218 dr_m=2599098 dtheta_mdeg=67789
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=920_s
+  [satellite-state] r_m=6771001 theta_mdeg=57815 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=920_s
+  [transmission-packet] packet_number=47 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=930_s
+  [risk-item] debris_id=1 class=SAFE proximity=6852346 size_cm=240 dr_m=6851556 dtheta_mdeg=158100
+  [risk-item] debris_id=2 class=SAFE proximity=167168 size_cm=68 dr_m=166454 dtheta_mdeg=142888
+  [risk-item] debris_id=3 class=SAFE proximity=286071 size_cm=135 dr_m=285983 dtheta_mdeg=17698
+  [risk-item] debris_id=4 class=SAFE proximity=1305020 size_cm=66 dr_m=1304138 dtheta_mdeg=176430
+  [risk-item] debris_id=5 class=SAFE proximity=2207061 size_cm=24 dr_m=2206379 dtheta_mdeg=136535
+  [risk-item] debris_id=6 class=SAFE proximity=2648521 size_cm=218 dr_m=2647748 dtheta_mdeg=154609
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=940_s
+  [risk-item] debris_id=1 class=SAFE proximity=6816369 size_cm=240 dr_m=6815556 dtheta_mdeg=162780
+  [risk-item] debris_id=2 class=SAFE proximity=168068 size_cm=68 dr_m=167734 dtheta_mdeg=66978
+  [risk-item] debris_id=3 class=SAFE proximity=290130 size_cm=135 dr_m=289663 dtheta_mdeg=93402
+  [risk-item] debris_id=4 class=SAFE proximity=1328930 size_cm=66 dr_m=1328428 dtheta_mdeg=100410
+  [risk-item] debris_id=5 class=SAFE proximity=2228936 size_cm=24 dr_m=2228399 dtheta_mdeg=107575
+  [risk-item] debris_id=6 class=SAFE proximity=2696990 size_cm=218 dr_m=2696398 dtheta_mdeg=118571
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=940_s
+  [satellite-state] r_m=6771001 theta_mdeg=59055 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=940_s
+  [transmission-packet] packet_number=48 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=950_s
+  [risk-item] debris_id=1 class=SAFE proximity=6780174 size_cm=240 dr_m=6779556 dtheta_mdeg=123660
+  [risk-item] debris_id=2 class=SAFE proximity=169058 size_cm=68 dr_m=169014 dtheta_mdeg=8932
+  [risk-item] debris_id=3 class=SAFE proximity=294120 size_cm=135 dr_m=293343 dtheta_mdeg=155498
+  [risk-item] debris_id=4 class=SAFE proximity=1352804 size_cm=66 dr_m=1352718 dtheta_mdeg=17250
+  [risk-item] debris_id=5 class=SAFE proximity=2250460 size_cm=24 dr_m=2250419 dtheta_mdeg=8315
+  [risk-item] debris_id=6 class=SAFE proximity=2745206 size_cm=218 dr_m=2745048 dtheta_mdeg=31751
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=960_s
+  [risk-item] debris_id=1 class=SAFE proximity=6743978 size_cm=240 dr_m=6743556 dtheta_mdeg=84540
+  [risk-item] debris_id=2 class=SAFE proximity=170718 size_cm=68 dr_m=170294 dtheta_mdeg=84842
+  [risk-item] debris_id=3 class=SAFE proximity=297244 size_cm=135 dr_m=297023 dtheta_mdeg=44398
+  [risk-item] debris_id=4 class=SAFE proximity=1377337 size_cm=66 dr_m=1377008 dtheta_mdeg=65910
+  [risk-item] debris_id=5 class=SAFE proximity=2273060 size_cm=24 dr_m=2272439 dtheta_mdeg=124205
+  [risk-item] debris_id=6 class=SAFE proximity=2793973 size_cm=218 dr_m=2793698 dtheta_mdeg=55069
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=960_s
+  [satellite-state] r_m=6771001 theta_mdeg=60295 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=960_s
+  [transmission-packet] packet_number=49 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=970_s
+  [risk-item] debris_id=1 class=SAFE proximity=6707783 size_cm=240 dr_m=6707556 dtheta_mdeg=45420
+  [risk-item] debris_id=2 class=SAFE proximity=172377 size_cm=68 dr_m=171574 dtheta_mdeg=160752
+  [risk-item] debris_id=3 class=SAFE proximity=301036 size_cm=135 dr_m=300703 dtheta_mdeg=66702
+  [risk-item] debris_id=4 class=SAFE proximity=1402043 size_cm=66 dr_m=1401298 dtheta_mdeg=149070
+  [risk-item] debris_id=5 class=SAFE proximity=2295058 size_cm=24 dr_m=2294459 dtheta_mdeg=119905
+  [risk-item] debris_id=6 class=SAFE proximity=2843057 size_cm=218 dr_m=2842348 dtheta_mdeg=141889
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=980_s
+  [risk-item] debris_id=1 class=SAFE proximity=6671587 size_cm=240 dr_m=6671556 dtheta_mdeg=6300
+  [risk-item] debris_id=2 class=SAFE proximity=173470 size_cm=68 dr_m=172854 dtheta_mdeg=123338
+  [risk-item] debris_id=3 class=SAFE proximity=305272 size_cm=135 dr_m=304383 dtheta_mdeg=177802
+  [risk-item] debris_id=4 class=SAFE proximity=1426226 size_cm=66 dr_m=1425588 dtheta_mdeg=127770
+  [risk-item] debris_id=5 class=SAFE proximity=2316499 size_cm=24 dr_m=2316479 dtheta_mdeg=4015
+  [risk-item] debris_id=6 class=SAFE proximity=2891654 size_cm=218 dr_m=2890998 dtheta_mdeg=131291
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=980_s
+  [satellite-state] r_m=6771001 theta_mdeg=61535 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=980_s
+  [transmission-packet] packet_number=50 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=990_s
+  [risk-item] debris_id=1 class=SAFE proximity=6635720 size_cm=240 dr_m=6635556 dtheta_mdeg=32820
+  [risk-item] debris_id=2 class=SAFE proximity=174371 size_cm=68 dr_m=174134 dtheta_mdeg=47428
+  [risk-item] debris_id=3 class=SAFE proximity=308418 size_cm=135 dr_m=308063 dtheta_mdeg=71098
+  [risk-item] debris_id=4 class=SAFE proximity=1450101 size_cm=66 dr_m=1449878 dtheta_mdeg=44610
+  [risk-item] debris_id=5 class=SAFE proximity=2339058 size_cm=24 dr_m=2338499 dtheta_mdeg=111875
+  [risk-item] debris_id=6 class=SAFE proximity=2939870 size_cm=218 dr_m=2939648 dtheta_mdeg=44471
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1000_s
+  [risk-item] debris_id=1 class=SAFE proximity=6599915 size_cm=240 dr_m=6599556 dtheta_mdeg=71940
+  [risk-item] debris_id=2 class=SAFE proximity=175556 size_cm=68 dr_m=175414 dtheta_mdeg=28482
+  [risk-item] debris_id=3 class=SAFE proximity=311943 size_cm=135 dr_m=311743 dtheta_mdeg=40002
+  [risk-item] debris_id=4 class=SAFE proximity=1474360 size_cm=66 dr_m=1474168 dtheta_mdeg=38550
+  [risk-item] debris_id=5 class=SAFE proximity=2361180 size_cm=24 dr_m=2360519 dtheta_mdeg=132235
+  [risk-item] debris_id=6 class=SAFE proximity=2988509 size_cm=218 dr_m=2988298 dtheta_mdeg=42349
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1000_s
+  [satellite-state] r_m=6771001 theta_mdeg=62775 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1000_s
+  [transmission-packet] packet_number=51 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1010_s
+  [risk-item] debris_id=1 class=SAFE proximity=6564111 size_cm=240 dr_m=6563556 dtheta_mdeg=111060
+  [risk-item] debris_id=2 class=SAFE proximity=177215 size_cm=68 dr_m=176694 dtheta_mdeg=104392
+  [risk-item] debris_id=3 class=SAFE proximity=316178 size_cm=135 dr_m=315423 dtheta_mdeg=151102
+  [risk-item] debris_id=4 class=SAFE proximity=1499066 size_cm=66 dr_m=1498458 dtheta_mdeg=121710
+  [risk-item] debris_id=5 class=SAFE proximity=2382620 size_cm=24 dr_m=2382539 dtheta_mdeg=16345
+  [risk-item] debris_id=6 class=SAFE proximity=3037593 size_cm=218 dr_m=3036948 dtheta_mdeg=129169
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1020_s
+  [risk-item] debris_id=1 class=SAFE proximity=6528306 size_cm=240 dr_m=6527556 dtheta_mdeg=150180
+  [risk-item] debris_id=2 class=SAFE proximity=178872 size_cm=68 dr_m=177974 dtheta_mdeg=179698
+  [risk-item] debris_id=3 class=SAFE proximity=319591 size_cm=135 dr_m=319103 dtheta_mdeg=97798
+  [risk-item] debris_id=4 class=SAFE proximity=1523523 size_cm=66 dr_m=1522748 dtheta_mdeg=155130
+  [risk-item] debris_id=5 class=SAFE proximity=2405056 size_cm=24 dr_m=2404559 dtheta_mdeg=99545
+  [risk-item] debris_id=6 class=SAFE proximity=3086318 size_cm=218 dr_m=3085598 dtheta_mdeg=144011
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1020_s
+  [satellite-state] r_m=6771001 theta_mdeg=64015 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1020_s
+  [transmission-packet] packet_number=52 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1030_s
+  [risk-item] debris_id=1 class=SAFE proximity=6492409 size_cm=240 dr_m=6491556 dtheta_mdeg=170700
+  [risk-item] debris_id=2 class=SAFE proximity=179772 size_cm=68 dr_m=179254 dtheta_mdeg=103788
+  [risk-item] debris_id=3 class=SAFE proximity=322849 size_cm=135 dr_m=322783 dtheta_mdeg=13302
+  [risk-item] debris_id=4 class=SAFE proximity=1547397 size_cm=66 dr_m=1547038 dtheta_mdeg=71970
+  [risk-item] debris_id=5 class=SAFE proximity=2427301 size_cm=24 dr_m=2426579 dtheta_mdeg=144565
+  [risk-item] debris_id=6 class=SAFE proximity=3134533 size_cm=218 dr_m=3134248 dtheta_mdeg=57191
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1040_s
+  [risk-item] debris_id=1 class=SAFE proximity=6456213 size_cm=240 dr_m=6455556 dtheta_mdeg=131580
+  [risk-item] debris_id=2 class=SAFE proximity=180673 size_cm=68 dr_m=180534 dtheta_mdeg=27878
+  [risk-item] debris_id=3 class=SAFE proximity=327085 size_cm=135 dr_m=326463 dtheta_mdeg=124402
+  [risk-item] debris_id=4 class=SAFE proximity=1571383 size_cm=66 dr_m=1571328 dtheta_mdeg=11190
+  [risk-item] debris_id=5 class=SAFE proximity=2448742 size_cm=24 dr_m=2448599 dtheta_mdeg=28675
+  [risk-item] debris_id=6 class=SAFE proximity=3183046 size_cm=218 dr_m=3182898 dtheta_mdeg=29629
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1040_s
+  [satellite-state] r_m=6771001 theta_mdeg=65255 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1040_s
+  [transmission-packet] packet_number=53 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1050_s
+  [risk-item] debris_id=1 class=SAFE proximity=6420018 size_cm=240 dr_m=6419556 dtheta_mdeg=92460
+  [risk-item] debris_id=2 class=SAFE proximity=182054 size_cm=68 dr_m=181814 dtheta_mdeg=48032
+  [risk-item] debris_id=3 class=SAFE proximity=330765 size_cm=135 dr_m=330143 dtheta_mdeg=124498
+  [risk-item] debris_id=4 class=SAFE proximity=1596089 size_cm=66 dr_m=1595618 dtheta_mdeg=94350
+  [risk-item] debris_id=5 class=SAFE proximity=2471055 size_cm=24 dr_m=2470619 dtheta_mdeg=87215
+  [risk-item] debris_id=6 class=SAFE proximity=3232130 size_cm=218 dr_m=3231548 dtheta_mdeg=116449
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1060_s
+  [risk-item] debris_id=1 class=SAFE proximity=6383822 size_cm=240 dr_m=6383556 dtheta_mdeg=53340
+  [risk-item] debris_id=2 class=SAFE proximity=183713 size_cm=68 dr_m=183094 dtheta_mdeg=123942
+  [risk-item] debris_id=3 class=SAFE proximity=333889 size_cm=135 dr_m=333823 dtheta_mdeg=13398
+  [risk-item] debris_id=4 class=SAFE proximity=1620795 size_cm=66 dr_m=1619908 dtheta_mdeg=177510
+  [risk-item] debris_id=5 class=SAFE proximity=2493423 size_cm=24 dr_m=2492639 dtheta_mdeg=156895
+  [risk-item] debris_id=6 class=SAFE proximity=3280981 size_cm=218 dr_m=3280198 dtheta_mdeg=156731
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1060_s
+  [satellite-state] r_m=6771001 theta_mdeg=66495 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1060_s
+  [transmission-packet] packet_number=54 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1070_s
+  [risk-item] debris_id=1 class=SAFE proximity=6347627 size_cm=240 dr_m=6347556 dtheta_mdeg=14220
+  [risk-item] debris_id=2 class=SAFE proximity=185174 size_cm=68 dr_m=184374 dtheta_mdeg=160148
+  [risk-item] debris_id=3 class=SAFE proximity=337991 size_cm=135 dr_m=337503 dtheta_mdeg=97702
+  [risk-item] debris_id=4 class=SAFE proximity=1644694 size_cm=66 dr_m=1644198 dtheta_mdeg=99330
+  [risk-item] debris_id=5 class=SAFE proximity=2514864 size_cm=24 dr_m=2514659 dtheta_mdeg=41005
+  [risk-item] debris_id=6 class=SAFE proximity=3329197 size_cm=218 dr_m=3328848 dtheta_mdeg=69911
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1080_s
+  [risk-item] debris_id=1 class=SAFE proximity=6311680 size_cm=240 dr_m=6311556 dtheta_mdeg=24900
+  [risk-item] debris_id=2 class=SAFE proximity=186075 size_cm=68 dr_m=185654 dtheta_mdeg=84238
+  [risk-item] debris_id=3 class=SAFE proximity=341938 size_cm=135 dr_m=341183 dtheta_mdeg=151198
+  [risk-item] debris_id=4 class=SAFE proximity=1668568 size_cm=66 dr_m=1668488 dtheta_mdeg=16170
+  [risk-item] debris_id=5 class=SAFE proximity=2537053 size_cm=24 dr_m=2536679 dtheta_mdeg=74885
+  [risk-item] debris_id=6 class=SAFE proximity=3377582 size_cm=218 dr_m=3377498 dtheta_mdeg=16909
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1080_s
+  [satellite-state] r_m=6771001 theta_mdeg=67735 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1080_s
+  [transmission-packet] packet_number=55 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1090_s
+  [risk-item] debris_id=1 class=SAFE proximity=6275876 size_cm=240 dr_m=6275556 dtheta_mdeg=64020
+  [risk-item] debris_id=2 class=SAFE proximity=186975 size_cm=68 dr_m=186934 dtheta_mdeg=8328
+  [risk-item] debris_id=3 class=SAFE proximity=345063 size_cm=135 dr_m=344863 dtheta_mdeg=40098
+  [risk-item] debris_id=4 class=SAFE proximity=1693112 size_cm=66 dr_m=1692778 dtheta_mdeg=66990
+  [risk-item] debris_id=5 class=SAFE proximity=2559545 size_cm=24 dr_m=2558699 dtheta_mdeg=169225
+  [risk-item] debris_id=6 class=SAFE proximity=3426666 size_cm=218 dr_m=3426148 dtheta_mdeg=103729
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1100_s
+  [risk-item] debris_id=1 class=SAFE proximity=6240071 size_cm=240 dr_m=6239556 dtheta_mdeg=103140
+  [risk-item] debris_id=2 class=SAFE proximity=188551 size_cm=68 dr_m=188214 dtheta_mdeg=67582
+  [risk-item] debris_id=3 class=SAFE proximity=348898 size_cm=135 dr_m=348543 dtheta_mdeg=71002
+  [risk-item] debris_id=4 class=SAFE proximity=1717818 size_cm=66 dr_m=1717068 dtheta_mdeg=150150
+  [risk-item] debris_id=5 class=SAFE proximity=2580985 size_cm=24 dr_m=2580719 dtheta_mdeg=53335
+  [risk-item] debris_id=6 class=SAFE proximity=3475645 size_cm=218 dr_m=3474798 dtheta_mdeg=169451
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1100_s
+  [satellite-state] r_m=6771001 theta_mdeg=68975 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1100_s
+  [transmission-packet] packet_number=56 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1110_s
+  [risk-item] debris_id=1 class=SAFE proximity=6204267 size_cm=240 dr_m=6203556 dtheta_mdeg=142260
+  [risk-item] debris_id=2 class=SAFE proximity=190211 size_cm=68 dr_m=189494 dtheta_mdeg=143492
+  [risk-item] debris_id=3 class=SAFE proximity=353112 size_cm=135 dr_m=352223 dtheta_mdeg=177898
+  [risk-item] debris_id=4 class=SAFE proximity=1741991 size_cm=66 dr_m=1741358 dtheta_mdeg=126690
+  [risk-item] debris_id=5 class=SAFE proximity=2603051 size_cm=24 dr_m=2602739 dtheta_mdeg=62555
+  [risk-item] debris_id=6 class=SAFE proximity=3523861 size_cm=218 dr_m=3523448 dtheta_mdeg=82631
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1120_s
+  [risk-item] debris_id=1 class=SAFE proximity=6168449 size_cm=240 dr_m=6167556 dtheta_mdeg=178620
+  [risk-item] debris_id=2 class=SAFE proximity=191476 size_cm=68 dr_m=190774 dtheta_mdeg=140598
+  [risk-item] debris_id=3 class=SAFE proximity=356236 size_cm=135 dr_m=355903 dtheta_mdeg=66798
+  [risk-item] debris_id=4 class=SAFE proximity=1765865 size_cm=66 dr_m=1765648 dtheta_mdeg=43530
+  [risk-item] debris_id=5 class=SAFE proximity=2625651 size_cm=24 dr_m=2624759 dtheta_mdeg=178445
+  [risk-item] debris_id=6 class=SAFE proximity=3572118 size_cm=218 dr_m=3572098 dtheta_mdeg=4189
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1120_s
+  [satellite-state] r_m=6771001 theta_mdeg=70215 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1120_s
+  [transmission-packet] packet_number=57 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1130_s
+  [risk-item] debris_id=1 class=SAFE proximity=6132253 size_cm=240 dr_m=6131556 dtheta_mdeg=139500
+  [risk-item] debris_id=2 class=SAFE proximity=192377 size_cm=68 dr_m=192054 dtheta_mdeg=64688
+  [risk-item] debris_id=3 class=SAFE proximity=359804 size_cm=135 dr_m=359583 dtheta_mdeg=44302
+  [risk-item] debris_id=4 class=SAFE proximity=1790136 size_cm=66 dr_m=1789938 dtheta_mdeg=39630
+  [risk-item] debris_id=5 class=SAFE proximity=2647107 size_cm=24 dr_m=2646779 dtheta_mdeg=65665
+  [risk-item] debris_id=6 class=SAFE proximity=3621203 size_cm=218 dr_m=3620748 dtheta_mdeg=91009
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1140_s
+  [risk-item] debris_id=1 class=SAFE proximity=6096057 size_cm=240 dr_m=6095556 dtheta_mdeg=100380
+  [risk-item] debris_id=2 class=SAFE proximity=193390 size_cm=68 dr_m=193334 dtheta_mdeg=11222
+  [risk-item] debris_id=3 class=SAFE proximity=364040 size_cm=135 dr_m=363263 dtheta_mdeg=155402
+  [risk-item] debris_id=4 class=SAFE proximity=1814841 size_cm=66 dr_m=1814228 dtheta_mdeg=122790
+  [risk-item] debris_id=5 class=SAFE proximity=2669050 size_cm=24 dr_m=2668799 dtheta_mdeg=50225
+  [risk-item] debris_id=6 class=SAFE proximity=3670287 size_cm=218 dr_m=3669398 dtheta_mdeg=177829
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1140_s
+  [satellite-state] r_m=6771001 theta_mdeg=71455 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1140_s
+  [transmission-packet] packet_number=58 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1150_s
+  [risk-item] debris_id=1 class=SAFE proximity=6059862 size_cm=240 dr_m=6059556 dtheta_mdeg=61260
+  [risk-item] debris_id=2 class=SAFE proximity=195049 size_cm=68 dr_m=194614 dtheta_mdeg=87132
+  [risk-item] debris_id=3 class=SAFE proximity=367410 size_cm=135 dr_m=366943 dtheta_mdeg=93498
+  [risk-item] debris_id=4 class=SAFE proximity=1839288 size_cm=66 dr_m=1838518 dtheta_mdeg=154050
+  [risk-item] debris_id=5 class=SAFE proximity=2691649 size_cm=24 dr_m=2690819 dtheta_mdeg=166115
+  [risk-item] debris_id=6 class=SAFE proximity=3718524 size_cm=218 dr_m=3718048 dtheta_mdeg=95351
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1160_s
+  [risk-item] debris_id=1 class=SAFE proximity=6023666 size_cm=240 dr_m=6023556 dtheta_mdeg=22140
+  [risk-item] debris_id=2 class=SAFE proximity=196709 size_cm=68 dr_m=195894 dtheta_mdeg=163042
+  [risk-item] debris_id=3 class=SAFE proximity=370711 size_cm=135 dr_m=370623 dtheta_mdeg=17602
+  [risk-item] debris_id=4 class=SAFE proximity=1863162 size_cm=66 dr_m=1862808 dtheta_mdeg=70890
+  [risk-item] debris_id=5 class=SAFE proximity=2713228 size_cm=24 dr_m=2712839 dtheta_mdeg=77995
+  [risk-item] debris_id=6 class=SAFE proximity=3766740 size_cm=218 dr_m=3766698 dtheta_mdeg=8531
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1160_s
+  [satellite-state] r_m=6771001 theta_mdeg=72695 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1160_s
+  [transmission-packet] packet_number=59 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1170_s
+  [risk-item] debris_id=1 class=SAFE proximity=5987640 size_cm=240 dr_m=5987556 dtheta_mdeg=16980
+  [risk-item] debris_id=2 class=SAFE proximity=197779 size_cm=68 dr_m=197174 dtheta_mdeg=121048
+  [risk-item] debris_id=3 class=SAFE proximity=374946 size_cm=135 dr_m=374303 dtheta_mdeg=128702
+  [risk-item] debris_id=4 class=SAFE proximity=1887159 size_cm=66 dr_m=1887098 dtheta_mdeg=12270
+  [risk-item] debris_id=5 class=SAFE proximity=2735048 size_cm=24 dr_m=2734859 dtheta_mdeg=37895
+  [risk-item] debris_id=6 class=SAFE proximity=3815739 size_cm=218 dr_m=3815348 dtheta_mdeg=78289
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1180_s
+  [risk-item] debris_id=1 class=SAFE proximity=5951836 size_cm=240 dr_m=5951556 dtheta_mdeg=56100
+  [risk-item] debris_id=2 class=SAFE proximity=198679 size_cm=68 dr_m=198454 dtheta_mdeg=45138
+  [risk-item] debris_id=3 class=SAFE proximity=378583 size_cm=135 dr_m=377983 dtheta_mdeg=120198
+  [risk-item] debris_id=4 class=SAFE proximity=1911865 size_cm=66 dr_m=1911388 dtheta_mdeg=95430
+  [risk-item] debris_id=5 class=SAFE proximity=2757647 size_cm=24 dr_m=2756879 dtheta_mdeg=153785
+  [risk-item] debris_id=6 class=SAFE proximity=3864823 size_cm=218 dr_m=3863998 dtheta_mdeg=165109
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1180_s
+  [satellite-state] r_m=6771001 theta_mdeg=73935 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1180_s
+  [transmission-packet] packet_number=60 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1190_s
+  [risk-item] debris_id=1 class=SAFE proximity=5916032 size_cm=240 dr_m=5915556 dtheta_mdeg=95220
+  [risk-item] debris_id=2 class=SAFE proximity=199887 size_cm=68 dr_m=199734 dtheta_mdeg=30772
+  [risk-item] debris_id=3 class=SAFE proximity=381708 size_cm=135 dr_m=381663 dtheta_mdeg=9098
+  [risk-item] debris_id=4 class=SAFE proximity=1936570 size_cm=66 dr_m=1935678 dtheta_mdeg=178590
+  [risk-item] debris_id=5 class=SAFE proximity=2779350 size_cm=24 dr_m=2778899 dtheta_mdeg=90325
+  [risk-item] debris_id=6 class=SAFE proximity=3913188 size_cm=218 dr_m=3912648 dtheta_mdeg=108071
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1200_s
+  [risk-item] debris_id=1 class=SAFE proximity=5880227 size_cm=240 dr_m=5879556 dtheta_mdeg=134340
+  [risk-item] debris_id=2 class=SAFE proximity=201547 size_cm=68 dr_m=201014 dtheta_mdeg=106682
+  [risk-item] debris_id=3 class=SAFE proximity=385853 size_cm=135 dr_m=385343 dtheta_mdeg=102002
+  [risk-item] debris_id=4 class=SAFE proximity=1960459 size_cm=66 dr_m=1959968 dtheta_mdeg=98250
+  [risk-item] debris_id=5 class=SAFE proximity=2801046 size_cm=24 dr_m=2800919 dtheta_mdeg=25565
+  [risk-item] debris_id=6 class=SAFE proximity=3961404 size_cm=218 dr_m=3961298 dtheta_mdeg=21251
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1200_s
+  [satellite-state] r_m=6771001 theta_mdeg=75175 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1200_s
+  [transmission-packet] packet_number=61 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1210_s
+  [risk-item] debris_id=1 class=SAFE proximity=5844423 size_cm=240 dr_m=5843556 dtheta_mdeg=173460
+  [risk-item] debris_id=2 class=SAFE proximity=203181 size_cm=68 dr_m=202294 dtheta_mdeg=177408
+  [risk-item] debris_id=3 class=SAFE proximity=389757 size_cm=135 dr_m=389023 dtheta_mdeg=146898
+  [risk-item] debris_id=4 class=SAFE proximity=1984333 size_cm=66 dr_m=1984258 dtheta_mdeg=15090
+  [risk-item] debris_id=5 class=SAFE proximity=2823646 size_cm=24 dr_m=2822939 dtheta_mdeg=141455
+  [risk-item] debris_id=6 class=SAFE proximity=4010275 size_cm=218 dr_m=4009948 dtheta_mdeg=65569
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1220_s
+  [risk-item] debris_id=1 class=SAFE proximity=5808293 size_cm=240 dr_m=5807556 dtheta_mdeg=147420
+  [risk-item] debris_id=2 class=SAFE proximity=204081 size_cm=68 dr_m=203574 dtheta_mdeg=101498
+  [risk-item] debris_id=3 class=SAFE proximity=392881 size_cm=135 dr_m=392703 dtheta_mdeg=35798
+  [risk-item] debris_id=4 class=SAFE proximity=2008888 size_cm=66 dr_m=2008548 dtheta_mdeg=68070
+  [risk-item] debris_id=5 class=SAFE proximity=2845472 size_cm=24 dr_m=2844959 dtheta_mdeg=102655
+  [risk-item] debris_id=6 class=SAFE proximity=4059359 size_cm=218 dr_m=4058598 dtheta_mdeg=152389
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1220_s
+  [satellite-state] r_m=6771001 theta_mdeg=76415 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1220_s
+  [transmission-packet] packet_number=62 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1230_s
+  [risk-item] debris_id=1 class=SAFE proximity=5772097 size_cm=240 dr_m=5771556 dtheta_mdeg=108300
+  [risk-item] debris_id=2 class=SAFE proximity=204981 size_cm=68 dr_m=204854 dtheta_mdeg=25588
+  [risk-item] debris_id=3 class=SAFE proximity=396759 size_cm=135 dr_m=396383 dtheta_mdeg=75302
+  [risk-item] debris_id=4 class=SAFE proximity=2033594 size_cm=66 dr_m=2032838 dtheta_mdeg=151230
+  [risk-item] debris_id=5 class=SAFE proximity=2867045 size_cm=24 dr_m=2866979 dtheta_mdeg=13235
+  [risk-item] debris_id=6 class=SAFE proximity=4107851 size_cm=218 dr_m=4107248 dtheta_mdeg=120791
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1240_s
+  [risk-item] debris_id=1 class=SAFE proximity=5735901 size_cm=240 dr_m=5735556 dtheta_mdeg=69180
+  [risk-item] debris_id=2 class=SAFE proximity=206385 size_cm=68 dr_m=206134 dtheta_mdeg=50322
+  [risk-item] debris_id=3 class=SAFE proximity=400930 size_cm=135 dr_m=400063 dtheta_mdeg=173598
+  [risk-item] debris_id=4 class=SAFE proximity=2057756 size_cm=66 dr_m=2057128 dtheta_mdeg=125610
+  [risk-item] debris_id=5 class=SAFE proximity=2889644 size_cm=24 dr_m=2888999 dtheta_mdeg=129125
+  [risk-item] debris_id=6 class=SAFE proximity=4156067 size_cm=218 dr_m=4155898 dtheta_mdeg=33971
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1240_s
+  [satellite-state] r_m=6771001 theta_mdeg=77655 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1240_s
+  [transmission-packet] packet_number=63 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1250_s
+  [risk-item] debris_id=1 class=SAFE proximity=5699706 size_cm=240 dr_m=5699556 dtheta_mdeg=30060
+  [risk-item] debris_id=2 class=SAFE proximity=208045 size_cm=68 dr_m=207414 dtheta_mdeg=126232
+  [risk-item] debris_id=3 class=SAFE proximity=404055 size_cm=135 dr_m=403743 dtheta_mdeg=62498
+  [risk-item] debris_id=4 class=SAFE proximity=2081630 size_cm=66 dr_m=2081418 dtheta_mdeg=42450
+  [risk-item] debris_id=5 class=SAFE proximity=2911593 size_cm=24 dr_m=2911019 dtheta_mdeg=114985
+  [risk-item] debris_id=6 class=SAFE proximity=4204812 size_cm=218 dr_m=4204548 dtheta_mdeg=52849
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1260_s
+  [risk-item] debris_id=1 class=SAFE proximity=5663601 size_cm=240 dr_m=5663556 dtheta_mdeg=9060
+  [risk-item] debris_id=2 class=SAFE proximity=209483 size_cm=68 dr_m=208694 dtheta_mdeg=157858
+  [risk-item] debris_id=3 class=SAFE proximity=407666 size_cm=135 dr_m=407423 dtheta_mdeg=48602
+  [risk-item] debris_id=4 class=SAFE proximity=2105911 size_cm=66 dr_m=2105708 dtheta_mdeg=40710
+  [risk-item] debris_id=5 class=SAFE proximity=2933043 size_cm=24 dr_m=2933039 dtheta_mdeg=905
+  [risk-item] debris_id=6 class=SAFE proximity=4253896 size_cm=218 dr_m=4253198 dtheta_mdeg=139669
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1260_s
+  [satellite-state] r_m=6771001 theta_mdeg=78895 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1260_s
+  [transmission-packet] packet_number=64 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1270_s
+  [risk-item] debris_id=1 class=SAFE proximity=5627796 size_cm=240 dr_m=5627556 dtheta_mdeg=48180
+  [risk-item] debris_id=2 class=SAFE proximity=210383 size_cm=68 dr_m=209974 dtheta_mdeg=81948
+  [risk-item] debris_id=3 class=SAFE proximity=411901 size_cm=135 dr_m=411103 dtheta_mdeg=159702
+  [risk-item] debris_id=4 class=SAFE proximity=2130617 size_cm=66 dr_m=2129998 dtheta_mdeg=123870
+  [risk-item] debris_id=5 class=SAFE proximity=2955642 size_cm=24 dr_m=2955059 dtheta_mdeg=116795
+  [risk-item] debris_id=6 class=SAFE proximity=4302515 size_cm=218 dr_m=4301848 dtheta_mdeg=133511
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1280_s
+  [risk-item] debris_id=1 class=SAFE proximity=5591992 size_cm=240 dr_m=5591556 dtheta_mdeg=87300
+  [risk-item] debris_id=2 class=SAFE proximity=211284 size_cm=68 dr_m=211254 dtheta_mdeg=6038
+  [risk-item] debris_id=3 class=SAFE proximity=415228 size_cm=135 dr_m=414783 dtheta_mdeg=89198
+  [risk-item] debris_id=4 class=SAFE proximity=2155052 size_cm=66 dr_m=2154288 dtheta_mdeg=152970
+  [risk-item] debris_id=5 class=SAFE proximity=2977715 size_cm=24 dr_m=2977079 dtheta_mdeg=127315
+  [risk-item] debris_id=6 class=SAFE proximity=4350731 size_cm=218 dr_m=4350498 dtheta_mdeg=46691
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1280_s
+  [satellite-state] r_m=6771001 theta_mdeg=80135 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1280_s
+  [transmission-packet] packet_number=65 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1290_s
+  [risk-item] debris_id=1 class=SAFE proximity=5556188 size_cm=240 dr_m=5555556 dtheta_mdeg=126420
+  [risk-item] debris_id=2 class=SAFE proximity=212883 size_cm=68 dr_m=212534 dtheta_mdeg=69872
+  [risk-item] debris_id=3 class=SAFE proximity=418572 size_cm=135 dr_m=418463 dtheta_mdeg=21902
+  [risk-item] debris_id=4 class=SAFE proximity=2178927 size_cm=66 dr_m=2178578 dtheta_mdeg=69810
+  [risk-item] debris_id=5 class=SAFE proximity=2999156 size_cm=24 dr_m=2999099 dtheta_mdeg=11425
+  [risk-item] debris_id=6 class=SAFE proximity=4399348 size_cm=218 dr_m=4399148 dtheta_mdeg=40129
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1300_s
+  [risk-item] debris_id=1 class=SAFE proximity=5520383 size_cm=240 dr_m=5519556 dtheta_mdeg=165540
+  [risk-item] debris_id=2 class=SAFE proximity=214542 size_cm=68 dr_m=213814 dtheta_mdeg=145782
+  [risk-item] debris_id=3 class=SAFE proximity=422808 size_cm=135 dr_m=422143 dtheta_mdeg=133002
+  [risk-item] debris_id=4 class=SAFE proximity=2202934 size_cm=66 dr_m=2202868 dtheta_mdeg=13350
+  [risk-item] debris_id=5 class=SAFE proximity=3021641 size_cm=24 dr_m=3021119 dtheta_mdeg=104465
+  [risk-item] debris_id=6 class=SAFE proximity=4448432 size_cm=218 dr_m=4447798 dtheta_mdeg=126949
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1300_s
+  [satellite-state] r_m=6771001 theta_mdeg=81375 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1300_s
+  [transmission-packet] packet_number=66 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1310_s
+  [risk-item] debris_id=1 class=SAFE proximity=5484332 size_cm=240 dr_m=5483556 dtheta_mdeg=155340
+  [risk-item] debris_id=2 class=SAFE proximity=215785 size_cm=68 dr_m=215094 dtheta_mdeg=138308
+  [risk-item] debris_id=3 class=SAFE proximity=426402 size_cm=135 dr_m=425823 dtheta_mdeg=115898
+  [risk-item] debris_id=4 class=SAFE proximity=2227640 size_cm=66 dr_m=2227158 dtheta_mdeg=96510
+  [risk-item] debris_id=5 class=SAFE proximity=3043837 size_cm=24 dr_m=3043139 dtheta_mdeg=139645
+  [risk-item] debris_id=6 class=SAFE proximity=4497179 size_cm=218 dr_m=4496448 dtheta_mdeg=146231
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1320_s
+  [risk-item] debris_id=1 class=SAFE proximity=5448137 size_cm=240 dr_m=5447556 dtheta_mdeg=116220
+  [risk-item] debris_id=2 class=SAFE proximity=216685 size_cm=68 dr_m=216374 dtheta_mdeg=62398
+  [risk-item] debris_id=3 class=SAFE proximity=429526 size_cm=135 dr_m=429503 dtheta_mdeg=4798
+  [risk-item] debris_id=4 class=SAFE proximity=2252346 size_cm=66 dr_m=2251448 dtheta_mdeg=179670
+  [risk-item] debris_id=5 class=SAFE proximity=3065277 size_cm=24 dr_m=3065159 dtheta_mdeg=23755
+  [risk-item] debris_id=6 class=SAFE proximity=4545395 size_cm=218 dr_m=4545098 dtheta_mdeg=59411
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1320_s
+  [satellite-state] r_m=6771001 theta_mdeg=82615 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1320_s
+  [transmission-packet] packet_number=67 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1330_s
+  [risk-item] debris_id=1 class=SAFE proximity=5411941 size_cm=240 dr_m=5411556 dtheta_mdeg=77100
+  [risk-item] debris_id=2 class=SAFE proximity=217721 size_cm=68 dr_m=217654 dtheta_mdeg=13512
+  [risk-item] debris_id=3 class=SAFE proximity=433714 size_cm=135 dr_m=433183 dtheta_mdeg=106302
+  [risk-item] debris_id=4 class=SAFE proximity=2276223 size_cm=66 dr_m=2275738 dtheta_mdeg=97170
+  [risk-item] debris_id=5 class=SAFE proximity=3087639 size_cm=24 dr_m=3087179 dtheta_mdeg=92135
+  [risk-item] debris_id=6 class=SAFE proximity=4593885 size_cm=218 dr_m=4593748 dtheta_mdeg=27409
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1340_s
+  [risk-item] debris_id=1 class=SAFE proximity=5375745 size_cm=240 dr_m=5375556 dtheta_mdeg=37980
+  [risk-item] debris_id=2 class=SAFE proximity=219381 size_cm=68 dr_m=218934 dtheta_mdeg=89422
+  [risk-item] debris_id=3 class=SAFE proximity=437575 size_cm=135 dr_m=436863 dtheta_mdeg=142598
+  [risk-item] debris_id=4 class=SAFE proximity=2300098 size_cm=66 dr_m=2300028 dtheta_mdeg=14010
+  [risk-item] debris_id=5 class=SAFE proximity=3109958 size_cm=24 dr_m=3109199 dtheta_mdeg=151975
+  [risk-item] debris_id=6 class=SAFE proximity=4642969 size_cm=218 dr_m=4642398 dtheta_mdeg=114229
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1340_s
+  [satellite-state] r_m=6771001 theta_mdeg=83855 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1340_s
+  [transmission-packet] packet_number=68 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1350_s
+  [risk-item] debris_id=1 class=SAFE proximity=5339561 size_cm=240 dr_m=5339556 dtheta_mdeg=1140
+  [risk-item] debris_id=2 class=SAFE proximity=221040 size_cm=68 dr_m=220214 dtheta_mdeg=165332
+  [risk-item] debris_id=3 class=SAFE proximity=440700 size_cm=135 dr_m=440543 dtheta_mdeg=31498
+  [risk-item] debris_id=4 class=SAFE proximity=2324663 size_cm=66 dr_m=2324318 dtheta_mdeg=69150
+  [risk-item] debris_id=5 class=SAFE proximity=3131399 size_cm=24 dr_m=3131219 dtheta_mdeg=36085
+  [risk-item] debris_id=6 class=SAFE proximity=4691842 size_cm=218 dr_m=4691048 dtheta_mdeg=158951
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1360_s
+  [risk-item] debris_id=1 class=SAFE proximity=5303757 size_cm=240 dr_m=5303556 dtheta_mdeg=40260
+  [risk-item] debris_id=2 class=SAFE proximity=222087 size_cm=68 dr_m=221494 dtheta_mdeg=118758
+  [risk-item] debris_id=3 class=SAFE proximity=444621 size_cm=135 dr_m=444223 dtheta_mdeg=79602
+  [risk-item] debris_id=4 class=SAFE proximity=2349369 size_cm=66 dr_m=2348608 dtheta_mdeg=152310
+  [risk-item] debris_id=5 class=SAFE proximity=3153638 size_cm=24 dr_m=3153239 dtheta_mdeg=79805
+  [risk-item] debris_id=6 class=SAFE proximity=4740058 size_cm=218 dr_m=4739698 dtheta_mdeg=72131
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1360_s
+  [satellite-state] r_m=6771001 theta_mdeg=85095 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1360_s
+  [transmission-packet] packet_number=69 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1370_s
+  [risk-item] debris_id=1 class=SAFE proximity=5267952 size_cm=240 dr_m=5267556 dtheta_mdeg=79380
+  [risk-item] debris_id=2 class=SAFE proximity=222988 size_cm=68 dr_m=222774 dtheta_mdeg=42848
+  [risk-item] debris_id=3 class=SAFE proximity=448749 size_cm=135 dr_m=447903 dtheta_mdeg=169298
+  [risk-item] debris_id=4 class=SAFE proximity=2373520 size_cm=66 dr_m=2372898 dtheta_mdeg=124530
+  [risk-item] debris_id=5 class=SAFE proximity=3176080 size_cm=24 dr_m=3175259 dtheta_mdeg=164305
+  [risk-item] debris_id=6 class=SAFE proximity=4788421 size_cm=218 dr_m=4788348 dtheta_mdeg=14689
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1380_s
+  [risk-item] debris_id=1 class=SAFE proximity=5232148 size_cm=240 dr_m=5231556 dtheta_mdeg=118500
+  [risk-item] debris_id=2 class=SAFE proximity=224219 size_cm=68 dr_m=224054 dtheta_mdeg=33062
+  [risk-item] debris_id=3 class=SAFE proximity=451873 size_cm=135 dr_m=451583 dtheta_mdeg=58198
+  [risk-item] debris_id=4 class=SAFE proximity=2397394 size_cm=66 dr_m=2397188 dtheta_mdeg=41370
+  [risk-item] debris_id=5 class=SAFE proximity=3197521 size_cm=24 dr_m=3197279 dtheta_mdeg=48415
+  [risk-item] debris_id=6 class=SAFE proximity=4837505 size_cm=218 dr_m=4836998 dtheta_mdeg=101509
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1380_s
+  [satellite-state] r_m=6771001 theta_mdeg=86335 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1380_s
+  [transmission-packet] packet_number=70 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1390_s
+  [risk-item] debris_id=1 class=SAFE proximity=5196344 size_cm=240 dr_m=5195556 dtheta_mdeg=157620
+  [risk-item] debris_id=2 class=SAFE proximity=225878 size_cm=68 dr_m=225334 dtheta_mdeg=108972
+  [risk-item] debris_id=3 class=SAFE proximity=455527 size_cm=135 dr_m=455263 dtheta_mdeg=52902
+  [risk-item] debris_id=4 class=SAFE proximity=2421686 size_cm=66 dr_m=2421478 dtheta_mdeg=41790
+  [risk-item] debris_id=5 class=SAFE proximity=3219636 size_cm=24 dr_m=3219299 dtheta_mdeg=67475
+  [risk-item] debris_id=6 class=SAFE proximity=4886506 size_cm=218 dr_m=4885648 dtheta_mdeg=171671
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1400_s
+  [risk-item] debris_id=1 class=SAFE proximity=5160372 size_cm=240 dr_m=5159556 dtheta_mdeg=163260
+  [risk-item] debris_id=2 class=SAFE proximity=227489 size_cm=68 dr_m=226614 dtheta_mdeg=175118
+  [risk-item] debris_id=3 class=SAFE proximity=459763 size_cm=135 dr_m=458943 dtheta_mdeg=164002
+  [risk-item] debris_id=4 class=SAFE proximity=2446392 size_cm=66 dr_m=2445768 dtheta_mdeg=124950
+  [risk-item] debris_id=5 class=SAFE proximity=3242202 size_cm=24 dr_m=3241319 dtheta_mdeg=176635
+  [risk-item] debris_id=6 class=SAFE proximity=4934722 size_cm=218 dr_m=4934298 dtheta_mdeg=84851
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1400_s
+  [satellite-state] r_m=6771001 theta_mdeg=87575 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1400_s
+  [transmission-packet] packet_number=71 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1410_s
+  [risk-item] debris_id=1 class=SAFE proximity=5124176 size_cm=240 dr_m=5123556 dtheta_mdeg=124140
+  [risk-item] debris_id=2 class=SAFE proximity=228390 size_cm=68 dr_m=227894 dtheta_mdeg=99208
+  [risk-item] debris_id=3 class=SAFE proximity=463047 size_cm=135 dr_m=462623 dtheta_mdeg=84898
+  [risk-item] debris_id=4 class=SAFE proximity=2470817 size_cm=66 dr_m=2470058 dtheta_mdeg=151890
+  [risk-item] debris_id=5 class=SAFE proximity=3263642 size_cm=24 dr_m=3263339 dtheta_mdeg=60745
+  [risk-item] debris_id=6 class=SAFE proximity=4982957 size_cm=218 dr_m=4982948 dtheta_mdeg=1969
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1420_s
+  [risk-item] debris_id=1 class=SAFE proximity=5087981 size_cm=240 dr_m=5087556 dtheta_mdeg=85020
+  [risk-item] debris_id=2 class=SAFE proximity=229290 size_cm=68 dr_m=229174 dtheta_mdeg=23298
+  [risk-item] debris_id=3 class=SAFE proximity=466434 size_cm=135 dr_m=466303 dtheta_mdeg=26202
+  [risk-item] debris_id=4 class=SAFE proximity=2494691 size_cm=66 dr_m=2494348 dtheta_mdeg=68730
+  [risk-item] debris_id=5 class=SAFE proximity=3285634 size_cm=24 dr_m=3285359 dtheta_mdeg=55145
+  [risk-item] debris_id=6 class=SAFE proximity=5032041 size_cm=218 dr_m=5031598 dtheta_mdeg=88789
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1420_s
+  [satellite-state] r_m=6771001 theta_mdeg=88815 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1420_s
+  [transmission-packet] packet_number=72 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1430_s
+  [risk-item] debris_id=1 class=SAFE proximity=5051785 size_cm=240 dr_m=5051556 dtheta_mdeg=45900
+  [risk-item] debris_id=2 class=SAFE proximity=230717 size_cm=68 dr_m=230454 dtheta_mdeg=52612
+  [risk-item] debris_id=3 class=SAFE proximity=470669 size_cm=135 dr_m=469983 dtheta_mdeg=137302
+  [risk-item] debris_id=4 class=SAFE proximity=2518710 size_cm=66 dr_m=2518638 dtheta_mdeg=14430
+  [risk-item] debris_id=5 class=SAFE proximity=3308234 size_cm=24 dr_m=3307379 dtheta_mdeg=171035
+  [risk-item] debris_id=6 class=SAFE proximity=5081126 size_cm=218 dr_m=5080248 dtheta_mdeg=175609
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1440_s
+  [risk-item] debris_id=1 class=SAFE proximity=5015589 size_cm=240 dr_m=5015556 dtheta_mdeg=6780
+  [risk-item] debris_id=2 class=SAFE proximity=232376 size_cm=68 dr_m=231734 dtheta_mdeg=128522
+  [risk-item] debris_id=3 class=SAFE proximity=474220 size_cm=135 dr_m=473663 dtheta_mdeg=111598
+  [risk-item] debris_id=4 class=SAFE proximity=2543415 size_cm=66 dr_m=2542928 dtheta_mdeg=97590
+  [risk-item] debris_id=5 class=SAFE proximity=3329764 size_cm=24 dr_m=3329399 dtheta_mdeg=73075
+  [risk-item] debris_id=6 class=SAFE proximity=5129385 size_cm=218 dr_m=5128898 dtheta_mdeg=97571
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1440_s
+  [satellite-state] r_m=6771001 theta_mdeg=90055 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1440_s
+  [transmission-packet] packet_number=73 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1450_s
+  [risk-item] debris_id=1 class=SAFE proximity=4979717 size_cm=240 dr_m=4979556 dtheta_mdeg=32340
+  [risk-item] debris_id=2 class=SAFE proximity=233791 size_cm=68 dr_m=233014 dtheta_mdeg=155568
+  [risk-item] debris_id=3 class=SAFE proximity=477345 size_cm=135 dr_m=477343 dtheta_mdeg=498
+  [risk-item] debris_id=4 class=SAFE proximity=2568114 size_cm=66 dr_m=2567218 dtheta_mdeg=179250
+  [risk-item] debris_id=5 class=SAFE proximity=3351633 size_cm=24 dr_m=3351419 dtheta_mdeg=42815
+  [risk-item] debris_id=6 class=SAFE proximity=5177601 size_cm=218 dr_m=5177548 dtheta_mdeg=10751
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1460_s
+  [risk-item] debris_id=1 class=SAFE proximity=4943913 size_cm=240 dr_m=4943556 dtheta_mdeg=71460
+  [risk-item] debris_id=2 class=SAFE proximity=234692 size_cm=68 dr_m=234294 dtheta_mdeg=79658
+  [risk-item] debris_id=3 class=SAFE proximity=481576 size_cm=135 dr_m=481023 dtheta_mdeg=110602
+  [risk-item] debris_id=4 class=SAFE proximity=2591988 size_cm=66 dr_m=2591508 dtheta_mdeg=96090
+  [risk-item] debris_id=5 class=SAFE proximity=3374232 size_cm=24 dr_m=3373439 dtheta_mdeg=158705
+  [risk-item] debris_id=6 class=SAFE proximity=5226578 size_cm=218 dr_m=5226198 dtheta_mdeg=76069
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1460_s
+  [satellite-state] r_m=6771001 theta_mdeg=91295 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1460_s
+  [transmission-packet] packet_number=74 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1470_s
+  [risk-item] debris_id=1 class=SAFE proximity=4908108 size_cm=240 dr_m=4907556 dtheta_mdeg=110580
+  [risk-item] debris_id=2 class=SAFE proximity=235592 size_cm=68 dr_m=235574 dtheta_mdeg=3748
+  [risk-item] debris_id=3 class=SAFE proximity=485394 size_cm=135 dr_m=484703 dtheta_mdeg=138298
+  [risk-item] debris_id=4 class=SAFE proximity=2615862 size_cm=66 dr_m=2615798 dtheta_mdeg=12930
+  [risk-item] debris_id=5 class=SAFE proximity=3395886 size_cm=24 dr_m=3395459 dtheta_mdeg=85405
+  [risk-item] debris_id=6 class=SAFE proximity=5275662 size_cm=218 dr_m=5274848 dtheta_mdeg=162889
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1480_s
+  [risk-item] debris_id=1 class=SAFE proximity=4872304 size_cm=240 dr_m=4871556 dtheta_mdeg=149700
+  [risk-item] debris_id=2 class=SAFE proximity=237214 size_cm=68 dr_m=236854 dtheta_mdeg=72162
+  [risk-item] debris_id=3 class=SAFE proximity=488518 size_cm=135 dr_m=488383 dtheta_mdeg=27198
+  [risk-item] debris_id=4 class=SAFE proximity=2640439 size_cm=66 dr_m=2640088 dtheta_mdeg=70230
+  [risk-item] debris_id=5 class=SAFE proximity=3417631 size_cm=24 dr_m=3417479 dtheta_mdeg=30485
+  [risk-item] debris_id=6 class=SAFE proximity=5324049 size_cm=218 dr_m=5323498 dtheta_mdeg=110291
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1480_s
+  [satellite-state] r_m=6771001 theta_mdeg=92535 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1480_s
+  [transmission-packet] packet_number=75 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1490_s
+  [risk-item] debris_id=1 class=SAFE proximity=4836411 size_cm=240 dr_m=4835556 dtheta_mdeg=171180
+  [risk-item] debris_id=2 class=SAFE proximity=238874 size_cm=68 dr_m=238134 dtheta_mdeg=148072
+  [risk-item] debris_id=3 class=SAFE proximity=492482 size_cm=135 dr_m=492063 dtheta_mdeg=83902
+  [risk-item] debris_id=4 class=SAFE proximity=2665144 size_cm=66 dr_m=2664378 dtheta_mdeg=153390
+  [risk-item] debris_id=5 class=SAFE proximity=3440230 size_cm=24 dr_m=3439499 dtheta_mdeg=146375
+  [risk-item] debris_id=6 class=SAFE proximity=5372265 size_cm=218 dr_m=5372148 dtheta_mdeg=23471
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1500_s
+  [risk-item] debris_id=1 class=SAFE proximity=4800216 size_cm=240 dr_m=4799556 dtheta_mdeg=132060
+  [risk-item] debris_id=2 class=SAFE proximity=240094 size_cm=68 dr_m=239414 dtheta_mdeg=136018
+  [risk-item] debris_id=3 class=SAFE proximity=496567 size_cm=135 dr_m=495743 dtheta_mdeg=164998
+  [risk-item] debris_id=4 class=SAFE proximity=2689285 size_cm=66 dr_m=2688668 dtheta_mdeg=123450
+  [risk-item] debris_id=5 class=SAFE proximity=3462007 size_cm=24 dr_m=3461519 dtheta_mdeg=97735
+  [risk-item] debris_id=6 class=SAFE proximity=5421114 size_cm=218 dr_m=5420798 dtheta_mdeg=63349
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1500_s
+  [satellite-state] r_m=6771001 theta_mdeg=93775 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1500_s
+  [transmission-packet] packet_number=76 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1510_s
+  [risk-item] debris_id=1 class=SAFE proximity=4764020 size_cm=240 dr_m=4763556 dtheta_mdeg=92940
+  [risk-item] debris_id=2 class=SAFE proximity=240994 size_cm=68 dr_m=240694 dtheta_mdeg=60108
+  [risk-item] debris_id=3 class=SAFE proximity=499692 size_cm=135 dr_m=499423 dtheta_mdeg=53898
+  [risk-item] debris_id=4 class=SAFE proximity=2713159 size_cm=66 dr_m=2712958 dtheta_mdeg=40290
+  [risk-item] debris_id=5 class=SAFE proximity=3483629 size_cm=24 dr_m=3483539 dtheta_mdeg=18155
+  [risk-item] debris_id=6 class=SAFE proximity=5470198 size_cm=218 dr_m=5469448 dtheta_mdeg=150169
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1520_s
+  [risk-item] debris_id=1 class=SAFE proximity=4727825 size_cm=240 dr_m=4727556 dtheta_mdeg=53820
+  [risk-item] debris_id=2 class=SAFE proximity=242053 size_cm=68 dr_m=241974 dtheta_mdeg=15802
+  [risk-item] debris_id=3 class=SAFE proximity=503389 size_cm=135 dr_m=503103 dtheta_mdeg=57202
+  [risk-item] debris_id=4 class=SAFE proximity=2737462 size_cm=66 dr_m=2737248 dtheta_mdeg=42870
+  [risk-item] debris_id=5 class=SAFE proximity=3506229 size_cm=24 dr_m=3505559 dtheta_mdeg=134045
+  [risk-item] debris_id=6 class=SAFE proximity=5518713 size_cm=218 dr_m=5518098 dtheta_mdeg=123011
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1520_s
+  [satellite-state] r_m=6771001 theta_mdeg=95015 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1520_s
+  [transmission-packet] packet_number=77 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1530_s
+  [risk-item] debris_id=1 class=SAFE proximity=4691629 size_cm=240 dr_m=4691556 dtheta_mdeg=14700
+  [risk-item] debris_id=2 class=SAFE proximity=243712 size_cm=68 dr_m=243254 dtheta_mdeg=91712
+  [risk-item] debris_id=3 class=SAFE proximity=507624 size_cm=135 dr_m=506783 dtheta_mdeg=168302
+  [risk-item] debris_id=4 class=SAFE proximity=2762168 size_cm=66 dr_m=2761538 dtheta_mdeg=126030
+  [risk-item] debris_id=5 class=SAFE proximity=3528129 size_cm=24 dr_m=3527579 dtheta_mdeg=110065
+  [risk-item] debris_id=6 class=SAFE proximity=5566928 size_cm=218 dr_m=5566748 dtheta_mdeg=36191
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1540_s
+  [risk-item] debris_id=1 class=SAFE proximity=4655678 size_cm=240 dr_m=4655556 dtheta_mdeg=24420
+  [risk-item] debris_id=2 class=SAFE proximity=245372 size_cm=68 dr_m=244534 dtheta_mdeg=167622
+  [risk-item] debris_id=3 class=SAFE proximity=510865 size_cm=135 dr_m=510463 dtheta_mdeg=80598
+  [risk-item] debris_id=4 class=SAFE proximity=2786582 size_cm=66 dr_m=2785828 dtheta_mdeg=150810
+  [risk-item] debris_id=5 class=SAFE proximity=3549628 size_cm=24 dr_m=3549599 dtheta_mdeg=5825
+  [risk-item] debris_id=6 class=SAFE proximity=5615651 size_cm=218 dr_m=5615398 dtheta_mdeg=50629
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1540_s
+  [satellite-state] r_m=6771001 theta_mdeg=96255 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1540_s
+  [transmission-packet] packet_number=78 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1550_s
+  [risk-item] debris_id=1 class=SAFE proximity=4619873 size_cm=240 dr_m=4619556 dtheta_mdeg=63540
+  [risk-item] debris_id=2 class=SAFE proximity=246396 size_cm=68 dr_m=245814 dtheta_mdeg=116468
+  [risk-item] debris_id=3 class=SAFE proximity=514295 size_cm=135 dr_m=514143 dtheta_mdeg=30502
+  [risk-item] debris_id=4 class=SAFE proximity=2810456 size_cm=66 dr_m=2810118 dtheta_mdeg=67650
+  [risk-item] debris_id=5 class=SAFE proximity=3572227 size_cm=24 dr_m=3571619 dtheta_mdeg=121715
+  [risk-item] debris_id=6 class=SAFE proximity=5664735 size_cm=218 dr_m=5664048 dtheta_mdeg=137449
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1560_s
+  [risk-item] debris_id=1 class=SAFE proximity=4584069 size_cm=240 dr_m=4583556 dtheta_mdeg=102660
+  [risk-item] debris_id=2 class=SAFE proximity=247296 size_cm=68 dr_m=247094 dtheta_mdeg=40558
+  [risk-item] debris_id=3 class=SAFE proximity=518531 size_cm=135 dr_m=517823 dtheta_mdeg=141602
+  [risk-item] debris_id=4 class=SAFE proximity=2834485 size_cm=66 dr_m=2834408 dtheta_mdeg=15510
+  [risk-item] debris_id=5 class=SAFE proximity=3594250 size_cm=24 dr_m=3593639 dtheta_mdeg=122395
+  [risk-item] debris_id=6 class=SAFE proximity=5713376 size_cm=218 dr_m=5712698 dtheta_mdeg=135731
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1560_s
+  [satellite-state] r_m=6771001 theta_mdeg=97495 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1560_s
+  [transmission-packet] packet_number=79 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1570_s
+  [risk-item] debris_id=1 class=SAFE proximity=4548264 size_cm=240 dr_m=4547556 dtheta_mdeg=141780
+  [risk-item] debris_id=2 class=SAFE proximity=248550 size_cm=68 dr_m=248374 dtheta_mdeg=35352
+  [risk-item] debris_id=3 class=SAFE proximity=522039 size_cm=135 dr_m=521503 dtheta_mdeg=107298
+  [risk-item] debris_id=4 class=SAFE proximity=2859191 size_cm=66 dr_m=2858698 dtheta_mdeg=98670
+  [risk-item] debris_id=5 class=SAFE proximity=3615691 size_cm=24 dr_m=3615659 dtheta_mdeg=6505
+  [risk-item] debris_id=6 class=SAFE proximity=5761592 size_cm=218 dr_m=5761348 dtheta_mdeg=48911
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1580_s
+  [risk-item] debris_id=1 class=SAFE proximity=4512451 size_cm=240 dr_m=4511556 dtheta_mdeg=179100
+  [risk-item] debris_id=2 class=SAFE proximity=250210 size_cm=68 dr_m=249654 dtheta_mdeg=111262
+  [risk-item] debris_id=3 class=SAFE proximity=525202 size_cm=135 dr_m=525183 dtheta_mdeg=3802
+  [risk-item] debris_id=4 class=SAFE proximity=2883878 size_cm=66 dr_m=2882988 dtheta_mdeg=178170
+  [risk-item] debris_id=5 class=SAFE proximity=3638225 size_cm=24 dr_m=3637679 dtheta_mdeg=109385
+  [risk-item] debris_id=6 class=SAFE proximity=5810187 size_cm=218 dr_m=5809998 dtheta_mdeg=37909
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1580_s
+  [satellite-state] r_m=6771001 theta_mdeg=98735 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1580_s
+  [transmission-packet] packet_number=80 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1590_s
+  [risk-item] debris_id=1 class=SAFE proximity=4476255 size_cm=240 dr_m=4475556 dtheta_mdeg=139980
+  [risk-item] debris_id=2 class=SAFE proximity=251798 size_cm=68 dr_m=250934 dtheta_mdeg=172828
+  [risk-item] debris_id=3 class=SAFE proximity=529437 size_cm=135 dr_m=528863 dtheta_mdeg=114902
+  [risk-item] debris_id=4 class=SAFE proximity=2907753 size_cm=66 dr_m=2907278 dtheta_mdeg=95010
+  [risk-item] debris_id=5 class=SAFE proximity=3660372 size_cm=24 dr_m=3659699 dtheta_mdeg=134725
+  [risk-item] debris_id=6 class=SAFE proximity=5859271 size_cm=218 dr_m=5858648 dtheta_mdeg=124729
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1600_s
+  [risk-item] debris_id=1 class=SAFE proximity=4440060 size_cm=240 dr_m=4439556 dtheta_mdeg=100860
+  [risk-item] debris_id=2 class=SAFE proximity=252698 size_cm=68 dr_m=252214 dtheta_mdeg=96918
+  [risk-item] debris_id=3 class=SAFE proximity=533212 size_cm=135 dr_m=532543 dtheta_mdeg=133998
+  [risk-item] debris_id=4 class=SAFE proximity=2931627 size_cm=66 dr_m=2931568 dtheta_mdeg=11850
+  [risk-item] debris_id=5 class=SAFE proximity=3681813 size_cm=24 dr_m=3681719 dtheta_mdeg=18835
+  [risk-item] debris_id=6 class=SAFE proximity=5908040 size_cm=218 dr_m=5907298 dtheta_mdeg=148451
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1600_s
+  [satellite-state] r_m=6771001 theta_mdeg=99975 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1600_s
+  [transmission-packet] packet_number=81 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1610_s
+  [risk-item] debris_id=1 class=SAFE proximity=4403864 size_cm=240 dr_m=4403556 dtheta_mdeg=61740
+  [risk-item] debris_id=2 class=SAFE proximity=253599 size_cm=68 dr_m=253494 dtheta_mdeg=21008
+  [risk-item] debris_id=3 class=SAFE proximity=536337 size_cm=135 dr_m=536223 dtheta_mdeg=22898
+  [risk-item] debris_id=4 class=SAFE proximity=2956214 size_cm=66 dr_m=2955858 dtheta_mdeg=71310
+  [risk-item] debris_id=5 class=SAFE proximity=3704224 size_cm=24 dr_m=3703739 dtheta_mdeg=97055
+  [risk-item] debris_id=6 class=SAFE proximity=5956256 size_cm=218 dr_m=5955948 dtheta_mdeg=61631
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1620_s
+  [risk-item] debris_id=1 class=SAFE proximity=4367669 size_cm=240 dr_m=4367556 dtheta_mdeg=22620
+  [risk-item] debris_id=2 class=SAFE proximity=255048 size_cm=68 dr_m=254774 dtheta_mdeg=54902
+  [risk-item] debris_id=3 class=SAFE proximity=540344 size_cm=135 dr_m=539903 dtheta_mdeg=88202
+  [risk-item] debris_id=4 class=SAFE proximity=2980920 size_cm=66 dr_m=2980148 dtheta_mdeg=154470
+  [risk-item] debris_id=5 class=SAFE proximity=3726494 size_cm=24 dr_m=3725759 dtheta_mdeg=147055
+  [risk-item] debris_id=6 class=SAFE proximity=6004723 size_cm=218 dr_m=6004598 dtheta_mdeg=25189
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1620_s
+  [satellite-state] r_m=6771001 theta_mdeg=101215 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1620_s
+  [transmission-packet] packet_number=82 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1630_s
+  [risk-item] debris_id=1 class=SAFE proximity=4331638 size_cm=240 dr_m=4331556 dtheta_mdeg=16500
+  [risk-item] debris_id=2 class=SAFE proximity=256708 size_cm=68 dr_m=256054 dtheta_mdeg=130812
+  [risk-item] debris_id=3 class=SAFE proximity=544386 size_cm=135 dr_m=543583 dtheta_mdeg=160698
+  [risk-item] debris_id=4 class=SAFE proximity=3005049 size_cm=66 dr_m=3004438 dtheta_mdeg=122370
+  [risk-item] debris_id=5 class=SAFE proximity=3747934 size_cm=24 dr_m=3747779 dtheta_mdeg=31165
+  [risk-item] debris_id=6 class=SAFE proximity=6053808 size_cm=218 dr_m=6053248 dtheta_mdeg=112009
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1640_s
+  [risk-item] debris_id=1 class=SAFE proximity=4295834 size_cm=240 dr_m=4295556 dtheta_mdeg=55620
+  [risk-item] debris_id=2 class=SAFE proximity=258100 size_cm=68 dr_m=257334 dtheta_mdeg=153278
+  [risk-item] debris_id=3 class=SAFE proximity=547510 size_cm=135 dr_m=547263 dtheta_mdeg=49598
+  [risk-item] debris_id=4 class=SAFE proximity=3028924 size_cm=66 dr_m=3028728 dtheta_mdeg=39210
+  [risk-item] debris_id=5 class=SAFE proximity=3770222 size_cm=24 dr_m=3769799 dtheta_mdeg=84725
+  [risk-item] debris_id=6 class=SAFE proximity=6102703 size_cm=218 dr_m=6101898 dtheta_mdeg=161171
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1640_s
+  [satellite-state] r_m=6771001 theta_mdeg=102455 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1640_s
+  [transmission-packet] packet_number=83 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1650_s
+  [risk-item] debris_id=1 class=SAFE proximity=4260029 size_cm=240 dr_m=4259556 dtheta_mdeg=94740
+  [risk-item] debris_id=2 class=SAFE proximity=259000 size_cm=68 dr_m=258614 dtheta_mdeg=77368
+  [risk-item] debris_id=3 class=SAFE proximity=551250 size_cm=135 dr_m=550943 dtheta_mdeg=61502
+  [risk-item] debris_id=4 class=SAFE proximity=3053237 size_cm=66 dr_m=3053018 dtheta_mdeg=43950
+  [risk-item] debris_id=5 class=SAFE proximity=3792615 size_cm=24 dr_m=3791819 dtheta_mdeg=159385
+  [risk-item] debris_id=6 class=SAFE proximity=6150919 size_cm=218 dr_m=6150548 dtheta_mdeg=74351
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1660_s
+  [risk-item] debris_id=1 class=SAFE proximity=4224225 size_cm=240 dr_m=4223556 dtheta_mdeg=133860
+  [risk-item] debris_id=2 class=SAFE proximity=259901 size_cm=68 dr_m=259894 dtheta_mdeg=1458
+  [risk-item] debris_id=3 class=SAFE proximity=555486 size_cm=135 dr_m=554623 dtheta_mdeg=172602
+  [risk-item] debris_id=4 class=SAFE proximity=3077943 size_cm=66 dr_m=3077308 dtheta_mdeg=127110
+  [risk-item] debris_id=5 class=SAFE proximity=3814056 size_cm=24 dr_m=3813839 dtheta_mdeg=43495
+  [risk-item] debris_id=6 class=SAFE proximity=6199260 size_cm=218 dr_m=6199198 dtheta_mdeg=12469
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1660_s
+  [satellite-state] r_m=6771001 theta_mdeg=103695 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1660_s
+  [transmission-packet] packet_number=84 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1670_s
+  [risk-item] debris_id=1 class=SAFE proximity=4188420 size_cm=240 dr_m=4187556 dtheta_mdeg=172980
+  [risk-item] debris_id=2 class=SAFE proximity=261546 size_cm=68 dr_m=261174 dtheta_mdeg=74452
+  [risk-item] debris_id=3 class=SAFE proximity=558684 size_cm=135 dr_m=558303 dtheta_mdeg=76298
+  [risk-item] debris_id=4 class=SAFE proximity=3102346 size_cm=66 dr_m=3101598 dtheta_mdeg=149730
+  [risk-item] debris_id=5 class=SAFE proximity=3836220 size_cm=24 dr_m=3835859 dtheta_mdeg=72395
+  [risk-item] debris_id=6 class=SAFE proximity=6248344 size_cm=218 dr_m=6247848 dtheta_mdeg=99289
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1680_s
+  [risk-item] debris_id=1 class=SAFE proximity=4152295 size_cm=240 dr_m=4151556 dtheta_mdeg=147900
+  [risk-item] debris_id=2 class=SAFE proximity=263205 size_cm=68 dr_m=262454 dtheta_mdeg=150362
+  [risk-item] debris_id=3 class=SAFE proximity=562157 size_cm=135 dr_m=561983 dtheta_mdeg=34802
+  [risk-item] debris_id=4 class=SAFE proximity=3126220 size_cm=66 dr_m=3125888 dtheta_mdeg=66570
+  [risk-item] debris_id=5 class=SAFE proximity=3858737 size_cm=24 dr_m=3857879 dtheta_mdeg=171715
+  [risk-item] debris_id=6 class=SAFE proximity=6297367 size_cm=218 dr_m=6296498 dtheta_mdeg=173891
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1680_s
+  [satellite-state] r_m=6771001 theta_mdeg=104935 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1680_s
+  [transmission-packet] packet_number=85 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1690_s
+  [risk-item] debris_id=1 class=SAFE proximity=4116099 size_cm=240 dr_m=4115556 dtheta_mdeg=108780
+  [risk-item] debris_id=2 class=SAFE proximity=264402 size_cm=68 dr_m=263734 dtheta_mdeg=133728
+  [risk-item] debris_id=3 class=SAFE proximity=566392 size_cm=135 dr_m=565663 dtheta_mdeg=145902
+  [risk-item] debris_id=4 class=SAFE proximity=3150260 size_cm=66 dr_m=3150178 dtheta_mdeg=16590
+  [risk-item] debris_id=5 class=SAFE proximity=3880178 size_cm=24 dr_m=3879899 dtheta_mdeg=55825
+  [risk-item] debris_id=6 class=SAFE proximity=6345583 size_cm=218 dr_m=6345148 dtheta_mdeg=87071
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1700_s
+  [risk-item] debris_id=1 class=SAFE proximity=4079904 size_cm=240 dr_m=4079556 dtheta_mdeg=69660
+  [risk-item] debris_id=2 class=SAFE proximity=265303 size_cm=68 dr_m=265014 dtheta_mdeg=57818
+  [risk-item] debris_id=3 class=SAFE proximity=569857 size_cm=135 dr_m=569343 dtheta_mdeg=102998
+  [risk-item] debris_id=4 class=SAFE proximity=3174966 size_cm=66 dr_m=3174468 dtheta_mdeg=99750
+  [risk-item] debris_id=5 class=SAFE proximity=3902219 size_cm=24 dr_m=3901919 dtheta_mdeg=60065
+  [risk-item] debris_id=6 class=SAFE proximity=6393799 size_cm=218 dr_m=6393798 dtheta_mdeg=251
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1700_s
+  [satellite-state] r_m=6771001 theta_mdeg=106175 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1700_s
+  [transmission-packet] packet_number=86 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1710_s
+  [risk-item] debris_id=1 class=SAFE proximity=4043708 size_cm=240 dr_m=4043556 dtheta_mdeg=30540
+  [risk-item] debris_id=2 class=SAFE proximity=266384 size_cm=68 dr_m=266294 dtheta_mdeg=18092
+  [risk-item] debris_id=3 class=SAFE proximity=573063 size_cm=135 dr_m=573023 dtheta_mdeg=8102
+  [risk-item] debris_id=4 class=SAFE proximity=3199643 size_cm=66 dr_m=3198758 dtheta_mdeg=177090
+  [risk-item] debris_id=5 class=SAFE proximity=3924818 size_cm=24 dr_m=3923939 dtheta_mdeg=175955
+  [risk-item] debris_id=6 class=SAFE proximity=6442880 size_cm=218 dr_m=6442448 dtheta_mdeg=86569
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1720_s
+  [risk-item] debris_id=1 class=SAFE proximity=4007598 size_cm=240 dr_m=4007556 dtheta_mdeg=8580
+  [risk-item] debris_id=2 class=SAFE proximity=268044 size_cm=68 dr_m=267574 dtheta_mdeg=94002
+  [risk-item] debris_id=3 class=SAFE proximity=577299 size_cm=135 dr_m=576703 dtheta_mdeg=119202
+  [risk-item] debris_id=4 class=SAFE proximity=3223517 size_cm=66 dr_m=3223048 dtheta_mdeg=93930
+  [risk-item] debris_id=5 class=SAFE proximity=3946299 size_cm=24 dr_m=3945959 dtheta_mdeg=68155
+  [risk-item] debris_id=6 class=SAFE proximity=6491964 size_cm=218 dr_m=6491098 dtheta_mdeg=173389
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1720_s
+  [satellite-state] r_m=6771001 theta_mdeg=107415 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1720_s
+  [transmission-packet] packet_number=87 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1730_s
+  [risk-item] debris_id=1 class=SAFE proximity=3971794 size_cm=240 dr_m=3971556 dtheta_mdeg=47700
+  [risk-item] debris_id=2 class=SAFE proximity=269703 size_cm=68 dr_m=268854 dtheta_mdeg=169912
+  [risk-item] debris_id=3 class=SAFE proximity=581031 size_cm=135 dr_m=580383 dtheta_mdeg=129698
+  [risk-item] debris_id=4 class=SAFE proximity=3247391 size_cm=66 dr_m=3247338 dtheta_mdeg=10770
+  [risk-item] debris_id=5 class=SAFE proximity=3968217 size_cm=24 dr_m=3967979 dtheta_mdeg=47735
+  [risk-item] debris_id=6 class=SAFE proximity=6540246 size_cm=218 dr_m=6539748 dtheta_mdeg=99791
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1740_s
+  [risk-item] debris_id=1 class=SAFE proximity=3935990 size_cm=240 dr_m=3935556 dtheta_mdeg=86820
+  [risk-item] debris_id=2 class=SAFE proximity=270704 size_cm=68 dr_m=270134 dtheta_mdeg=114178
+  [risk-item] debris_id=3 class=SAFE proximity=584155 size_cm=135 dr_m=584063 dtheta_mdeg=18598
+  [risk-item] debris_id=4 class=SAFE proximity=3271989 size_cm=66 dr_m=3271628 dtheta_mdeg=72390
+  [risk-item] debris_id=5 class=SAFE proximity=3990817 size_cm=24 dr_m=3989999 dtheta_mdeg=163625
+  [risk-item] debris_id=6 class=SAFE proximity=6588462 size_cm=218 dr_m=6588398 dtheta_mdeg=12971
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1740_s
+  [satellite-state] r_m=6771001 theta_mdeg=108655 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1740_s
+  [transmission-packet] packet_number=88 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1750_s
+  [risk-item] debris_id=1 class=SAFE proximity=3900185 size_cm=240 dr_m=3899556 dtheta_mdeg=125940
+  [risk-item] debris_id=2 class=SAFE proximity=271605 size_cm=68 dr_m=271414 dtheta_mdeg=38268
+  [risk-item] debris_id=3 class=SAFE proximity=588205 size_cm=135 dr_m=587743 dtheta_mdeg=92502
+  [risk-item] debris_id=4 class=SAFE proximity=3296695 size_cm=66 dr_m=3295918 dtheta_mdeg=155550
+  [risk-item] debris_id=5 class=SAFE proximity=4012421 size_cm=24 dr_m=4012019 dtheta_mdeg=80485
+  [risk-item] debris_id=6 class=SAFE proximity=6637417 size_cm=218 dr_m=6637048 dtheta_mdeg=73849
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1760_s
+  [risk-item] debris_id=1 class=SAFE proximity=3864381 size_cm=240 dr_m=3863556 dtheta_mdeg=165060
+  [risk-item] debris_id=2 class=SAFE proximity=272882 size_cm=68 dr_m=272694 dtheta_mdeg=37642
+  [risk-item] debris_id=3 class=SAFE proximity=592204 size_cm=135 dr_m=591423 dtheta_mdeg=156398
+  [risk-item] debris_id=4 class=SAFE proximity=3320814 size_cm=66 dr_m=3320208 dtheta_mdeg=121290
+  [risk-item] debris_id=5 class=SAFE proximity=4034216 size_cm=24 dr_m=4034039 dtheta_mdeg=35405
+  [risk-item] debris_id=6 class=SAFE proximity=6686501 size_cm=218 dr_m=6685698 dtheta_mdeg=160669
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1760_s
+  [satellite-state] r_m=6771001 theta_mdeg=109895 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1760_s
+  [transmission-packet] packet_number=89 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1770_s
+  [risk-item] debris_id=1 class=SAFE proximity=3828335 size_cm=240 dr_m=3827556 dtheta_mdeg=155820
+  [risk-item] debris_id=2 class=SAFE proximity=274541 size_cm=68 dr_m=273974 dtheta_mdeg=113552
+  [risk-item] debris_id=3 class=SAFE proximity=595329 size_cm=135 dr_m=595103 dtheta_mdeg=45298
+  [risk-item] debris_id=4 class=SAFE proximity=3344688 size_cm=66 dr_m=3344498 dtheta_mdeg=38130
+  [risk-item] debris_id=5 class=SAFE proximity=4056815 size_cm=24 dr_m=4056059 dtheta_mdeg=151295
+  [risk-item] debris_id=6 class=SAFE proximity=6734910 size_cm=218 dr_m=6734348 dtheta_mdeg=112511
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1780_s
+  [risk-item] debris_id=1 class=SAFE proximity=3792139 size_cm=240 dr_m=3791556 dtheta_mdeg=116700
+  [risk-item] debris_id=2 class=SAFE proximity=276106 size_cm=68 dr_m=275254 dtheta_mdeg=170538
+  [risk-item] debris_id=3 class=SAFE proximity=599112 size_cm=135 dr_m=598783 dtheta_mdeg=65802
+  [risk-item] debris_id=4 class=SAFE proximity=3369013 size_cm=66 dr_m=3368788 dtheta_mdeg=45030
+  [risk-item] debris_id=5 class=SAFE proximity=4078543 size_cm=24 dr_m=4078079 dtheta_mdeg=92815
+  [risk-item] debris_id=6 class=SAFE proximity=6783126 size_cm=218 dr_m=6782998 dtheta_mdeg=25691
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1780_s
+  [satellite-state] r_m=6771001 theta_mdeg=111135 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1780_s
+  [transmission-packet] packet_number=90 type=weather_status status=sent radio_on=true
+
+[COLLISION-RISK-REPORT] timestamp=1790_s
+  [risk-item] debris_id=1 class=SAFE proximity=3755943 size_cm=240 dr_m=3755556 dtheta_mdeg=77580
+  [risk-item] debris_id=2 class=SAFE proximity=277007 size_cm=68 dr_m=276534 dtheta_mdeg=94628
+  [risk-item] debris_id=3 class=SAFE proximity=603347 size_cm=135 dr_m=602463 dtheta_mdeg=176902
+  [risk-item] debris_id=4 class=SAFE proximity=3393718 size_cm=66 dr_m=3393078 dtheta_mdeg=128190
+  [risk-item] debris_id=5 class=SAFE proximity=4100214 size_cm=24 dr_m=4100099 dtheta_mdeg=23075
+  [risk-item] debris_id=6 class=SAFE proximity=6831953 size_cm=218 dr_m=6831648 dtheta_mdeg=61129
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[COLLISION-RISK-REPORT] timestamp=1800_s
+  [risk-item] debris_id=1 class=SAFE proximity=3719748 size_cm=240 dr_m=3719556 dtheta_mdeg=38460
+  [risk-item] debris_id=2 class=SAFE proximity=277907 size_cm=68 dr_m=277814 dtheta_mdeg=18718
+  [risk-item] debris_id=3 class=SAFE proximity=606502 size_cm=135 dr_m=606143 dtheta_mdeg=71998
+  [risk-item] debris_id=4 class=SAFE proximity=3418111 size_cm=66 dr_m=3417368 dtheta_mdeg=148650
+  [risk-item] debris_id=5 class=SAFE proximity=4122813 size_cm=24 dr_m=4122119 dtheta_mdeg=138965
+  [risk-item] debris_id=6 class=SAFE proximity=6881037 size_cm=218 dr_m=6880298 dtheta_mdeg=147949
+[COLLISION-RISK-SUMMARY] high_risk=0 watch=0 safe=6
+
+[TELEMETRY-REPORT] timestamp=1800_s
+  [satellite-state] r_m=6771001 theta_mdeg=112375 omega_mdegps=62
+  [risk-tracking] current_high_risk=0 any_in_window=0 max_in_window=0 total_events=0
+  [mission-status] debris_tracked=6 decision_window_s=20
+
+[TRANSMISSION-LOG] timestamp=1800_s
+  [transmission-packet] packet_number=91 type=weather_status status=sent radio_on=true
+
+================== FINAL RESOURCE REPORT ==================
+
+[CPU-UTILIZATION]
+  cpu_utilization_pct=0.98
+  active_cycles=1769270
+  sleep_cycles=178330730
+  radio_cycles=172900
+  total_cycles=1769270
+
+[PER-TASK-CYCLES]
+  task_orbit_cycles=703950
+  task_risk_cycles=836220
+  task_maneuver_cycles=56200
+  task_telemetry_cycles=100100
+  task_tx_cycles=72800
+
+[ENERGY-BUDGET]
+  estimated_energy_mj=133195.76
+  budget_mj=15000000
+  remaining_energy_mj=14866804.24
+  battery_status=HEALTHY
+
+=========================================================

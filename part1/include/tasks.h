@@ -17,6 +17,9 @@ typedef struct {
     int32_t sat_theta_mdeg;
     int32_t sat_omega_mdegps;
     int32_t high_risk_count;
+    int32_t high_risk_any_20s;
+    int32_t high_risk_max_20s;
+    int32_t high_risk_events_20s;
     int32_t last_high_risk_id;
     int32_t maneuver_pending;
     int32_t planned_dv_cms;
