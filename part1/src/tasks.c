@@ -142,8 +142,8 @@ void task_risk_eval(mission_state_t *ms, scenario_t *sc, runtime_stats_t *rt, in
         }
 
         int32_t proximity = dr + (dtheta / 200);
-        int32_t high_risk_threshold = 10 * sc->debris[i].size_cm;
-        int32_t watch_threshold = 100 * sc->debris[i].size_cm;
+        int32_t high_risk_threshold = 100 * sc->debris[i].size_cm;
+        int32_t watch_threshold = 1000 * sc->debris[i].size_cm;
         risk_level_t level = RISK_SAFE;
         if (proximity < high_risk_threshold) {
             level = RISK_HIGH;
