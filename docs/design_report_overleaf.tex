@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{enumitem}
+\usepackage{amsmath}
+
+\setlength{\emergencystretch}{2em}
+
+\title{Design Report: Satellite Debris Collision-Avoidance Runtime and RISC-V Emulator}
+\author{HackRush 2026 -- Computer Architecture Project}
+\date{April 2026}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This report summarizes the design of a deterministic satellite debris collision-avoidance runtime and its companion RISC-V emulator. The primary engineering goal is to make scheduling, risk decisions, cycle accounting, and energy accounting transparent and reproducible. Instead of optimizing only for realism, the implementation prioritizes traceability: every major runtime decision has an explicit formula, fixed interval, or bounded state transition that can be audited directly in logs.
+
+The implementation has two complementary parts. First, a C11 runtime executes periodic mission tasks (orbit propagation, risk evaluation, maneuver planning, telemetry, and transmission) under a fixed cycle budget per second. Second, a Python emulator executes RV32-style assembly kernels with pipeline-aware cycle accounting and lightweight power estimation. Together, they support both system-level reasoning (mission behavior, deadlines, energy budget compliance) and architecture-level reasoning (instruction mix, hazards, CPI behavior).
+
+Key design intent for this submission is practical and specific: use integer/fixed-point math for deterministic behavior, use simple but meaningful risk thresholds tied to debris size, use small bounded maneuver candidate sets for predictable compute cost, and expose enough micro-architectural detail in the emulator to validate cycle/energy trends against assembly scenarios.
+
+\section{Emulator Design and Hardware Model Assumptions}
+The emulator in \texttt{simulator\_core/emulator/emulator.py} uses the following model:
+\begin{itemize}[leftmargin=1.5em]
+    \item RV32-style integer register file (32 registers with ABI aliases).
+    \item Instruction subset needed by project assembly kernels:
+    \texttt{li, mv, addi, add, sub, ori, mul, div, rem, slt, lw, sw, beq, bne, blt, bge, bnez, beqz, j, jal, ret}.
+    \item Bounded memory model with text/data/stack regions and optional fast-memory abstraction.
+\end{itemize}
+This model is intentionally scoped to the project kernels: it is detailed enough for instruction-level timing discussion while avoiding unrelated ISA complexity.
+
+Timing assumptions:
+\begin{equation}
+\texttt{total\_cycles} = (k-1) + \sum_i \texttt{cost}(i)
+\end{equation}
+where $k=5$ (pipeline fill overhead), and \texttt{cost(i)} includes base latency plus penalties.
+
+Default baseline currently used:
+\begin{itemize}[leftmargin=1.5em]
+    \item ALU/load/store/branch/mul/div/rem base cost = 1,
+    \item taken-branch penalty = 0,
+    \item memory penalty = 0,
+    \item load-use hazard stall = +1 when detected.
+\end{itemize}
+These defaults produce near-ideal throughput but still capture meaningful hazards. In practice, the load-use check is the most relevant penalty for the provided kernels, because dependent instruction pairs after \texttt{lw} appear naturally in state-update code.
+
+Power model in emulator:
+\begin{equation}
+E_{mJ} = C_{active}P_{active}T + C_{sleep}P_{sleep}T + C_{radio}P_{radio}T
+\end{equation}
+with configurable defaults in code.
+The reported CPI is derived from total cycles, so it remains consistent with the pipeline-fill model ($n + k - 1$) plus any dynamic penalties.
+
+\section{OS/Runtime Design}
+\subsection*{Scheduler type}
+The runtime in \texttt{simulator\_core/src/main.c} uses a static time-triggered cyclic scheduler over 1-second ticks:
+\begin{itemize}[leftmargin=1.5em]
+    \item Every 5 s: orbit propagation.
+    \item Every 10 s: risk evaluation and maneuver.
+    \item Every 20 s: telemetry and transmission.
+\end{itemize}
+Release checks are modulo-based and constant-time. This makes dispatch deterministic and easy to validate through timestamped logs.
+
+\subsection*{Priorities, timing, and deadlines}
+No dynamic priority queue is used; effective priority is release order in each tick:
+\begin{enumerate}[leftmargin=1.5em]
+    \item Orbit propagation,
+    \item Risk evaluation,
+    \item Maneuver,
+    \item Telemetry,
+    \item Transmission.
+\end{enumerate}
+Each second has a fixed cycle budget (\texttt{SIM\_CYCLES\_PER\_SEC=100000}).
+Used cycles are charged to tasks; leftover cycles are charged to sleep.
+This yields deterministic accounting and bounded per-tick utilization.
+
+Task compute costs are explicitly modeled in cycles and are central to timing analysis:
+\begin{itemize}[leftmargin=1.5em]
+    \item Orbit propagation: \(1800 + 25 \times \texttt{debris\_count}\).
+    \item Risk evaluation: \(4200 + 70 \times \texttt{debris\_count}\).
+    \item Maneuver: 2200 when a maneuver is pending, else 300.
+    \item Telemetry: 1100.
+    \item Transmission: 800.
+\end{itemize}
+Because these costs are deterministic functions of current state (especially \texttt{debris\_count}), timing behavior can be reasoned about analytically and then verified directly against output logs.
+
+\subsection*{Power-management policy}
+Implemented in \texttt{simulator\_core/src/runtime.c}:
+\begin{itemize}[leftmargin=1.5em]
+    \item Active task cycles add active energy.
+    \item Radio-on tasks add extra radio energy.
+    \item Remaining per-tick capacity is counted as sleep (low-power state).
+\end{itemize}
+The energy constants used by the runtime are:
+\begin{itemize}[leftmargin=1.5em]
+    \item Active work: 200 units/cycle \(=0.020\,\text{mJ/cycle}\).
+    \item Sleep: 5 units/cycle \(=0.0005\,\text{mJ/cycle}\).
+    \item Radio extra: 500 units/cycle \(=0.050\,\text{mJ/cycle}\).
+\end{itemize}
+One internal unit is \(10^{-4}\) mJ (tracked as \texttt{energy\_mj\_x10000}).
+This fixed-point energy representation avoids floating-point drift and keeps budget checks stable across builds and platforms.
+
+\section{Architecture-Aware Optimizations}
+\subsection*{Fixed-point arithmetic: where and why}
+Fixed-point/integer math is used to reduce overhead and improve deterministic behavior:
+\begin{itemize}[leftmargin=1.5em]
+    \item Angles: millidegrees (\texttt{mdeg}).
+    \item Energy: \texttt{energy\_mj\_x10000} (0.0001 mJ units).
+    \item Integer rad-to-mdeg conversion constant (57296).
+\end{itemize}
+This choice is critical for two reasons: frequent execution in the scheduler loop, and the need for deterministic comparisons in risk classification and budget accounting. Integer/fixed-point arithmetic keeps both predictable.
+
+\subsection*{Assembly: where and why}
+Assembly in \texttt{simulator\_core/asm} is used for architecture validation and instruction-level analysis:
+\begin{itemize}[leftmargin=1.5em]
+    \item \texttt{runtime\_kernels\_riscv32.s}: helper kernels mirroring runtime logic.
+    \item \texttt{sort\_10\_registers\_riscv32.s}: register-only sorting micro-benchmark.
+\end{itemize}
+These kernels are used to verify both correctness and timing metrics (instruction count, total cycles, CPI, stall behavior) under a controlled instruction stream.
+
+\subsection*{Data layout and locality}
+\begin{itemize}[leftmargin=1.5em]
+    \item Compact arrays/structs for task and debris data to improve sequential access.
+    \item Linear iteration over debris catalog in orbit/risk tasks.
+    \item Fast-memory region parameter in emulator (scratchpad-like abstraction).
+\end{itemize}
+The scenario structure supports up to \texttt{MAX\_DEBRIS = 256}. Critical loops traverse the debris array linearly, which is locality-friendly in the runtime and simple to reason about in cycle-level emulator experiments.
+
+Design-specific risk thresholds are also intentionally simple and integer-based. For each debris item:
+\begin{equation}
+\texttt{proximity} = |\Delta r| + \frac{|\Delta \theta|}{200}
+\end{equation}
+\begin{itemize}[leftmargin=1.5em]
+    \item HIGH-RISK if \(\texttt{proximity} < 100 \times \texttt{size\_cm}\)
+    \item WATCH if \(\texttt{proximity} < 1000 \times \texttt{size\_cm}\)
+    \item SAFE otherwise
+\end{itemize}
+
+This thresholding strategy directly scales risk tolerance by debris size, which is a practical mission heuristic: larger objects are classified as risky at larger separations.
+
+Maneuver selection evaluates a small fixed candidate set
+\(\Delta v\in\{-3,+3\}\,\text{cm/s}\),
+\(\Delta r\in\{-1,+1\}\,\text{m}\),
+and picks the option with best predicted next-step proximity.
+The bounded 2x2 search keeps compute cost constant while still allowing both tangential and radial correction.
+
+\section{Implemented Extras Relevant to This Submission}
+\begin{itemize}[leftmargin=1.5em]
+    \item GUI fallback to a valid entry label when selected label is missing.
+    \item Simplified emulator performance summary: instruction count, total cycles, CPI, stall cycles, and estimated energy.
+    \item Added over-budget test scenario \texttt{energy\_budget\_exceeded\_scenario.json} with validated \texttt{battery\_status=EXCEEDED}.
+    \item Updated project scripts and docs for renamed core folder \texttt{simulator\_core}.
+\end{itemize}
+These additions improve reliability of day-to-day usage (GUI loading behavior), readability of performance reporting, and reproducibility of stress testing for energy-budget violations.
+
+\section{Conclusion}
+The final design is intentionally balanced: simple enough to remain analyzable, but detailed enough to support meaningful architecture and runtime conclusions. The runtime delivers deterministic scheduling and transparent energy/cycle accounting, while the emulator provides instruction-level visibility under an explicit timing model. Most importantly, the selected thresholds, task-cost formulas, and fixed-point representations are tightly aligned with the project goal of reproducible mission-level decision making under constrained resources.
+
+The main limitations are also clear in the current implementation: scheduling is non-preemptive at 1-second granularity, scenario parsing is lightweight rather than fully standards-compliant JSON parsing, emulator ISA coverage is limited to the project-required subset, and cache/memory hierarchy effects are abstract rather than cycle-accurate. The coarse 1-second base tick also means interrupt jitter and asynchronous event behavior are not modeled at RTOS fidelity.
+
+Future improvements follow directly from these limitations: add preemptive scheduling with deadline-miss diagnostics, upgrade to strict JSON parsing with robust validation, extend emulator ISA and branch/memory hierarchy realism, and add automated regression checks for CPI/energy invariants and scenario-level correctness.
+
+\end{document}
