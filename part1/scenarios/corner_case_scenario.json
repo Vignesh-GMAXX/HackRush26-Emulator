@@ -1,0 +1,80 @@
+{
+  "_comment": "Corner-case scenario for parser and runtime behavior checks. Note: JSON comments are represented via _comment fields.",
+  "0": {
+    "simulation_parameters": {
+      "horizon_s": 80,
+      "decision_step_s": 10,
+      "energy_budget_J": 5000,
+      "_comment": "Short horizon for manageable logs while still triggering multiple 5s/10s/20s tasks."
+    },
+    "satellite_initial_state": {
+      "radius_m": 6771000,
+      "angular_velocity_rad_s": 0.0011331552793,
+      "_comment": "Nominal LEO-like orbital rate used as baseline."
+    },
+    "corner_case_notes": {
+      "debris_101": "Theta near 2pi (wrap-around boundary).",
+      "debris_102": "vt=0 corner case (no tangential theta update).",
+      "debris_103": "Large size object to stress size-scaled thresholds.",
+      "debris_104": "Negative theta input and very small size.",
+      "debris_105": "Same radius as satellite (dr=0 at start).",
+      "debris_106": "Near-aligned and close radius for potential high-risk transitions."
+    },
+    "debris_catalog": [
+      {
+        "id": 101,
+        "r": 6771200.0,
+        "theta": 6.2815,
+        "vr": 0.0,
+        "vt": 7600.0,
+        "size": 0.15,
+        "_comment": "Wrap-around theta corner."
+      },
+      {
+        "id": 102,
+        "r": 6776000.0,
+        "theta": 0.50,
+        "vr": -50.0,
+        "vt": 0.0,
+        "size": 0.25,
+        "_comment": "vt=0 -> tangential_to_theta_delta should return 0."
+      },
+      {
+        "id": 103,
+        "r": 6790000.0,
+        "theta": 3.00,
+        "vr": -150.0,
+        "vt": 7600.0,
+        "size": 2.50,
+        "_comment": "Large debris size_cm=250 tests loose thresholds."
+      },
+      {
+        "id": 104,
+        "r": 6765000.0,
+        "theta": -0.10,
+        "vr": 40.0,
+        "vt": 7700.0,
+        "size": 0.03,
+        "_comment": "Negative theta and tiny size corner."
+      },
+      {
+        "id": 105,
+        "r": 6771000.0,
+        "theta": 1.57,
+        "vr": 0.0,
+        "vt": 7600.0,
+        "size": 0.10,
+        "_comment": "dr starts at zero; classification relies on angular term."
+      },
+      {
+        "id": 106,
+        "r": 6773000.0,
+        "theta": 0.01,
+        "vr": -5.0,
+        "vt": 7600.0,
+        "size": 0.08,
+        "_comment": "Near radius/theta alignment to trigger high-risk behavior."
+      }
+    ]
+  }
+}

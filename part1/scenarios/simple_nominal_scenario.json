@@ -1,0 +1,55 @@
+{
+  "0": {
+    "simulation_parameters": {
+      "horizon_s": 1,
+      "decision_step_s": 10,
+      "energy_budget_J": 12000
+    },
+    "satellite_initial_state": {
+      "radius_m": 6771000,
+      "angular_velocity_rad_s": 0.0011331552793
+    },
+    "debris_catalog": [
+      {
+        "id": 1,
+        "r": 6772400.0,
+        "theta": 0.12,
+        "vr": -3.0,
+        "vt": 7660.0,
+        "size": 0.20
+      },
+      {
+        "id": 2,
+        "r": 6775000.0,
+        "theta": 1.00,
+        "vr": 3.0,
+        "vt": 7645.0,
+        "size": 0.10
+      },
+      {
+        "id": 3,
+        "r": 6781000.0,
+        "theta": 2.50,
+        "vr": -1.0,
+        "vt": 7700.0,
+        "size": 0.05
+      },
+      {
+        "id": 4,
+        "r": 6762000.0,
+        "theta": 4.00,
+        "vr": 1.0,
+        "vt": 7625.0,
+        "size": 0.08
+      },
+      {
+        "id": 5,
+        "r": 6778000.0,
+        "theta": 5.80,
+        "vr": 2.0,
+        "vt": 7685.0,
+        "size": 0.12
+      }
+    ]
+  }
+}

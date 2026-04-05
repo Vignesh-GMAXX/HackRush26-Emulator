@@ -14,6 +14,7 @@ A real-time C11 simulation system for satellite orbital collision avoidance, ris
 - [Installation & Setup](#installation--setup)
 - [Building the Project](#building-the-project)
 - [Running the Simulator](#running-the-simulator)
+- [RISC-V Emulator and Assembly](#risc-v-emulator-and-assembly)
 - [Configuration](#configuration)
 - [Output Format](#output-format)
 - [Key Features](#key-features)
@@ -73,17 +74,22 @@ Part 1/
 │   ├── include/
 │   │   ├── scenario.h          # Scenario loader interface
 │   │   ├── tasks.h             # Mission tasks and state
-│   │   ├── runtime.h           # Cycle and energy accounting
-│   │   └── collision.h         # Collision math utilities
+│   │   └── runtime.h           # Cycle and energy accounting
 │   ├── src/
 │   │   ├── main.c              # Main simulation loop
 │   │   ├── scenario.c          # JSON scenario parser
 │   │   ├── tasks.c             # Core mission logic
-│   │   ├── runtime.c           # Resource accounting
-│   │   └── collision.c         # Proximity/risk calculations
+│   │   └── runtime.c           # Resource accounting
 │   ├── scenarios/
 │   │   ├── conic_scenario_dataset.json    # Test scenario (6 debris, 1800s)
 │   │   └── [other scenarios]
+│   ├── asm/                    # RISC-V assembly kernels and examples
+│   │   ├── runtime_kernels_riscv32.s
+│   │   └── sort_10_registers_riscv32.s
+│   ├── emulator/               # Python emulator and GUI tools
+│   │   ├── riscv_emulator.py
+│   │   ├── emulator.py
+│   │   └── gui.py
 │   ├── Makefile                # Build configuration
 │   └── README.md               # Simulator documentation
 ├── docs/
@@ -209,6 +215,39 @@ Select-String -Path "../results/conic_scenario_dataset.log" -Pattern "HIGH-RISK"
 cd part1
 bin\sat_sim.exe
 ```
+
+---
+
+## RISC-V Emulator and Assembly
+
+The project includes a Python RISC-V emulator and assembly examples for step-by-step inspection.
+
+### Run Assembly in CLI
+```powershell
+cd part1
+python emulator\riscv_emulator.py asm\sort_10_registers_riscv32.s sort_10_registers
+```
+
+Expected behavior:
+- `sort_10_registers` sorts 10 constants in ascending order.
+- Sorted values are stored in `s0-s9` and mirrored to `a0-a7`, `t0`, `t1`.
+
+### Run Assembly in GUI
+```powershell
+cd part1
+python emulator\gui.py
+```
+
+In the GUI:
+1. Open `asm/sort_10_registers_riscv32.s`.
+2. Set Function to `sort_10_registers` (or click Load and let GUI auto-select).
+3. Click Run.
+
+The GUI shows:
+- Assembly source
+- Instruction listing
+- Register/memory state
+- Performance and power summary
 
 ---
 
@@ -554,6 +593,7 @@ Use the per-task cycle breakdown in FINAL RESOURCE REPORT:
 mingw32-make              # Build
 mingw32-make run          # Build & run (console)
 mingw32-make run-log      # Build & run (to file)
+mingw32-make gui          # Launch the Tkinter simulator UI
 mingw32-make clean        # Clean build
 ```
 
