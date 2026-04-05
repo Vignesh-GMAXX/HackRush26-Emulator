@@ -8,12 +8,12 @@ $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $Root
 
 if ([string]::IsNullOrWhiteSpace($Scenario)) {
-    $Scenario = "$Root\part1\scenarios\sample_scenario.json"
+    $Scenario = "$Root\simulator_core\scenarios\simple_nominal_scenario.json"
 }
 
-if (!(Test-Path "$Root\part1\bin\sat_sim.exe")) {
+if (!(Test-Path "$Root\simulator_core\bin\sat_sim.exe")) {
     Write-Host "[run] Binary missing, invoking build.ps1 first..."
     & "$Root\build.ps1"
 }
 
-& "$Root\part1\bin\sat_sim.exe" $Scenario
+& "$Root\simulator_core\bin\sat_sim.exe" $Scenario

@@ -52,7 +52,7 @@ static void print_summary(const scenario_t *sc, const runtime_stats_t *rt) {
 }
 
 int main(int argc, char **argv) {
-    const char *scenario_path = (argc > 1) ? argv[1] : "part1/scenarios/sample_scenario.json";
+    const char *scenario_path = (argc > 1) ? argv[1] : "simulator_core/scenarios/sample_scenario.json";
 
     scenario_t sc;
     int rc = load_scenario_file(scenario_path, &sc);

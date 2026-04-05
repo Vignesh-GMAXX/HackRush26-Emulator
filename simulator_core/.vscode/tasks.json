@@ -2,7 +2,7 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "run-makefile-part1",
+			"label": "run-makefile-simulator_core",
 			"type": "shell",
 			"command": "make",
 			"isBackground": false

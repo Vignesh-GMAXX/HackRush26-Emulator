@@ -30,7 +30,7 @@ This folder contains architecture-specific assembly helpers for the simulator.
 
 ## Emulator
 
-Run the helper assembly with the Python emulator from the `part1/` directory:
+Run the helper assembly with the Python emulator from the `simulator_core/` directory:
 
 ```powershell
 python emulator\riscv_emulator.py asm\runtime_kernels_riscv32.s rv_risk_classify 120 3
@@ -43,7 +43,7 @@ Example outputs:
 
 ## Simulator UI
 
-Launch the Tkinter simulator window from the `part1/` directory:
+Launch the Tkinter simulator window from the `simulator_core/` directory:
 
 ```powershell
 python emulator\gui.py

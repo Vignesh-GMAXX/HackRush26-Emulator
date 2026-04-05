@@ -67,7 +67,7 @@ Both should display version information confirming installation.
 
 ```
 Part 1/
-├── part1/
+├── simulator_core/
 │   ├── bin/                    # Compiled executable (generated)
 │   │   └── sat_sim.exe
 │   ├── build/                  # Object files (generated)
@@ -142,7 +142,7 @@ From the project root directory, verify the structure:
 
 ```powershell
 # Navigate to the simulator directory
-cd part1
+cd simulator_core
 
 # List key directories
 ls src/          # Should have .c source files
@@ -155,7 +155,7 @@ ls scenarios/    # Should have .json test scenarios
 Create an output directory for logs:
 
 ```powershell
-# From project root (same level as part1/ folder)
+# From project root (same level as simulator_core/ folder)
 if (!(Test-Path "results")) { mkdir "results" }
 ```
 
@@ -165,7 +165,7 @@ if (!(Test-Path "results")) { mkdir "results" }
 
 ### Clean and Build
 ```powershell
-cd part1
+cd simulator_core
 mingw32-make clean
 mingw32-make
 ```
@@ -192,7 +192,7 @@ The executable should be ~200-400 KB depending on compiler flags.
 
 ### Quick Start: Run Default Test Scenario
 ```powershell
-cd part1
+cd simulator_core
 mingw32-make run-log
 ```
 
@@ -212,7 +212,7 @@ Select-String -Path "../results/conic_scenario_dataset.log" -Pattern "HIGH-RISK"
 
 ### Manual Execution
 ```powershell
-cd part1
+cd simulator_core
 bin\sat_sim.exe
 ```
 
@@ -224,7 +224,7 @@ The project includes a Python RISC-V emulator and assembly examples for step-by-
 
 ### Run Assembly in CLI
 ```powershell
-cd part1
+cd simulator_core
 python emulator\riscv_emulator.py asm\sort_10_registers_riscv32.s sort_10_registers
 ```
 
@@ -234,7 +234,7 @@ Expected behavior:
 
 ### Run Assembly in GUI
 ```powershell
-cd part1
+cd simulator_core
 python emulator\gui.py
 ```
 
@@ -464,7 +464,7 @@ CPU Utilization (%) = (active_cycles / (active_cycles + sleep_cycles)) × 100
 
 ### Run and Display Full Output
 ```powershell
-cd part1
+cd simulator_core
 mingw32-make run
 ```
 

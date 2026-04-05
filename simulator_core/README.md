@@ -1,4 +1,4 @@
-# part1 Simulator Core
+# simulator_core Simulator Core
 
 This folder contains the core simulator implementation and supporting tooling.
 

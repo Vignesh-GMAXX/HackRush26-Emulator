@@ -1,6 +1,6 @@
 # Output Variable Report
 
-This document explains every variable printed by the simulator, how it is calculated, and why it matters. It is written against the current implementation in `part1/src/main.c`, `part1/src/tasks.c`, and `part1/src/runtime.c`.
+This document explains every variable printed by the simulator, how it is calculated, and why it matters. It is written against the current implementation in `simulator_core/src/main.c`, `simulator_core/src/tasks.c`, and `simulator_core/src/runtime.c`.
 
 ## 1. Overview of Output Blocks
 

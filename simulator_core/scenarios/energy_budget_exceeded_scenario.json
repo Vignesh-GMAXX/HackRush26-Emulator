@@ -1,0 +1,64 @@
+{
+  "_comment": "Scenario intentionally configured to exceed energy budget.",
+  "0": {
+    "simulation_parameters": {
+      "horizon_s": 180,
+      "decision_step_s": 10,
+      "energy_budget_J": 1
+    },
+    "satellite_initial_state": {
+      "radius_m": 6771000,
+      "angular_velocity_rad_s": 0.0011331552793
+    },
+    "debris_catalog": [
+      {
+        "id": 201,
+        "r": 6771300.0,
+        "theta": 0.03,
+        "vr": -4.0,
+        "vt": 7650.0,
+        "size": 0.45
+      },
+      {
+        "id": 202,
+        "r": 6771500.0,
+        "theta": 0.06,
+        "vr": -3.0,
+        "vt": 7648.0,
+        "size": 0.40
+      },
+      {
+        "id": 203,
+        "r": 6771800.0,
+        "theta": 0.10,
+        "vr": -2.0,
+        "vt": 7645.0,
+        "size": 0.38
+      },
+      {
+        "id": 204,
+        "r": 6772100.0,
+        "theta": 0.14,
+        "vr": -1.0,
+        "vt": 7642.0,
+        "size": 0.35
+      },
+      {
+        "id": 205,
+        "r": 6772400.0,
+        "theta": 0.19,
+        "vr": 0.0,
+        "vt": 7640.0,
+        "size": 0.32
+      },
+      {
+        "id": 206,
+        "r": 6772700.0,
+        "theta": 0.24,
+        "vr": 1.0,
+        "vt": 7638.0,
+        "size": 0.30
+      }
+    ]
+  }
+}
